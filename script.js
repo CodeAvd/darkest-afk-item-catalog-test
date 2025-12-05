@@ -10,7 +10,7 @@
 
   let items = [];
   let filtered = [];
-  let selectedId = null;
+  let selectedIds = new Set(); // Changed to Set for multi-selection
   let showRu = false;
 
   async function loadItems() {
@@ -62,8 +62,8 @@
     filtered.forEach((item) => {
       const card = document.createElement("div");
       card.className = "card";
-      if (item.id === selectedId) card.classList.add("selected");
-      card.addEventListener("click", () => selectItem(item.id));
+      if (selectedIds.has(item.id)) card.classList.add("selected");
+      card.addEventListener("click", () => toggleItemSelection(item.id));
 
       const img = document.createElement("img");
       img.src = item.image || "";
@@ -112,35 +112,85 @@
     return span;
   }
 
-  function selectItem(id) {
-    selectedId = id;
+  function toggleItemSelection(id) {
+    if (selectedIds.has(id)) {
+      selectedIds.delete(id);
+    } else {
+      selectedIds.add(id);
+    }
     renderGrid();
-    const item = items.find((i) => i.id === id);
-    if (!item) return;
+    updateDetailPanel();
+  }
+
+  function updateDetailPanel() {
     detailContent.innerHTML = "";
 
-    const nameRow = row("Name", showRu && item.displayNameRu ? item.displayNameRu : item.displayName || item.id);
-    const altName = showRu ? item.displayName : item.displayNameRu;
-    if (altName) nameRow.querySelector(".value").appendChild(subText(altName));
+    if (selectedIds.size === 0) {
+      const placeholder = document.createElement("p");
+      placeholder.textContent = "Select items to generate init_info JSON.";
+      placeholder.style.color = "var(--muted)";
+      detailContent.appendChild(placeholder);
+      return;
+    }
 
-    const catRow = row("Category", item.category || "—");
-    const codeRow = row("Internal code", codeMono(item.id));
-    const qtyRow = item.defaultQuantity ? row("Default qty", item.defaultQuantity) : null;
+    // Get selected items
+    const selectedItems = Array.from(selectedIds).map(id => 
+      items.find(item => item.id === id)
+    ).filter(Boolean);
 
+    // Build init_info structure
+    const initInfo = {
+      init_info: {
+        type: "COMMON",
+        title: "To our dearest hero",
+        message: "We apologize for the inconvenience you have encountered. Here is the compensation pack for you.",
+        rewards: {
+          rewards_list: selectedItems.map(item => ({
+            type: "ITEM",
+            item_name: item.id,
+            quantity: item.defaultQuantity || 1
+          }))
+        }
+      }
+    };
+
+    // Show selected items summary
+    const summary = document.createElement("div");
+    summary.style.marginBottom = "12px";
+    summary.innerHTML = `<strong>Selected items:</strong> ${selectedItems.length}`;
+    detailContent.appendChild(summary);
+
+    // Show items list
+    const itemsList = document.createElement("div");
+    itemsList.style.marginBottom = "12px";
+    itemsList.style.fontSize = "13px";
+    itemsList.style.color = "var(--muted)";
+    selectedItems.forEach(item => {
+      const itemDiv = document.createElement("div");
+      const displayName = showRu && item.displayNameRu ? item.displayNameRu : item.displayName || item.id;
+      itemDiv.textContent = `• ${displayName} (x${item.defaultQuantity || 1})`;
+      itemsList.appendChild(itemDiv);
+    });
+    detailContent.appendChild(itemsList);
+
+    // JSON code block
     const codeBlock = document.createElement("pre");
     codeBlock.className = "code-block";
-    codeBlock.textContent = item.codeSnippet || "";
+    codeBlock.textContent = JSON.stringify(initInfo, null, 2);
+    detailContent.appendChild(codeBlock);
 
+    // Actions
     const actions = document.createElement("div");
     actions.className = "actions";
     actions.append(
-      actionButton("Copy item code", () => copyText(item.id)),
-      actionButton("Copy JSON snippet", () => copyText(item.codeSnippet || ""))
+      actionButton("Copy init_info JSON", () => copyText(JSON.stringify(initInfo, null, 2))),
+      actionButton("Clear selection", () => {
+        selectedIds.clear();
+        renderGrid();
+        updateDetailPanel();
+      })
     );
-
-    detailContent.append(nameRow, catRow, codeRow);
-    if (qtyRow) detailContent.appendChild(qtyRow);
-    detailContent.append(codeBlock, actions);
+    detailContent.appendChild(actions);
   }
 
   function row(label, value) {
@@ -221,7 +271,7 @@
   langToggle.addEventListener("change", () => {
     showRu = langToggle.checked;
     renderGrid();
-    if (selectedId) selectItem(selectedId);
+    updateDetailPanel();
   });
 
   loadItems();
