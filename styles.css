@@ -585,6 +585,10 @@ button:active {
   animation: modal-fade-in 0.2s ease;
 }
 
+.help-modal[hidden] {
+  display: none;
+}
+
 @keyframes modal-fade-in {
   from {
     opacity: 0;
