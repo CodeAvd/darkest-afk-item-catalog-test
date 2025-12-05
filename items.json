@@ -55,10 +55,10 @@
   },
   {
     "id": "item_pet_wallet_fragment",
-    "displayName": "Pet Fragment",
-    "displayNameRu": "Фрагмент питомца",
+    "displayName": "Pet Fragment: Chip",
+    "displayNameRu": "Фрагмент питомца: Чип",
     "category": "Pet Fragment",
-    "image": "images/item_pet_wallet_fragment.png",
+    "image": "images/icon_pet_fragment_wallet.png",
     "defaultQuantity": 30,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_wallet_fragment\",\n  \"quantity\": 30\n}"
   },
@@ -187,6 +187,888 @@
     "image": "images/item_pet_equipment_core.png",
     "defaultQuantity": 3,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_equipment_core\",\n  \"quantity\": 3\n}"
+  },
+  {
+    "id": "item_pet_cart_fragment",
+    "displayName": "Pet Fragment: Rex",
+    "displayNameRu": "Фрагмент питомца: Рекс",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_cart.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_cart_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_chest_fragment",
+    "displayName": "Pet Fragment: Spike",
+    "displayNameRu": "Фрагмент питомца: Спайк",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_chest.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_chest_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_coffin_fragment",
+    "displayName": "Pet Fragment: Jack",
+    "displayNameRu": "Фрагмент питомца: Джек",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_coffin.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_coffin_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_dresser_fragment",
+    "displayName": "Pet Fragment: Butch",
+    "displayNameRu": "Фрагмент питомца: Бутч",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_dresser.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_dresser_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_handbag_fragment",
+    "displayName": "Pet Fragment: Layla",
+    "displayNameRu": "Фрагмент питомца: Лайла",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_handbag.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_handbag_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "gear_rune_rank_3",
+    "displayName": "Adept Rune",
+    "displayNameRu": "Руна адепта",
+    "category": "Rune",
+    "image": "images/icon_rune_for_equipment_blue.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"gear_rune_rank_3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_chest_heroes_fragment",
+    "displayName": "Class Chest",
+    "displayNameRu": "Сундук классов",
+    "category": "Chest",
+    "image": "images/7dayEvent_chest.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_chest_heroes_fragment\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "black_friday_event_2024_activity_broom",
+    "displayName": "Black Friday: Broom",
+    "displayNameRu": "Черная пятница: Метла",
+    "category": "Event Item",
+    "image": "images/event_black_friday_mini_g_broom.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"black_friday_event_2024_activity_broom\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "black_friday_event_2024_activity_cloth",
+    "displayName": "Black Friday: Cloth",
+    "displayNameRu": "Черная пятница: Тряпка",
+    "category": "Event Item",
+    "image": "images/event_black_friday_mini_g_cloth.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"black_friday_event_2024_activity_cloth\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "black_friday_event_2024_activity_scoop",
+    "displayName": "Black Friday: Scoop",
+    "displayNameRu": "Черная пятница: Совок",
+    "category": "Event Item",
+    "image": "images/event_black_friday_mini_g_scoop.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"black_friday_event_2024_activity_scoop\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_body_grade1",
+    "displayName": "Damager Armor Grade 1",
+    "displayNameRu": "Доспех АТК ранг 1",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_body_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_body_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_body_grade2",
+    "displayName": "Damager Armor Grade 2",
+    "displayNameRu": "Доспех АТК ранг 2",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_body_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_body_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_body_grade3_plus",
+    "displayName": "Damager Armor Grade 3+",
+    "displayNameRu": "Доспех АТК ранг 3+",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_body_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_body_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_body_grade3",
+    "displayName": "Damager Armor Grade 3",
+    "displayNameRu": "Доспех АТК ранг 3",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_body_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_body_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_body_grade4_plus",
+    "displayName": "Damager Armor Grade 4+",
+    "displayNameRu": "Доспех АТК ранг 4+",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_body_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_body_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_body_grade4",
+    "displayName": "Damager Armor Grade 4",
+    "displayNameRu": "Доспех АТК ранг 4",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_body_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_body_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_body_grade5",
+    "displayName": "Damager Armor Grade 5",
+    "displayNameRu": "Доспех АТК ранг 5",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_body_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_body_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_gloves_grade1",
+    "displayName": "Damager Gloves Grade 1",
+    "displayNameRu": "Перчатки АТК ранг 1",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_gloves_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_gloves_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_gloves_grade2",
+    "displayName": "Damager Gloves Grade 2",
+    "displayNameRu": "Перчатки АТК ранг 2",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_gloves_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_gloves_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_gloves_grade3_plus",
+    "displayName": "Damager Gloves Grade 3+",
+    "displayNameRu": "Перчатки АТК ранг 3+",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_gloves_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_gloves_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_gloves_grade3",
+    "displayName": "Damager Gloves Grade 3",
+    "displayNameRu": "Перчатки АТК ранг 3",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_gloves_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_gloves_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_gloves_grade4_plus",
+    "displayName": "Damager Gloves Grade 4+",
+    "displayNameRu": "Перчатки АТК ранг 4+",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_gloves_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_gloves_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_gloves_grade4",
+    "displayName": "Damager Gloves Grade 4",
+    "displayNameRu": "Перчатки АТК ранг 4",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_gloves_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_gloves_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_gloves_grade5",
+    "displayName": "Damager Gloves Grade 5",
+    "displayNameRu": "Перчатки АТК ранг 5",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_gloves_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_gloves_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_offhand_grade1",
+    "displayName": "Damager Off-Hand Grade 1",
+    "displayNameRu": "Доп. оружие АТК ранг 1",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_offhand_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_offhand_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_offhand_grade2",
+    "displayName": "Damager Off-Hand Grade 2",
+    "displayNameRu": "Доп. оружие АТК ранг 2",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_offhand_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_offhand_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_offhand_grade3_plus",
+    "displayName": "Damager Off-Hand Grade 3+",
+    "displayNameRu": "Доп. оружие АТК ранг 3+",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_offhand_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_offhand_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_offhand_grade3",
+    "displayName": "Damager Off-Hand Grade 3",
+    "displayNameRu": "Доп. оружие АТК ранг 3",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_offhand_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_offhand_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_offhand_grade4_plus",
+    "displayName": "Damager Off-Hand Grade 4+",
+    "displayNameRu": "Доп. оружие АТК ранг 4+",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_offhand_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_offhand_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_offhand_grade4",
+    "displayName": "Damager Off-Hand Grade 4",
+    "displayNameRu": "Доп. оружие АТК ранг 4",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_offhand_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_offhand_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_offhand_grade5",
+    "displayName": "Damager Off-Hand Grade 5",
+    "displayNameRu": "Доп. оружие АТК ранг 5",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_offhand_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_offhand_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_weapon_grade1",
+    "displayName": "Damager Weapon Grade 1",
+    "displayNameRu": "Оружие АТК ранг 1",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_weapon_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_weapon_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_weapon_grade2",
+    "displayName": "Damager Weapon Grade 2",
+    "displayNameRu": "Оружие АТК ранг 2",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_weapon_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_weapon_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_weapon_grade3_plus",
+    "displayName": "Damager Weapon Grade 3+",
+    "displayNameRu": "Оружие АТК ранг 3+",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_weapon_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_weapon_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_weapon_grade3",
+    "displayName": "Damager Weapon Grade 3",
+    "displayNameRu": "Оружие АТК ранг 3",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_weapon_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_weapon_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_weapon_grade4_plus",
+    "displayName": "Damager Weapon Grade 4+",
+    "displayNameRu": "Оружие АТК ранг 4+",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_weapon_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_weapon_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_weapon_grade4",
+    "displayName": "Damager Weapon Grade 4",
+    "displayNameRu": "Оружие АТК ранг 4",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_weapon_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_weapon_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_dmgr_weapon_grade5",
+    "displayName": "Damager Weapon Grade 5",
+    "displayNameRu": "Оружие АТК ранг 5",
+    "category": "Gear: Damager",
+    "image": "images/gear_dmgr_weapon_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_dmgr_weapon_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_body_grade1",
+    "displayName": "Support Armor Grade 1",
+    "displayNameRu": "Доспех САПП ранг 1",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_body_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_body_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_body_grade2",
+    "displayName": "Support Armor Grade 2",
+    "displayNameRu": "Доспех САПП ранг 2",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_body_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_body_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_body_grade3_plus",
+    "displayName": "Support Armor Grade 3+",
+    "displayNameRu": "Доспех САПП ранг 3+",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_body_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_body_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_body_grade3",
+    "displayName": "Support Armor Grade 3",
+    "displayNameRu": "Доспех САПП ранг 3",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_body_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_body_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_body_grade4_plus",
+    "displayName": "Support Armor Grade 4+",
+    "displayNameRu": "Доспех САПП ранг 4+",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_body_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_body_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_body_grade4",
+    "displayName": "Support Armor Grade 4",
+    "displayNameRu": "Доспех САПП ранг 4",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_body_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_body_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_body_grade5",
+    "displayName": "Support Armor Grade 5",
+    "displayNameRu": "Доспех САПП ранг 5",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_body_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_body_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_gloves_grade1",
+    "displayName": "Support Gloves Grade 1",
+    "displayNameRu": "Перчатки САПП ранг 1",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_gloves_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_gloves_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_gloves_grade2",
+    "displayName": "Support Gloves Grade 2",
+    "displayNameRu": "Перчатки САПП ранг 2",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_gloves_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_gloves_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_gloves_grade3_plus",
+    "displayName": "Support Gloves Grade 3+",
+    "displayNameRu": "Перчатки САПП ранг 3+",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_gloves_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_gloves_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_gloves_grade3",
+    "displayName": "Support Gloves Grade 3",
+    "displayNameRu": "Перчатки САПП ранг 3",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_gloves_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_gloves_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_gloves_grade4_plus",
+    "displayName": "Support Gloves Grade 4+",
+    "displayNameRu": "Перчатки САПП ранг 4+",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_gloves_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_gloves_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_gloves_grade4",
+    "displayName": "Support Gloves Grade 4",
+    "displayNameRu": "Перчатки САПП ранг 4",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_gloves_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_gloves_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_gloves_grade5",
+    "displayName": "Support Gloves Grade 5",
+    "displayNameRu": "Перчатки САПП ранг 5",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_gloves_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_gloves_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_offhand_grade1",
+    "displayName": "Support Off-Hand Grade 1",
+    "displayNameRu": "Доп. оружие САПП ранг 1",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_offhand_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_offhand_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_offhand_grade2",
+    "displayName": "Support Off-Hand Grade 2",
+    "displayNameRu": "Доп. оружие САПП ранг 2",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_offhand_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_offhand_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_offhand_grade3_plus",
+    "displayName": "Support Off-Hand Grade 3+",
+    "displayNameRu": "Доп. оружие САПП ранг 3+",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_offhand_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_offhand_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_offhand_grade3",
+    "displayName": "Support Off-Hand Grade 3",
+    "displayNameRu": "Доп. оружие САПП ранг 3",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_offhand_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_offhand_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_offhand_grade4_plus",
+    "displayName": "Support Off-Hand Grade 4+",
+    "displayNameRu": "Доп. оружие САПП ранг 4+",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_offhand_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_offhand_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_offhand_grade4",
+    "displayName": "Support Off-Hand Grade 4",
+    "displayNameRu": "Доп. оружие САПП ранг 4",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_offhand_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_offhand_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_offhand_grade5",
+    "displayName": "Support Off-Hand Grade 5",
+    "displayNameRu": "Доп. оружие САПП ранг 5",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_offhand_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_offhand_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_weapon_grade1",
+    "displayName": "Support Weapon Grade 1",
+    "displayNameRu": "Оружие САПП ранг 1",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_weapon_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_weapon_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_weapon_grade2",
+    "displayName": "Support Weapon Grade 2",
+    "displayNameRu": "Оружие САПП ранг 2",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_weapon_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_weapon_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_weapon_grade3_plus",
+    "displayName": "Support Weapon Grade 3+",
+    "displayNameRu": "Оружие САПП ранг 3+",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_weapon_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_weapon_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_weapon_grade3",
+    "displayName": "Support Weapon Grade 3",
+    "displayNameRu": "Оружие САПП ранг 3",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_weapon_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_weapon_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_weapon_grade4_plus",
+    "displayName": "Support Weapon Grade 4+",
+    "displayNameRu": "Оружие САПП ранг 4+",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_weapon_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_weapon_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_weapon_grade4",
+    "displayName": "Support Weapon Grade 4",
+    "displayNameRu": "Оружие САПП ранг 4",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_weapon_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_weapon_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_supp_weapon_grade5",
+    "displayName": "Support Weapon Grade 5",
+    "displayNameRu": "Оружие САПП ранг 5",
+    "category": "Gear: Support",
+    "image": "images/gear_supp_weapon_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_supp_weapon_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_body_grade1",
+    "displayName": "Tank Armor Grade 1",
+    "displayNameRu": "Доспех ТАНК ранг 1",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_body_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_body_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_body_grade2",
+    "displayName": "Tank Armor Grade 2",
+    "displayNameRu": "Доспех ТАНК ранг 2",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_body_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_body_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_body_grade3_plus",
+    "displayName": "Tank Armor Grade 3+",
+    "displayNameRu": "Доспех ТАНК ранг 3+",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_body_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_body_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_body_grade3",
+    "displayName": "Tank Armor Grade 3",
+    "displayNameRu": "Доспех ТАНК ранг 3",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_body_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_body_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_body_grade4_plus",
+    "displayName": "Tank Armor Grade 4+",
+    "displayNameRu": "Доспех ТАНК ранг 4+",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_body_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_body_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_body_grade4",
+    "displayName": "Tank Armor Grade 4",
+    "displayNameRu": "Доспех ТАНК ранг 4",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_body_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_body_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_body_grade5",
+    "displayName": "Tank Armor Grade 5",
+    "displayNameRu": "Доспех ТАНК ранг 5",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_body_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_body_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_gloves_grade1",
+    "displayName": "Tank Gloves Grade 1",
+    "displayNameRu": "Перчатки ТАНК ранг 1",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_gloves_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_gloves_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_gloves_grade2",
+    "displayName": "Tank Gloves Grade 2",
+    "displayNameRu": "Перчатки ТАНК ранг 2",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_gloves_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_gloves_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_gloves_grade3_plus",
+    "displayName": "Tank Gloves Grade 3+",
+    "displayNameRu": "Перчатки ТАНК ранг 3+",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_gloves_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_gloves_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_gloves_grade3",
+    "displayName": "Tank Gloves Grade 3",
+    "displayNameRu": "Перчатки ТАНК ранг 3",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_gloves_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_gloves_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_gloves_grade4_plus",
+    "displayName": "Tank Gloves Grade 4+",
+    "displayNameRu": "Перчатки ТАНК ранг 4+",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_gloves_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_gloves_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_gloves_grade4",
+    "displayName": "Tank Gloves Grade 4",
+    "displayNameRu": "Перчатки ТАНК ранг 4",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_gloves_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_gloves_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_gloves_grade5",
+    "displayName": "Tank Gloves Grade 5",
+    "displayNameRu": "Перчатки ТАНК ранг 5",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_gloves_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_gloves_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_offhand_grade1",
+    "displayName": "Tank Off-Hand Grade 1",
+    "displayNameRu": "Доп. оружие ТАНК ранг 1",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_offhand_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_offhand_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_offhand_grade2",
+    "displayName": "Tank Off-Hand Grade 2",
+    "displayNameRu": "Доп. оружие ТАНК ранг 2",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_offhand_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_offhand_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_offhand_grade3_plus",
+    "displayName": "Tank Off-Hand Grade 3+",
+    "displayNameRu": "Доп. оружие ТАНК ранг 3+",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_offhand_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_offhand_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_offhand_grade3",
+    "displayName": "Tank Off-Hand Grade 3",
+    "displayNameRu": "Доп. оружие ТАНК ранг 3",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_offhand_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_offhand_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_offhand_grade4_plus",
+    "displayName": "Tank Off-Hand Grade 4+",
+    "displayNameRu": "Доп. оружие ТАНК ранг 4+",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_offhand_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_offhand_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_offhand_grade4",
+    "displayName": "Tank Off-Hand Grade 4",
+    "displayNameRu": "Доп. оружие ТАНК ранг 4",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_offhand_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_offhand_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_offhand_grade5",
+    "displayName": "Tank Off-Hand Grade 5",
+    "displayNameRu": "Доп. оружие ТАНК ранг 5",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_offhand_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_offhand_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_weapon_grade1",
+    "displayName": "Tank Weapon Grade 1",
+    "displayNameRu": "Оружие ТАНК ранг 1",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_weapon_grade1.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_weapon_grade1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_weapon_grade2",
+    "displayName": "Tank Weapon Grade 2",
+    "displayNameRu": "Оружие ТАНК ранг 2",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_weapon_grade2.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_weapon_grade2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_weapon_grade3_plus",
+    "displayName": "Tank Weapon Grade 3+",
+    "displayNameRu": "Оружие ТАНК ранг 3+",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_weapon_grade3_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_weapon_grade3_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_weapon_grade3",
+    "displayName": "Tank Weapon Grade 3",
+    "displayNameRu": "Оружие ТАНК ранг 3",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_weapon_grade3.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_weapon_grade3\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_weapon_grade4_plus",
+    "displayName": "Tank Weapon Grade 4+",
+    "displayNameRu": "Оружие ТАНК ранг 4+",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_weapon_grade4_plus.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_weapon_grade4_plus\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_weapon_grade4",
+    "displayName": "Tank Weapon Grade 4",
+    "displayNameRu": "Оружие ТАНК ранг 4",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_weapon_grade4.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_weapon_grade4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_tank_weapon_grade5",
+    "displayName": "Tank Weapon Grade 5",
+    "displayNameRu": "Оружие ТАНК ранг 5",
+    "category": "Gear: Tank",
+    "image": "images/gear_tank_weapon_grade5.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"GEAR\",\n  \"item_name\": \"gear_tank_weapon_grade5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_anniversary_2025_move_event",
+    "displayName": "Anniversary 2025: Blood Drop",
+    "displayNameRu": "Годовщина 2025: Капля крови",
+    "category": "Event Item",
+    "image": "images/icon_anniversary_2025_move.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_anniversary_2025_move_event\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_dragon_utopia_boost_mace",
+    "displayName": "Dragon Utopia: Crushing Mace",
+    "displayNameRu": "Утопия драконов: Сокрушающий молот",
+    "category": "Dragon Utopia",
+    "image": "images/icon_daily_boss_hammer.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_dragon_utopia_boost_mace\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_dragon_utopia_boost_magic_sword",
+    "displayName": "Dragon Utopia: Magic Sword",
+    "displayNameRu": "Утопия драконов: Магический меч",
+    "category": "Dragon Utopia",
+    "image": "images/icon_daily_boss_sword.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_dragon_utopia_boost_magic_sword\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_dragon_utopia_boost_spear",
+    "displayName": "Dragon Utopia: Celestial Staff",
+    "displayNameRu": "Утопия драконов: Небесный посох",
+    "category": "Dragon Utopia",
+    "image": "images/icon_daily_quest_spear.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_dragon_utopia_boost_spear\",\n  \"quantity\": 1\n}"
   }
 ]
 
