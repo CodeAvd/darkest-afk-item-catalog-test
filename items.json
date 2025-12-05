@@ -55,10 +55,10 @@
   },
   {
     "id": "item_pet_wallet_fragment",
-    "displayName": "Pet Fragment",
-    "displayNameRu": "Фрагмент питомца",
+    "displayName": "Pet Fragment: Chip",
+    "displayNameRu": "Фрагмент питомца: Чип",
     "category": "Pet Fragment",
-    "image": "images/item_pet_wallet_fragment.png",
+    "image": "images/icon_pet_fragment_wallet.png",
     "defaultQuantity": 30,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_wallet_fragment\",\n  \"quantity\": 30\n}"
   },
@@ -187,6 +187,60 @@
     "image": "images/item_pet_equipment_core.png",
     "defaultQuantity": 3,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_equipment_core\",\n  \"quantity\": 3\n}"
+  },
+  {
+    "id": "item_pet_cart_fragment",
+    "displayName": "Pet Fragment: Rex",
+    "displayNameRu": "Фрагмент питомца: Рекс",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_cart.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_cart_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_chest_fragment",
+    "displayName": "Pet Fragment: Spike",
+    "displayNameRu": "Фрагмент питомца: Спайк",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_chest.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_chest_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_coffin_fragment",
+    "displayName": "Pet Fragment: Jack",
+    "displayNameRu": "Фрагмент питомца: Джек",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_coffin.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_coffin_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_dresser_fragment",
+    "displayName": "Pet Fragment: Butch",
+    "displayNameRu": "Фрагмент питомца: Бутч",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_dresser.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_dresser_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_handbag_fragment",
+    "displayName": "Pet Fragment: Layla",
+    "displayNameRu": "Фрагмент питомца: Лайла",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_handbag.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_handbag_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "gear_rune_rank_3",
+    "displayName": "Adept Rune",
+    "displayNameRu": "Руна адепта",
+    "category": "Rune",
+    "image": "images/icon_rune_for_equipment_blue.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"gear_rune_rank_3\",\n  \"quantity\": 1\n}"
   }
 ]
 
