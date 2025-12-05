@@ -167,7 +167,8 @@
     itemsList.style.color = "var(--muted)";
     selectedItems.forEach(item => {
       const itemDiv = document.createElement("div");
-      itemDiv.textContent = `• ${item.displayName || item.id} (x${item.defaultQuantity || 1})`;
+      const displayName = showRu && item.displayNameRu ? item.displayNameRu : item.displayName || item.id;
+      itemDiv.textContent = `• ${displayName} (x${item.defaultQuantity || 1})`;
       itemsList.appendChild(itemDiv);
     });
     detailContent.appendChild(itemsList);
