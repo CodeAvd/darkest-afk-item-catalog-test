@@ -1,0 +1,1 @@
+# darkest-afk-item-catalog
