@@ -1,0 +1,33 @@
+{
+  "name": "darkest-afk-item-catalog",
+  "version": "2.0.0",
+  "description": "Professional support tool for Darkest AFK item catalog and compensation packages",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "dev": "python3 -m http.server 8080",
+    "lint": "eslint *.js",
+    "format": "prettier --write \"**/*.{js,html,css,json}\""
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.55.0",
+    "happy-dom": "^12.10.3",
+    "prettier": "^3.1.1",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "darkest-afk",
+    "item-catalog",
+    "support-tool",
+    "compensation"
+  ],
+  "author": "Support Team",
+  "license": "MIT"
+}
+
