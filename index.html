@@ -10,7 +10,7 @@
   <header class="page-header">
     <div>
       <h1>Darkest AFK – Item Catalog (Support Tool)</h1>
-      <p>Click an item to copy its internal code.</p>
+      <p>Select items to generate compensation package JSON.</p>
     </div>
     <div class="controls">
       <input id="searchInput" type="search" placeholder="Search by name or code…" />
@@ -24,7 +24,8 @@
     </div>
   </header>
 
-  <section class="featured-items">
+  <!-- Featured Items Section - Disabled -->
+  <section class="featured-items" hidden>
     <h2>Featured Game Items</h2>
     <div class="featured-grid">
       <div class="featured-item">
@@ -58,9 +59,9 @@
     </section>
 
     <aside class="detail-panel" id="detailPanel" aria-live="polite">
-      <h2>Selected Item</h2>
+      <h2>Compensation Package</h2>
       <div id="detailContent" class="detail-content">
-        <p>Select an item to see details.</p>
+        <p>Select items to generate init_info JSON.</p>
       </div>
     </aside>
   </main>
