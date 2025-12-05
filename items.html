@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Darkest AFK – Items List</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Additional styles for items.html */
+    .items-page {
+      padding: 16px 20px 24px;
+      flex: 1;
+    }
+
+    .items-header {
+      margin-bottom: 20px;
+    }
+
+    .items-header h1 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+    }
+
+    .items-header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .items-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 640px) {
+      .items-controls {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    .items-controls input[type="search"] {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .items-controls select {
+      min-width: 180px;
+    }
+
+    .items-stats {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    /* Loading state */
+    .loading-state {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px;
+    }
+
+    .loading-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    .loading-card::before {
+      content: "";
+      display: block;
+      width: 64px;
+      height: 64px;
+      background: var(--border);
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    .loading-card::after {
+      content: "";
+      display: block;
+      height: 16px;
+      background: var(--border);
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--muted);
+    }
+
+    .empty-state-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      opacity: 0.5;
+    }
+
+    .empty-state h2 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .empty-state p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* Error state */
+    .error-state {
+      text-align: center;
+      padding: 48px 20px;
+    }
+
+    .error-state-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .error-state h2 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+    }
+
+    .error-state p {
+      margin: 0 0 16px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .error-state button {
+      margin-top: 12px;
+    }
+
+    /* Item card enhancements for list view */
+    .item-card {
+      position: relative;
+    }
+
+    .item-card .category-badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(90, 200, 250, 0.15);
+      color: var(--accent);
+      font-size: 10px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .item-card .code {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* Responsive grid adjustments */
+    @media (max-width: 640px) {
+      .item-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 10px;
+      }
+
+      .items-page {
+        padding: 12px 16px 20px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .item-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      }
+    }
+
+    /* Focus styles for accessibility */
+    .item-card:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .item-card:focus-visible .category-badge {
+      background: var(--accent);
+      color: #0b0d12;
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <div class="items-header">
+      <h1>Darkest AFK – Items List</h1>
+      <p>Browse all game items and resources</p>
+    </div>
+  </header>
+
+  <main class="items-page">
+    <!-- Controls Section -->
+    <div class="items-controls" role="search" aria-label="Filter items">
+      <input 
+        id="searchInput" 
+        type="search" 
+        placeholder="Search by name or code…" 
+        aria-label="Search items"
+        autocomplete="off"
+      />
+      <select 
+        id="categoryFilter" 
+        aria-label="Filter by category"
+      >
+        <option value="">All categories</option>
+      </select>
+      <label class="lang-toggle" aria-label="Toggle Russian labels">
+        <input id="langToggle" type="checkbox" />
+        <span>Show Russian labels</span>
+      </label>
+    </div>
+
+    <!-- Stats -->
+    <div class="items-stats" id="itemsStats" aria-live="polite">
+      Loading items…
+    </div>
+
+    <!-- Loading State -->
+    <div id="loadingState" class="loading-state" aria-live="polite" aria-busy="true" hidden>
+      <!-- Skeleton cards will be generated by JS -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state" hidden aria-live="polite">
+      <div class="empty-state-icon" aria-hidden="true">📦</div>
+      <h2>No items found</h2>
+      <p>Try adjusting your search or filter criteria.</p>
+    </div>
+
+    <!-- Error State -->
+    <div id="errorState" class="error-state" hidden aria-live="polite">
+      <div class="error-state-icon" aria-hidden="true">⚠️</div>
+      <h2>Failed to load items</h2>
+      <p>There was an error loading the items list. Please check your connection and try again.</p>
+      <button type="button" id="retryButton" aria-label="Retry loading items">
+        Retry
+      </button>
+    </div>
+
+    <!-- Items Grid -->
+    <div id="itemsGrid" class="item-grid" hidden aria-live="polite"></div>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+
+      // DOM elements
+      const searchInput = document.getElementById('searchInput');
+      const categoryFilter = document.getElementById('categoryFilter');
+      const langToggle = document.getElementById('langToggle');
+      const itemsStats = document.getElementById('itemsStats');
+      const loadingState = document.getElementById('loadingState');
+      const emptyState = document.getElementById('emptyState');
+      const errorState = document.getElementById('errorState');
+      const itemsGrid = document.getElementById('itemsGrid');
+      const retryButton = document.getElementById('retryButton');
+
+      // State
+      let items = [];
+      let filteredItems = [];
+      let showRu = false;
+
+      // Initialize loading skeleton
+      function showLoadingSkeleton() {
+        loadingState.hidden = false;
+        emptyState.hidden = true;
+        errorState.hidden = true;
+        itemsGrid.hidden = true;
+
+        // Generate skeleton cards
+        loadingState.innerHTML = '';
+        for (let i = 0; i < 12; i++) {
+          const skeleton = document.createElement('div');
+          skeleton.className = 'loading-card';
+          loadingState.appendChild(skeleton);
+        }
+      }
+
+      // Load items from JSON
+      async function loadItems() {
+        showLoadingSkeleton();
+        itemsStats.textContent = 'Loading items…';
+
+        try {
+          const response = await fetch('items.json');
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          items = await response.json();
+          // Explicitly hide error state on successful load
+          errorState.hidden = true;
+          populateCategories();
+          applyFilters();
+        } catch (error) {
+          console.error('Failed to load items:', error);
+          showError();
+        }
+      }
+
+      // Show error state
+      function showError() {
+        loadingState.hidden = true;
+        emptyState.hidden = true;
+        errorState.hidden = false;
+        itemsGrid.hidden = true;
+        itemsStats.textContent = 'Error loading items';
+      }
+
+      // Populate category filter
+      function populateCategories() {
+        const categories = Array.from(new Set(items.map(item => item.category).filter(Boolean)))
+          .sort();
+
+        // Clear existing options except "All categories"
+        categoryFilter.innerHTML = '<option value="">All categories</option>';
+
+        categories.forEach(category => {
+          const option = document.createElement('option');
+          option.value = category;
+          option.textContent = category;
+          categoryFilter.appendChild(option);
+        });
+      }
+
+      // Apply search and category filters
+      function applyFilters() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        const selectedCategory = categoryFilter.value;
+
+        filteredItems = items.filter(item => {
+          const matchesCategory = !selectedCategory || item.category === selectedCategory;
+          const matchesSearch = !searchTerm ||
+            item.id.toLowerCase().includes(searchTerm) ||
+            (item.displayName && item.displayName.toLowerCase().includes(searchTerm)) ||
+            (item.displayNameRu && item.displayNameRu.toLowerCase().includes(searchTerm));
+
+          return matchesCategory && matchesSearch;
+        });
+
+        renderItems();
+        updateStats();
+      }
+
+      // Render items grid
+      function renderItems() {
+        if (filteredItems.length === 0) {
+          loadingState.hidden = true;
+          emptyState.hidden = false;
+          errorState.hidden = true;
+          itemsGrid.hidden = true;
+          return;
+        }
+
+        loadingState.hidden = true;
+        emptyState.hidden = true;
+        errorState.hidden = true;
+        itemsGrid.hidden = false;
+
+        itemsGrid.innerHTML = '';
+
+        filteredItems.forEach(item => {
+          const card = document.createElement('article');
+          card.className = 'card item-card';
+          card.setAttribute('role', 'article');
+          card.setAttribute('aria-label', `${item.displayName || item.id} - ${item.category || 'Uncategorized'}`);
+          card.tabIndex = 0;
+
+          // Category badge
+          if (item.category) {
+            const badge = document.createElement('div');
+            badge.className = 'category-badge';
+            badge.textContent = item.category;
+            badge.setAttribute('aria-hidden', 'true');
+            card.appendChild(badge);
+          }
+
+          // Image
+          const img = document.createElement('img');
+          img.src = item.image || '';
+          img.alt = item.displayName || item.id;
+          img.loading = 'lazy';
+          img.onerror = () => {
+            // Fallback: show code as text
+            img.style.display = 'none';
+            const fallback = document.createElement('div');
+            fallback.style.cssText = 'width: 64px; height: 64px; display: grid; place-items: center; background: #0b0d12; border-radius: 10px; border: 1px solid var(--border); color: #9aa1b5; font-size: 10px; text-align: center; padding: 6px; word-break: break-all;';
+            fallback.textContent = item.id.substring(0, 8);
+            img.parentNode.replaceChild(fallback, img);
+          };
+          card.appendChild(img);
+
+          // Name
+          const name = document.createElement('div');
+          name.className = 'name';
+          name.textContent = showRu && item.displayNameRu ? item.displayNameRu : (item.displayName || item.id);
+          card.appendChild(name);
+
+          // Russian name (if applicable)
+          if (showRu && item.displayName) {
+            const nameRu = document.createElement('div');
+            nameRu.className = 'name-ru';
+            nameRu.textContent = item.displayName;
+            card.appendChild(nameRu);
+          } else if (!showRu && item.displayNameRu) {
+            const nameRu = document.createElement('div');
+            nameRu.className = 'name-ru';
+            nameRu.textContent = item.displayNameRu;
+            card.appendChild(nameRu);
+          }
+
+          // Code
+          const code = document.createElement('div');
+          code.className = 'code';
+          code.textContent = item.id;
+          code.setAttribute('title', item.id); // Tooltip for full code
+          card.appendChild(code);
+
+          // Click handler
+          card.addEventListener('click', () => {
+            copyToClipboard(item.id);
+          });
+
+          // Keyboard navigation
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              copyToClipboard(item.id);
+            }
+          });
+
+          itemsGrid.appendChild(card);
+        });
+      }
+
+      // Update stats
+      function updateStats() {
+        const total = items.length;
+        const showing = filteredItems.length;
+        
+        if (showing === total) {
+          itemsStats.textContent = `Showing all ${total} items`;
+        } else {
+          itemsStats.textContent = `Showing ${showing} of ${total} items`;
+        }
+      }
+
+      // Copy to clipboard
+      async function copyToClipboard(text) {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(text);
+          } else {
+            // Fallback for older browsers
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+          }
+          
+          // Show toast notification
+          showToast(`Copied: ${text}`);
+        } catch (error) {
+          console.error('Failed to copy:', error);
+          showToast('Copy failed');
+        }
+      }
+
+      // Show toast notification
+      function showToast(message) {
+        // Create or reuse toast element
+        let toast = document.getElementById('toast');
+        if (!toast) {
+          toast = document.createElement('div');
+          toast.id = 'toast';
+          toast.className = 'toast';
+          document.body.appendChild(toast);
+        }
+
+        toast.textContent = message;
+        toast.hidden = false;
+        toast.classList.add('show');
+
+        setTimeout(() => {
+          toast.classList.remove('show');
+          setTimeout(() => {
+            toast.hidden = true;
+          }, 180);
+        }, 2000);
+      }
+
+      // Event listeners
+      searchInput.addEventListener('input', applyFilters);
+      categoryFilter.addEventListener('change', applyFilters);
+      langToggle.addEventListener('change', () => {
+        showRu = langToggle.checked;
+        renderItems();
+      });
+      retryButton.addEventListener('click', loadItems);
+
+      // Initial load
+      loadItems();
+    })();
+  </script>
+</body>
+</html>
+
