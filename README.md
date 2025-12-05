@@ -13,11 +13,12 @@ An internal support tool for managing game items and resources in Darkest AFK. T
 
 ## Files
 
-- `index.html` - Main catalog page with detail panel
+- `index.html` - Main catalog page with detail panel and featured items showcase
 - `items.html` - Simple list view of all items
 - `styles.css` - Shared stylesheet with design tokens
 - `script.js` - JavaScript for index.html functionality
 - `items.json` - Item data (extendable JSON format)
+- `images/` - Directory containing item images
 
 ## Usage
 
@@ -26,6 +27,17 @@ An internal support tool for managing game items and resources in Darkest AFK. T
 3. Filter by category using the dropdown
 4. Click any item card to copy its code or view JSON snippet
 5. Toggle Russian labels if needed
+
+## Featured Items
+
+The `index.html` page now includes a featured items showcase section displaying popular game items:
+- **Class Summon Scroll** (Классовый свиток) - `items_hero_summon_scroll_class`
+- **Blazing Meteorite** (Пылающий метеорит) - `item_meteorite`
+- **Magic Beans** (Магические бобы) - `item_magic_bean`
+- **Magic Seeds** (Магические семена) - `item_magic_seed`
+- **Stardust** (Звездная пыль) - `item_stardust`
+
+These images are displayed prominently at the top of the catalog for quick reference.
 
 ## Adding New Items
 
@@ -42,6 +54,14 @@ Edit `items.json` and add new items following this structure:
   "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_code_here\",\n  \"quantity\": 1\n}"
 }
 ```
+
+### Adding Item Images
+
+1. Save your item images in the `images/` directory
+2. Use PNG format for best compatibility
+3. Recommended image size: 64x64 to 128x128 pixels
+4. Reference the image in `items.json` using the path `images/your_item_name.png`
+5. The current placeholder images can be replaced with actual game assets
 
 ## Technical Details
 

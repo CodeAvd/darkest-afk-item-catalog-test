@@ -1,30 +1,48 @@
 [
   {
-    "id": "item_magic_seed",
-    "displayName": "Magic Seed",
-    "displayNameRu": "Магическое семя",
+    "id": "items_hero_summon_scroll_class",
+    "displayName": "Class Summon Scroll",
+    "displayNameRu": "Классовый свиток",
+    "category": "Summon Scroll",
+    "image": "images/items_hero_summon_scroll_class.svg",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"items_hero_summon_scroll_class\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_meteorite",
+    "displayName": "Blazing Meteorite",
+    "displayNameRu": "Пылающий метеорит",
     "category": "Resource",
-    "image": "images/item_magic_seed.png",
+    "image": "images/item_meteorite.svg",
+    "defaultQuantity": 250,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_meteorite\",\n  \"quantity\": 250\n}"
+  },
+  {
+    "id": "item_magic_bean",
+    "displayName": "Magic Beans",
+    "displayNameRu": "Магические бобы",
+    "category": "Resource",
+    "image": "images/item_magic_bean.svg",
+    "defaultQuantity": 625,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_magic_bean\",\n  \"quantity\": 625\n}"
+  },
+  {
+    "id": "item_magic_seed",
+    "displayName": "Magic Seeds",
+    "displayNameRu": "Магические семена",
+    "category": "Resource",
+    "image": "images/item_magic_seed.svg",
     "defaultQuantity": 1,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_magic_seed\",\n  \"quantity\": 1\n}"
   },
   {
-    "id": "item_magic_bean",
-    "displayName": "Magic Bean",
-    "displayNameRu": "Волшебный боб",
-    "category": "Resource",
-    "image": "images/item_magic_bean.png",
-    "defaultQuantity": 5,
-    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_magic_bean\",\n  \"quantity\": 5\n}"
-  },
-  {
     "id": "item_stardust",
     "displayName": "Stardust",
-    "displayNameRu": "Звёздная пыль",
+    "displayNameRu": "Звездная пыль",
     "category": "Resource",
-    "image": "images/item_stardust.png",
-    "defaultQuantity": 50,
-    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_stardust\",\n  \"quantity\": 50\n}"
+    "image": "images/item_stardust.svg",
+    "defaultQuantity": 200,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_stardust\",\n  \"quantity\": 200\n}"
   },
   {
     "id": "item_idle_gold_1h",
