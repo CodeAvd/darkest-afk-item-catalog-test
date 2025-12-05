@@ -4,7 +4,7 @@
     "displayName": "Class Summon Scroll",
     "displayNameRu": "Классовый свиток",
     "category": "Summon Scroll",
-    "image": "images/items_hero_summon_scroll_class.svg",
+    "image": "images/items_hero_summon_scroll_class.png",
     "defaultQuantity": 1,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"items_hero_summon_scroll_class\",\n  \"quantity\": 1\n}"
   },
@@ -13,7 +13,7 @@
     "displayName": "Blazing Meteorite",
     "displayNameRu": "Пылающий метеорит",
     "category": "Resource",
-    "image": "images/item_meteorite.svg",
+    "image": "images/item_meteorite.png",
     "defaultQuantity": 250,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_meteorite\",\n  \"quantity\": 250\n}"
   },
@@ -22,7 +22,7 @@
     "displayName": "Magic Beans",
     "displayNameRu": "Магические бобы",
     "category": "Resource",
-    "image": "images/item_magic_bean.svg",
+    "image": "images/item_magic_bean.png",
     "defaultQuantity": 625,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_magic_bean\",\n  \"quantity\": 625\n}"
   },
@@ -31,7 +31,7 @@
     "displayName": "Magic Seeds",
     "displayNameRu": "Магические семена",
     "category": "Resource",
-    "image": "images/item_magic_seed.svg",
+    "image": "images/item_magic_seed.png",
     "defaultQuantity": 1,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_magic_seed\",\n  \"quantity\": 1\n}"
   },
@@ -40,7 +40,7 @@
     "displayName": "Stardust",
     "displayNameRu": "Звездная пыль",
     "category": "Resource",
-    "image": "images/item_stardust.svg",
+    "image": "images/item_stardust.png",
     "defaultQuantity": 200,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_stardust\",\n  \"quantity\": 200\n}"
   },

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
-  <rect width="80" height="80" fill="#1a1d2e" rx="10"/>
-  <path d="M20 25 L60 25 L60 55 L20 55 Z" fill="#d4a574" stroke="#8b6f47" stroke-width="2"/>
-  <circle cx="30" cy="45" r="4" fill="#ff5555"/>
-  <circle cx="40" cy="45" r="4" fill="#50fa7b"/>
-  <circle cx="50" cy="45" r="4" fill="#bd93f9"/>
-  <text x="40" y="38" font-family="Arial" font-size="10" fill="#4a3829" text-anchor="middle">Scroll</text>
-</svg>
