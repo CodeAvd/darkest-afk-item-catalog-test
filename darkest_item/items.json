@@ -1069,6 +1069,1841 @@
     "image": "images/icon_daily_quest_spear.png",
     "defaultQuantity": 1,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_dragon_utopia_boost_spear\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gold",
+    "displayName": "Gold",
+    "displayNameRu": "Золото",
+    "category": "Resource",
+    "image": "images/item_gold.png",
+    "defaultQuantity": 10000,
+    "codeSnippet": "{\n  \"type\": \"RESOURCE\",\n  \"resource\": \"gold\",\n  \"quantity\": 10000\n}"
+  },
+  {
+    "id": "hero_exp",
+    "displayName": "Hero EXP",
+    "displayNameRu": "Опыт героя",
+    "category": "Resource",
+    "image": "images/item_exp.png",
+    "defaultQuantity": 5000,
+    "codeSnippet": "{\n  \"type\": \"RESOURCE\",\n  \"resource\": \"hero_exp\",\n  \"quantity\": 5000\n}"
+  },
+  {
+    "id": "item_fragment_dmgr_gr1",
+    "displayName": "Damager Fragment (Grade 1)",
+    "displayNameRu": "Фрагмент атакующего (Ранг 1)",
+    "category": "Class Fragment",
+    "image": "images/item_fragment_dmgr.png",
+    "defaultQuantity": 60,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_fragment_dmgr_gr1\",\n  \"quantity\": 60\n}"
+  },
+  {
+    "id": "item_fragment_supp_gr1",
+    "displayName": "Support Fragment (Grade 1)",
+    "displayNameRu": "Фрагмент поддержки (Ранг 1)",
+    "category": "Class Fragment",
+    "image": "images/item_fragment_supp.png",
+    "defaultQuantity": 60,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_fragment_supp_gr1\",\n  \"quantity\": 60\n}"
+  },
+  {
+    "id": "item_fragment_tank_gr1",
+    "displayName": "Tank Fragment (Grade 1)",
+    "displayNameRu": "Фрагмент танка (Ранг 1)",
+    "category": "Class Fragment",
+    "image": "images/item_fragment_tank.png",
+    "defaultQuantity": 60,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_fragment_tank_gr1\",\n  \"quantity\": 60\n}"
+  },
+  {
+    "id": "item_universal_soul_gr1",
+    "displayName": "Universal Soul (Grade 1)",
+    "displayNameRu": "Универсальная душа (Ранг 1)",
+    "category": "Soul",
+    "image": "images/item_soul_grade1.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_universal_soul_gr1\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_universal_soul_gr2",
+    "displayName": "Universal Soul (Grade 2)",
+    "displayNameRu": "Универсальная душа (Ранг 2)",
+    "category": "Soul",
+    "image": "images/item_soul_grade2.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_universal_soul_gr2\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_universal_soul_gr3",
+    "displayName": "Universal Soul (Grade 3)",
+    "displayNameRu": "Универсальная душа (Ранг 3)",
+    "category": "Soul",
+    "image": "images/item_soul_grade3.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_universal_soul_gr3\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_universal_soul_gr4",
+    "displayName": "Universal Soul (Grade 4)",
+    "displayNameRu": "Универсальная душа (Ранг 4)",
+    "category": "Soul",
+    "image": "images/item_soul_grade4.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_universal_soul_gr4\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_idle_hero_exp_1h",
+    "displayName": "Idle Hero EXP (1h)",
+    "displayNameRu": "Опыт героя (1ч)",
+    "category": "Chest",
+    "image": "images/item_chest_exp.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_idle_hero_exp_1h\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_idle_hero_exp_2h",
+    "displayName": "Idle Hero EXP (2h)",
+    "displayNameRu": "Опыт героя (2ч)",
+    "category": "Chest",
+    "image": "images/item_chest_exp.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_idle_hero_exp_2h\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_idle_gold_2h",
+    "displayName": "Idle Gold (2h)",
+    "displayNameRu": "Золото (2ч)",
+    "category": "Chest",
+    "image": "images/item_chest_gold.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_idle_gold_2h\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_small_gems_pack",
+    "displayName": "Small Gem Chest (5-20 gems)",
+    "displayNameRu": "Малый сундук гемов (5-20 гемов)",
+    "category": "Chest",
+    "image": "images/item_chest_gems_pack_small.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_small_gems_pack\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_medium_gems_pack",
+    "displayName": "Heavy Gem Chest (20-50 gems)",
+    "displayNameRu": "Тяжелый сундук гемов (20-50 гемов)",
+    "category": "Chest",
+    "image": "images/item_chest_gems_pack_medium.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_medium_gems_pack\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_big_gems_pack",
+    "displayName": "Massive Gem Chest (60-100 gems)",
+    "displayNameRu": "Массивный сундук гемов (60-100 гемов)",
+    "category": "Chest",
+    "image": "images/item_chest_gems_pack_big.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_big_gems_pack\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_pet_backpack_fragment",
+    "displayName": "Pet Fragment: Backpack",
+    "displayNameRu": "Фрагмент питомца: Рюкзак",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_backpack.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_backpack_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_bag_fragment",
+    "displayName": "Pet Fragment: Bag",
+    "displayNameRu": "Фрагмент питомца: Сумка",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_bag.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_bag_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_barrel_fragment",
+    "displayName": "Pet Fragment: Barrel",
+    "displayNameRu": "Фрагмент питомца: Бочка",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_barrel.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_barrel_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_pet_basket_fragment",
+    "displayName": "Pet Fragment: Basket",
+    "displayNameRu": "Фрагмент питомца: Корзина",
+    "category": "Pet Fragment",
+    "image": "images/icon_pet_fragment_basket.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_basket_fragment\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_anniversary_2025_event_mini_game_search",
+    "displayName": "Anniversary 2025: Search Token",
+    "displayNameRu": "Годовщина 2025: Жетон поиска",
+    "category": "Event Item",
+    "image": "images/item_anniversary_2025_search.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_anniversary_2025_event_mini_game_search\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_chaos_magic_rune",
+    "displayName": "Chaos Magic Rune",
+    "displayNameRu": "Руна магии хаоса",
+    "category": "Rune",
+    "image": "images/item_chaos_magic_rune.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_chaos_magic_rune\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_chinese_new_year_event_activity",
+    "displayName": "Chinese New Year: Coin",
+    "displayNameRu": "Китайский Новый год: Монета",
+    "category": "Event Currency",
+    "image": "images/item_chinese_new_year_coin.png",
+    "defaultQuantity": 100,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_chinese_new_year_event_activity\",\n  \"quantity\": 100\n}"
+  },
+  {
+    "id": "item_coin_balrog_vs_forces_of_good_event_activity",
+    "displayName": "Balrog vs Forces: Coin",
+    "displayNameRu": "Балрог против сил добра: Монета",
+    "category": "Event Currency",
+    "image": "images/item_coin_balrog_vs_forces_of_good.png",
+    "defaultQuantity": 100,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_coin_balrog_vs_forces_of_good_event_activity\",\n  \"quantity\": 100\n}"
+  },
+  {
+    "id": "item_coin_fortune_teller_event_activity",
+    "displayName": "Fortune Teller: Coin",
+    "displayNameRu": "Гадалка: Монета",
+    "category": "Event Currency",
+    "image": "images/item_coin_fortune_teller.png",
+    "defaultQuantity": 100,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_coin_fortune_teller_event_activity\",\n  \"quantity\": 100\n}"
+  },
+  {
+    "id": "item_dark_magic_rune",
+    "displayName": "Dark Magic Rune",
+    "displayNameRu": "Руна темной магии",
+    "category": "Rune",
+    "image": "images/item_dark_magic_rune.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_dark_magic_rune\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_dwarven_miner_game_boer",
+    "displayName": "Dwarven Miner: Drill",
+    "displayNameRu": "Гномий шахтер: Бур",
+    "category": "Game Item",
+    "image": "images/item_dwarven_miner_game_boer.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_dwarven_miner_game_boer\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_dwarven_miner_game_dynamite",
+    "displayName": "Dwarven Miner: Dynamite",
+    "displayNameRu": "Гномий шахтер: Динамит",
+    "category": "Game Item",
+    "image": "images/item_dwarven_miner_game_dynamite.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_dwarven_miner_game_dynamite\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_dwarven_miner_game_pick",
+    "displayName": "Dwarven Miner: Pickaxe",
+    "displayNameRu": "Гномий шахтер: Кирка",
+    "category": "Game Item",
+    "image": "images/item_dwarven_miner_game_pick.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_dwarven_miner_game_pick\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_food_supplies",
+    "displayName": "Food Supplies",
+    "displayNameRu": "Запасы еды",
+    "category": "Consumable",
+    "image": "images/item_food_supplies.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_food_supplies\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_gifts_ancients_event",
+    "displayName": "Gifts of the Ancients",
+    "displayNameRu": "Дары древних",
+    "category": "Event Item",
+    "image": "images/item_gifts_ancients_event_icon.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_gifts_ancients_event\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "maze_coin",
+    "displayName": "Maze Coin",
+    "displayNameRu": "Монета лабиринта",
+    "category": "Resource",
+    "image": "images/item_maze_coin.png",
+    "defaultQuantity": 100,
+    "codeSnippet": "{\n  \"type\": \"RESOURCE\",\n  \"resource\": \"maze_coin\",\n  \"quantity\": 100\n}"
+  },
+  {
+    "id": "item_hiking_tools",
+    "displayName": "Hiking Tools",
+    "displayNameRu": "Инструменты для походов",
+    "category": "Consumable",
+    "image": "images/item_hiking_tools.png",
+    "defaultQuantity": 3,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_hiking_tools\",\n  \"quantity\": 3\n}"
+  },
+  {
+    "id": "item_holy_water",
+    "displayName": "Holy Water",
+    "displayNameRu": "Святая вода",
+    "category": "Consumable",
+    "image": "images/item_holy_water.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_holy_water\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_light_magic_rune",
+    "displayName": "Light Magic Rune",
+    "displayNameRu": "Руна светлой магии",
+    "category": "Rune",
+    "image": "images/item_light_magic_rune.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_light_magic_rune\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_medical_bandages",
+    "displayName": "Medical Bandages",
+    "displayNameRu": "Медицинские бинты",
+    "category": "Consumable",
+    "image": "images/item_medical_bandages.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_medical_bandages\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_medicinal_herb",
+    "displayName": "Medicinal Herb",
+    "displayNameRu": "Лечебная трава",
+    "category": "Consumable",
+    "image": "images/item_medicinal_herb.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_medicinal_herb\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_pick_set",
+    "displayName": "Pickaxe Set",
+    "displayNameRu": "Набор кирок",
+    "category": "Consumable",
+    "image": "images/item_pick_set.png",
+    "defaultQuantity": 3,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pick_set\",\n  \"quantity\": 3\n}"
+  },
+  {
+    "id": "item_resurrection_scroll",
+    "displayName": "Resurrection Scroll",
+    "displayNameRu": "Свиток воскрешения",
+    "category": "Consumable",
+    "image": "images/item_resurrection_scroll.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_resurrection_scroll\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_summoning_magic_rune",
+    "displayName": "Summoning Magic Rune",
+    "displayNameRu": "Руна магии призыва",
+    "category": "Rune",
+    "image": "images/item_summoning_magic_rune.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_summoning_magic_rune\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_torch_set",
+    "displayName": "Torch Set",
+    "displayNameRu": "Набор факелов",
+    "category": "Consumable",
+    "image": "images/item_torch_set.png",
+    "defaultQuantity": 5,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_torch_set\",\n  \"quantity\": 5\n}"
+  },
+  {
+    "id": "item_vigor_potion",
+    "displayName": "Vigor Potion",
+    "displayNameRu": "Зелье бодрости",
+    "category": "Consumable",
+    "image": "images/item_vigor_potion.png",
+    "defaultQuantity": 3,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_vigor_potion\",\n  \"quantity\": 3\n}"
+  },
+  {
+    "id": "item_pet_bowl",
+    "displayName": "Pet Bowl",
+    "displayNameRu": "Миска для питомца",
+    "category": "Pet Item",
+    "image": "images/pets_items_icon_bowl.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_bowl\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_pet_toys",
+    "displayName": "Pet Toys",
+    "displayNameRu": "Игрушки для питомца",
+    "category": "Pet Item",
+    "image": "images/pets_items_icon_toys.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_toys\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_pet_training",
+    "displayName": "Pet Training",
+    "displayNameRu": "Тренировка питомца",
+    "category": "Pet Item",
+    "image": "images/pets_items_icon_training.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pet_training\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "birthday_event_2024_match_three",
+    "displayName": "Birthday Event 2024: Match-3",
+    "displayNameRu": "День рождения 2024: Три в ряд",
+    "category": "Event Item",
+    "image": "images/icon_event_pelmeni_mini_g_move.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"birthday_event_2024_match_three\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "gear_rune_dust",
+    "displayName": "Rune Shards",
+    "displayNameRu": "Осколки рун",
+    "category": "Rune",
+    "image": "images/item_runes_for_eqipment_shards.png",
+    "defaultQuantity": 100,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"gear_rune_dust\",\n  \"quantity\": 100\n}"
+  },
+  {
+    "id": "gear_rune_rank_1",
+    "displayName": "Novice Rune",
+    "displayNameRu": "Руна новичка",
+    "category": "Rune",
+    "image": "images/icon_rune_for_equipment_grey.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"gear_rune_rank_1\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_rune_rank_2",
+    "displayName": "Student Rune",
+    "displayNameRu": "Руна ученика",
+    "category": "Rune",
+    "image": "images/icon_rune_for_equipment_green.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"gear_rune_rank_2\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_rune_rank_4",
+    "displayName": "Expert Rune",
+    "displayNameRu": "Руна эксперта",
+    "category": "Rune",
+    "image": "images/icon_rune_for_equipment_purple.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"gear_rune_rank_4\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "gear_rune_rank_5",
+    "displayName": "Master Rune",
+    "displayNameRu": "Руна мастера",
+    "category": "Rune",
+    "image": "images/icon_rune_for_equipment_gold.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"gear_rune_rank_5\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "birthday_event_2024_boss_item_rune",
+    "displayName": "Birthday Event 2024: Pelmeni Rune",
+    "displayNameRu": "День рождения 2024: Пельменная руна",
+    "category": "Event Rune",
+    "image": "images/rune_pelmeni_event.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"birthday_event_2024_boss_item_rune\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_card_halloween_event_activity",
+    "displayName": "Halloween Event: Royal Card",
+    "displayNameRu": "Хэллоуин: Королевская карта",
+    "category": "Event Item",
+    "image": "images/item_halloween_card.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_card_halloween_event_activity\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_fly_shooter_event_activity_feather",
+    "displayName": "Fly Shooter Event: Magic Feather",
+    "displayNameRu": "Событие стрельбы: Волшебное перо",
+    "category": "Event Item",
+    "image": "images/item_fly_shooter_feather.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_fly_shooter_event_activity_feather\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "item_gladiator_event_activity_monopolia",
+    "displayName": "Gladiator Event: Colosseum Dice",
+    "displayNameRu": "Гладиатор: Кости Колизея",
+    "category": "Event Currency",
+    "image": "images/icon_arena_move.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_gladiator_event_activity_monopolia\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "item_gladiator_event_activity_dmg",
+    "displayName": "Gladiator Event: Damager Medal",
+    "displayNameRu": "Гладиатор: Медаль атакующего",
+    "category": "Event Currency",
+    "image": "images/item_token_damager.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_gladiator_event_activity_dmg\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "item_gladiator_event_activity_dmg_big",
+    "displayName": "Gladiator Event: Damager Medal (Big)",
+    "displayNameRu": "Гладиатор: Медаль атакующего (Большая)",
+    "category": "Event Currency",
+    "image": "images/item_token_damager_big.png",
+    "defaultQuantity": 50,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_gladiator_event_activity_dmg\",\n  \"quantity\": 50\n}"
+  },
+  {
+    "id": "item_gladiator_event_activity_tnk",
+    "displayName": "Gladiator Event: Tank Medal",
+    "displayNameRu": "Гладиатор: Медаль танка",
+    "category": "Event Currency",
+    "image": "images/item_token_tank.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_gladiator_event_activity_tnk\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "item_gladiator_event_activity_tnk_big",
+    "displayName": "Gladiator Event: Tank Medal (Big)",
+    "displayNameRu": "Гладиатор: Медаль танка (Большая)",
+    "category": "Event Currency",
+    "image": "images/item_token_tank_big.png",
+    "defaultQuantity": 50,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_gladiator_event_activity_tnk\",\n  \"quantity\": 50\n}"
+  },
+  {
+    "id": "item_gladiator_event_activity_spr",
+    "displayName": "Gladiator Event: Support Medal",
+    "displayNameRu": "Гладиатор: Медаль поддержки",
+    "category": "Event Currency",
+    "image": "images/item_token_support.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_gladiator_event_activity_spr\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "item_gladiator_event_activity_spr_big",
+    "displayName": "Gladiator Event: Support Medal (Big)",
+    "displayNameRu": "Гладиатор: Медаль поддержки (Большая)",
+    "category": "Event Currency",
+    "image": "images/item_token_support_big.png",
+    "defaultQuantity": 50,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_gladiator_event_activity_spr\",\n  \"quantity\": 50\n}"
+  },
+  {
+    "id": "item_sapper_event_activity_key",
+    "displayName": "Sapper Event: Portal Key",
+    "displayNameRu": "Копатель: Портальный ключ",
+    "category": "Event Item",
+    "image": "images/item_sapper_key.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_sapper_event_activity_key\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_sapper_event_activity_ore",
+    "displayName": "Sapper Event: Golden Ore",
+    "displayNameRu": "Копатель: Золотая руда",
+    "category": "Event Item",
+    "image": "images/item_sapper_ore.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_sapper_event_activity_ore\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "item_pirates_event_activity_shooter",
+    "displayName": "Pirates Event: Cannon Shot",
+    "displayNameRu": "Пираты: Пушечный выстрел",
+    "category": "Event Item",
+    "image": "images/item_pirates_shoot.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pirates_event_activity_shooter\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_pirates_event_activity",
+    "displayName": "Pirates Event: Cursed Coins",
+    "displayNameRu": "Пираты: Проклятые монеты",
+    "category": "Event Currency",
+    "image": "images/pirates_map_icon_coin.png",
+    "defaultQuantity": 100,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_pirates_event_activity\",\n  \"quantity\": 100\n}"
+  },
+  {
+    "id": "item_vampire_castle_event_activity",
+    "displayName": "Vampire Castle: Vampire Rune",
+    "displayNameRu": "Замок вампиров: Вампирская руна",
+    "category": "Event Rune",
+    "image": "images/item_vampire_castle_rune.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_vampire_castle_event_activity\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "seal",
+    "displayName": "Seal of the Fallen",
+    "displayNameRu": "Печати падших",
+    "category": "Resource",
+    "image": "images/item_seal.png",
+    "defaultQuantity": 2000,
+    "codeSnippet": "{\n  \"type\": \"RESOURCE\",\n  \"resource\": \"seal\",\n  \"quantity\": 2000\n}"
+  },
+  {
+    "id": "item_universal_soul_pack",
+    "displayName": "Soul Vessel",
+    "displayNameRu": "Сосуд души",
+    "category": "Soul",
+    "image": "images/item_soul_vessel.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_universal_soul_pack\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_fragment_soul_pack",
+    "displayName": "Soul Vessel Fragment (20 = 1 vessel)",
+    "displayNameRu": "Фрагмент сосуда души (20 = 1 сосуд)",
+    "category": "Soul",
+    "image": "images/item_soul_vessel_fragment.png",
+    "defaultQuantity": 20,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_fragment_soul_pack\",\n  \"quantity\": 20\n}"
+  },
+  {
+    "id": "item_halloween_event_activity",
+    "displayName": "Halloween Event: Devil Seals",
+    "displayNameRu": "Хэллоуин: Дьявольские печати",
+    "category": "Event Rune",
+    "image": "images/item_halloween_rune.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_halloween_event_activity\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_agra_fragment",
+    "displayName": "Aura: Agra Fragment",
+    "displayNameRu": "Аура: Фрагмент Агры",
+    "category": "Aura",
+    "image": "images/hero_aura_item_agra_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_agra_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_ayrin_fragment",
+    "displayName": "Aura: Ayrin Fragment",
+    "displayNameRu": "Аура: Фрагмент Айрин",
+    "category": "Aura",
+    "image": "images/hero_aura_item_ayrin_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_ayrin_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_bang_fragment",
+    "displayName": "Aura: Bang Fragment",
+    "displayNameRu": "Аура: Фрагмент Бэнга",
+    "category": "Aura",
+    "image": "images/hero_aura_item_bang_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_bang_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_chester_fragment",
+    "displayName": "Aura: Chester Fragment",
+    "displayNameRu": "Аура: Фрагмент Честера",
+    "category": "Aura",
+    "image": "images/hero_aura_item_chester_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_chester_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_dwalin_fragment",
+    "displayName": "Aura: Dwalin Fragment",
+    "displayNameRu": "Аура: Фрагмент Двалина",
+    "category": "Aura",
+    "image": "images/hero_aura_item_dwalin_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_dwalin_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_exella_fragment",
+    "displayName": "Aura: Exella Fragment",
+    "displayNameRu": "Аура: Фрагмент Экселлы",
+    "category": "Aura",
+    "image": "images/hero_aura_item_exella_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_exella_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_fenris_fragment",
+    "displayName": "Aura: Fenris Fragment",
+    "displayNameRu": "Аура: Фрагмент Фенриса",
+    "category": "Aura",
+    "image": "images/hero_aura_item_fenris_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_fenris_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_flamen_fragment",
+    "displayName": "Aura: Flamen Fragment",
+    "displayNameRu": "Аура: Фрагмент Фламена",
+    "category": "Aura",
+    "image": "images/hero_aura_item_flamen_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_flamen_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_forest_child_fragment",
+    "displayName": "Aura: Forest Child Fragment",
+    "displayNameRu": "Аура: Фрагмент Дитя Леса",
+    "category": "Aura",
+    "image": "images/hero_aura_item_forest_child_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_forest_child_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_goblin_king_fragment",
+    "displayName": "Aura: Goblin King Fragment",
+    "displayNameRu": "Аура: Фрагмент Короля Гоблинов",
+    "category": "Aura",
+    "image": "images/hero_aura_item_goblin_king_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_goblin_king_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_grido_fragment",
+    "displayName": "Aura: Grido Fragment",
+    "displayNameRu": "Аура: Фрагмент Гридо",
+    "category": "Aura",
+    "image": "images/hero_aura_item_grido_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_grido_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_grim_fragment",
+    "displayName": "Aura: Grim Fragment",
+    "displayNameRu": "Аура: Фрагмент Грима",
+    "category": "Aura",
+    "image": "images/hero_aura_item_grim_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_grim_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_hilda_fragment",
+    "displayName": "Aura: Hilda Fragment",
+    "displayNameRu": "Аура: Фрагмент Хильды",
+    "category": "Aura",
+    "image": "images/hero_aura_item_hilda_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_hilda_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_izot_fragment",
+    "displayName": "Aura: Izot Fragment",
+    "displayNameRu": "Аура: Фрагмент Изота",
+    "category": "Aura",
+    "image": "images/hero_aura_item_izot_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_izot_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_jack_fragment",
+    "displayName": "Aura: Jack Fragment",
+    "displayNameRu": "Аура: Фрагмент Джека",
+    "category": "Aura",
+    "image": "images/hero_aura_item_jack_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_jack_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_katherine_fragment",
+    "displayName": "Aura: Katherine Fragment",
+    "displayNameRu": "Аура: Фрагмент Кэтрин",
+    "category": "Aura",
+    "image": "images/hero_aura_item_katherine_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_katherine_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_lexa_fragment",
+    "displayName": "Aura: Lexa Fragment",
+    "displayNameRu": "Аура: Фрагмент Лексы",
+    "category": "Aura",
+    "image": "images/hero_aura_item_lexa_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_lexa_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_malbeth_fragment",
+    "displayName": "Aura: Malbeth Fragment",
+    "displayNameRu": "Аура: Фрагмент Мальбета",
+    "category": "Aura",
+    "image": "images/hero_aura_item_malbeth_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_malbeth_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_malser_fragment",
+    "displayName": "Aura: Malser Fragment",
+    "displayNameRu": "Аура: Фрагмент Малсера",
+    "category": "Aura",
+    "image": "images/hero_aura_item_malser_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_malser_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_matilda_fragment",
+    "displayName": "Aura: Matilda Fragment",
+    "displayNameRu": "Аура: Фрагмент Матильды",
+    "category": "Aura",
+    "image": "images/hero_aura_item_matilda_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_matilda_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_mikael_fragment",
+    "displayName": "Aura: Mikael Fragment",
+    "displayNameRu": "Аура: Фрагмент Микаэля",
+    "category": "Aura",
+    "image": "images/hero_aura_item_mikael_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_mikael_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_morrigan_fragment",
+    "displayName": "Aura: Morrigan Fragment",
+    "displayNameRu": "Аура: Фрагмент Морриган",
+    "category": "Aura",
+    "image": "images/hero_aura_item_morrigan_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_morrigan_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_neera_fragment",
+    "displayName": "Aura: Neera Fragment",
+    "displayNameRu": "Аура: Фрагмент Ниры",
+    "category": "Aura",
+    "image": "images/hero_aura_item_neera_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_neera_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_night_rider_fragment",
+    "displayName": "Aura: Night Rider Fragment",
+    "displayNameRu": "Аура: Фрагмент Ночного Всадника",
+    "category": "Aura",
+    "image": "images/hero_aura_item_night_rider_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_night_rider_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_oberon_fragment",
+    "displayName": "Aura: Oberon Fragment",
+    "displayNameRu": "Аура: Фрагмент Оберона",
+    "category": "Aura",
+    "image": "images/hero_aura_item_oberon_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_oberon_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_pumpking_fragment",
+    "displayName": "Aura: Pumpking Fragment",
+    "displayNameRu": "Аура: Фрагмент Короля Тыкв",
+    "category": "Aura",
+    "image": "images/hero_aura_item_pumpking_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_pumpking_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_pyromania_fragment",
+    "displayName": "Aura: Pyromania Fragment",
+    "displayNameRu": "Аура: Фрагмент Пиромании",
+    "category": "Aura",
+    "image": "images/hero_aura_item_pyromania_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_pyromania_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_rangda_fragment",
+    "displayName": "Aura: Rangda Fragment",
+    "displayNameRu": "Аура: Фрагмент Рангды",
+    "category": "Aura",
+    "image": "images/hero_aura_item_rangda_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_rangda_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_red_rooster_fragment",
+    "displayName": "Aura: Red Rooster Fragment",
+    "displayNameRu": "Аура: Фрагмент Красного Петуха",
+    "category": "Aura",
+    "image": "images/hero_aura_item_red_rooster_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_red_rooster_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_rigzash_fragment",
+    "displayName": "Aura: Rigzash Fragment",
+    "displayNameRu": "Аура: Фрагмент Ригзаша",
+    "category": "Aura",
+    "image": "images/hero_aura_item_rigzash_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_rigzash_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_salazar_fragment",
+    "displayName": "Aura: Salazar Fragment",
+    "displayNameRu": "Аура: Фрагмент Салазара",
+    "category": "Aura",
+    "image": "images/hero_aura_item_salazar_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_salazar_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_sarah_fragment",
+    "displayName": "Aura: Sarah Fragment",
+    "displayNameRu": "Аура: Фрагмент Сары",
+    "category": "Aura",
+    "image": "images/hero_aura_item_sarah_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_sarah_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_shade_fragment",
+    "displayName": "Aura: Shade Fragment",
+    "displayNameRu": "Аура: Фрагмент Тени",
+    "category": "Aura",
+    "image": "images/hero_aura_item_shade_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_shade_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_sir_roland_fragment",
+    "displayName": "Aura: Sir Roland Fragment",
+    "displayNameRu": "Аура: Фрагмент Сэра Роланда",
+    "category": "Aura",
+    "image": "images/hero_aura_item_sir_roland_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_sir_roland_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_skylar_fragment",
+    "displayName": "Aura: Skylar Fragment",
+    "displayNameRu": "Аура: Фрагмент Скайлар",
+    "category": "Aura",
+    "image": "images/hero_aura_item_skylar_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_skylar_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_storm_fragment",
+    "displayName": "Aura: Storm Fragment",
+    "displayNameRu": "Аура: Фрагмент Шторма",
+    "category": "Aura",
+    "image": "images/hero_aura_item_storm_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_storm_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_thor_fragment",
+    "displayName": "Aura: Thor Fragment",
+    "displayNameRu": "Аура: Фрагмент Тора",
+    "category": "Aura",
+    "image": "images/hero_aura_item_thor_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_thor_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_violet_fragment",
+    "displayName": "Aura: Violet Fragment",
+    "displayNameRu": "Аура: Фрагмент Виолет",
+    "category": "Aura",
+    "image": "images/hero_aura_item_violet_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_violet_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_whisperer_fragment",
+    "displayName": "Aura: Whisperer Fragment",
+    "displayNameRu": "Аура: Фрагмент Шептуна",
+    "category": "Aura",
+    "image": "images/hero_aura_item_whisperer_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_whisperer_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_witcher_fragment",
+    "displayName": "Aura: Witcher Fragment",
+    "displayNameRu": "Аура: Фрагмент Ведьмака",
+    "category": "Aura",
+    "image": "images/hero_aura_item_witcher_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_witcher_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_wukong_fragment",
+    "displayName": "Aura: Wukong Fragment",
+    "displayNameRu": "Аура: Фрагмент Вуконга",
+    "category": "Aura",
+    "image": "images/hero_aura_item_wukong_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_wukong_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_yaga_fragment",
+    "displayName": "Aura: Yaga Fragment",
+    "displayNameRu": "Аура: Фрагмент Яги",
+    "category": "Aura",
+    "image": "images/hero_aura_item_yaga_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_yaga_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_yaeger_stalker_fragment",
+    "displayName": "Aura: Yaeger Stalker Fragment",
+    "displayNameRu": "Аура: Фрагмент Егеря",
+    "category": "Aura",
+    "image": "images/hero_aura_item_yaeger_stalker_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_yaeger_stalker_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_yuri_fragment",
+    "displayName": "Aura: Yuri Fragment",
+    "displayNameRu": "Аура: Фрагмент Юрия",
+    "category": "Aura",
+    "image": "images/hero_aura_item_yuri_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_yuri_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_zahhak_fragment",
+    "displayName": "Aura: Zahhak Fragment",
+    "displayNameRu": "Аура: Фрагмент Заххака",
+    "category": "Aura",
+    "image": "images/hero_aura_item_zahhak_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_zahhak_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_zeus_fragment",
+    "displayName": "Aura: Zeus Fragment",
+    "displayNameRu": "Аура: Фрагмент Зевса",
+    "category": "Aura",
+    "image": "images/hero_aura_item_zeus_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_zeus_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_zombie_lord_fragment",
+    "displayName": "Aura: Zombie Lord Fragment",
+    "displayNameRu": "Аура: Фрагмент Лорда Зомби",
+    "category": "Aura",
+    "image": "images/hero_aura_item_zombie_lord_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_zombie_lord_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "hero_aura_item_zorro_fragment",
+    "displayName": "Aura: Zorro Fragment",
+    "displayNameRu": "Аура: Фрагмент Зорро",
+    "category": "Aura",
+    "image": "images/hero_aura_item_zorro_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_zorro_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_agra_fragment",
+    "displayName": "Signature: Agra Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Агры",
+    "category": "Signature Item",
+    "image": "images/signature_item_agra_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_agra_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_ayrin_fragment",
+    "displayName": "Signature: Ayrin Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Айрин",
+    "category": "Signature Item",
+    "image": "images/signature_item_ayrin_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_ayrin_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_bang_fragment",
+    "displayName": "Signature: Bang Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Бэнга",
+    "category": "Signature Item",
+    "image": "images/signature_item_bang_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_bang_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_chester_fragment",
+    "displayName": "Signature: Chester Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Честера",
+    "category": "Signature Item",
+    "image": "images/signature_item_chester_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_chester_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_dwalin_fragment",
+    "displayName": "Signature: Dwalin Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Двалина",
+    "category": "Signature Item",
+    "image": "images/signature_item_dwalin_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_dwalin_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_exella_fragment",
+    "displayName": "Signature: Exella Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Экселлы",
+    "category": "Signature Item",
+    "image": "images/signature_item_exella_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_exella_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_fenris_fragment",
+    "displayName": "Signature: Fenris Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Фенриса",
+    "category": "Signature Item",
+    "image": "images/signature_item_fenris_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_fenris_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_flamen_fragment",
+    "displayName": "Signature: Flamen Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Фламена",
+    "category": "Signature Item",
+    "image": "images/signature_item_flamen_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_flamen_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_forest_child_fragment",
+    "displayName": "Signature: Forest Child Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Дитя Леса",
+    "category": "Signature Item",
+    "image": "images/signature_item_forest_child_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_forest_child_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_goblin_king_fragment",
+    "displayName": "Signature: Goblin King Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Короля Гоблинов",
+    "category": "Signature Item",
+    "image": "images/signature_item_goblin_king_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_goblin_king_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_grido_fragment",
+    "displayName": "Signature: Grido Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Гридо",
+    "category": "Signature Item",
+    "image": "images/signature_item_grido_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_grido_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_grim_fragment",
+    "displayName": "Signature: Grim Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Грима",
+    "category": "Signature Item",
+    "image": "images/signature_item_grim_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_grim_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_hilda_fragment",
+    "displayName": "Signature: Hilda Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Хильды",
+    "category": "Signature Item",
+    "image": "images/signature_item_hilda_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_hilda_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_izot_fragment",
+    "displayName": "Signature: Izot Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Изота",
+    "category": "Signature Item",
+    "image": "images/signature_item_izot_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_izot_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_jack_fragment",
+    "displayName": "Signature: Jack Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Джека",
+    "category": "Signature Item",
+    "image": "images/signature_item_jack_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_jack_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_katherine_fragment",
+    "displayName": "Signature: Katherine Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Кэтрин",
+    "category": "Signature Item",
+    "image": "images/signature_item_katherine_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_katherine_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_lexa_fragment",
+    "displayName": "Signature: Lexa Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Лексы",
+    "category": "Signature Item",
+    "image": "images/signature_item_lexa_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_lexa_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_malbeth_fragment",
+    "displayName": "Signature: Malbeth Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Мальбета",
+    "category": "Signature Item",
+    "image": "images/signature_item_malbeth_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_malbeth_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_malser_fragment",
+    "displayName": "Signature: Malser Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Малсера",
+    "category": "Signature Item",
+    "image": "images/signature_item_malser_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_malser_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_matilda_fragment",
+    "displayName": "Signature: Matilda Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Матильды",
+    "category": "Signature Item",
+    "image": "images/signature_item_matilda_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_matilda_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_mikael_fragment",
+    "displayName": "Signature: Mikael Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Микаэля",
+    "category": "Signature Item",
+    "image": "images/signature_item_mikael_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_mikael_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_morrigan_fragment",
+    "displayName": "Signature: Morrigan Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Морриган",
+    "category": "Signature Item",
+    "image": "images/signature_item_morrigan_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_morrigan_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_neera_fragment",
+    "displayName": "Signature: Neera Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Ниры",
+    "category": "Signature Item",
+    "image": "images/signature_item_neera_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_neera_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_night_rider_fragment",
+    "displayName": "Signature: Night Rider Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Ночного Всадника",
+    "category": "Signature Item",
+    "image": "images/signature_item_night_rider_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_night_rider_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_oberon_fragment",
+    "displayName": "Signature: Oberon Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Оберона",
+    "category": "Signature Item",
+    "image": "images/signature_item_oberon_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_oberon_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_pumpking_fragment",
+    "displayName": "Signature: Pumpking Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Короля Тыкв",
+    "category": "Signature Item",
+    "image": "images/signature_item_pumpking_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_pumpking_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_pyromania_fragment",
+    "displayName": "Signature: Pyromania Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Пиромании",
+    "category": "Signature Item",
+    "image": "images/signature_item_pyromania_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_pyromania_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_rangda_fragment",
+    "displayName": "Signature: Rangda Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Рангды",
+    "category": "Signature Item",
+    "image": "images/signature_item_rangda_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_rangda_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_red_rooster_fragment",
+    "displayName": "Signature: Red Rooster Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Красного Петуха",
+    "category": "Signature Item",
+    "image": "images/signature_item_red_rooster_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_red_rooster_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_rigzash_fragment",
+    "displayName": "Signature: Rigzash Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Ригзаша",
+    "category": "Signature Item",
+    "image": "images/signature_item_rigzash_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_rigzash_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_salazar_fragment",
+    "displayName": "Signature: Salazar Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Салазара",
+    "category": "Signature Item",
+    "image": "images/signature_item_salazar_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_salazar_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_sarah_fragment",
+    "displayName": "Signature: Sarah Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Сары",
+    "category": "Signature Item",
+    "image": "images/signature_item_sarah_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_sarah_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_shade_fragment",
+    "displayName": "Signature: Shade Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Тени",
+    "category": "Signature Item",
+    "image": "images/signature_item_shade_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_shade_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_sir_joseph_fragment",
+    "displayName": "Signature: Sir Joseph Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Сэра Джозефа",
+    "category": "Signature Item",
+    "image": "images/signature_item_sir_joseph_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_sir_joseph_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_sir_roland_fragment",
+    "displayName": "Signature: Sir Roland Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Сэра Роланда",
+    "category": "Signature Item",
+    "image": "images/signature_item_sir_roland_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_sir_roland_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_skylar_fragment",
+    "displayName": "Signature: Skylar Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Скайлар",
+    "category": "Signature Item",
+    "image": "images/signature_item_skylar_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_skylar_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_storm_fragment",
+    "displayName": "Signature: Storm Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Шторма",
+    "category": "Signature Item",
+    "image": "images/signature_item_storm_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_storm_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_thor_fragment",
+    "displayName": "Signature: Thor Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Тора",
+    "category": "Signature Item",
+    "image": "images/signature_item_thor_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_thor_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_violet_fragment",
+    "displayName": "Signature: Violet Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Виолет",
+    "category": "Signature Item",
+    "image": "images/signature_item_violet_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_violet_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_whisperer_fragment",
+    "displayName": "Signature: Whisperer Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Шептуна",
+    "category": "Signature Item",
+    "image": "images/signature_item_whisperer_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_whisperer_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_wukong_fragment",
+    "displayName": "Signature: Wukong Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Вуконга",
+    "category": "Signature Item",
+    "image": "images/signature_item_wukong_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_wukong_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_yaga_fragment",
+    "displayName": "Signature: Yaga Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Яги",
+    "category": "Signature Item",
+    "image": "images/signature_item_yaga_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_yaga_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_yaeger_stalker_fragment",
+    "displayName": "Signature: Yaeger Stalker Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Егеря",
+    "category": "Signature Item",
+    "image": "images/signature_item_yaeger_stalker_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_yaeger_stalker_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_yuri_fragment",
+    "displayName": "Signature: Yuri Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Юрия",
+    "category": "Signature Item",
+    "image": "images/signature_item_yuri_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_yuri_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_zahhak_fragment",
+    "displayName": "Signature: Zahhak Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Заххака",
+    "category": "Signature Item",
+    "image": "images/signature_item_zahhak_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_zahhak_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_zeus_fragment",
+    "displayName": "Signature: Zeus Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Зевса",
+    "category": "Signature Item",
+    "image": "images/signature_item_zeus_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_zeus_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "signature_item_zombie_lord_fragment",
+    "displayName": "Signature: Zombie Lord Fragment",
+    "displayNameRu": "Сигнатура: Фрагмент Лорда Зомби",
+    "category": "Signature Item",
+    "image": "images/signature_item_zombie_lord_fragment.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"signature_item_zombie_lord_fragment\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "pet_chest_equipment_fragment_1",
+    "displayName": "Pet Equipment Fragment (Tier 1)",
+    "displayNameRu": "Фрагмент снаряжения питомца (Ур. 1)",
+    "category": "Pet Fragment",
+    "image": "images/pet_chest_equipment_fragment_1.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"pet_chest_equipment_fragment_1\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "pet_chest_equipment_fragment_2",
+    "displayName": "Pet Equipment Fragment (Tier 2)",
+    "displayNameRu": "Фрагмент снаряжения питомца (Ур. 2)",
+    "category": "Pet Fragment",
+    "image": "images/pet_chest_equipment_fragment_2.png",
+    "defaultQuantity": 30,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"pet_chest_equipment_fragment_2\",\n  \"quantity\": 30\n}"
+  },
+  {
+    "id": "item_avatar_birthday_event_2024",
+    "displayName": "Avatar: Birthday 2024",
+    "displayNameRu": "Аватар: День рождения 2024",
+    "category": "Avatar",
+    "image": "images/item_avatar_birthday_event_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_birthday_event_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_chinese_new_year",
+    "displayName": "Avatar: Chinese New Year",
+    "displayNameRu": "Аватар: Китайский Новый год",
+    "category": "Avatar",
+    "image": "images/item_avatar_chinese_new_year.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_chinese_new_year\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_dwarven_miner_2024",
+    "displayName": "Avatar: Dwarven Miner 2024",
+    "displayNameRu": "Аватар: Гномий Шахтёр 2024",
+    "category": "Avatar",
+    "image": "images/item_avatar_dwarven_miner_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_dwarven_miner_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_fortune_teller",
+    "displayName": "Avatar: Fortune Teller",
+    "displayNameRu": "Аватар: Гадалка",
+    "category": "Avatar",
+    "image": "images/item_avatar_fortune_teller.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_fortune_teller\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_gladiator",
+    "displayName": "Avatar: Gladiator",
+    "displayNameRu": "Аватар: Гладиатор",
+    "category": "Avatar",
+    "image": "images/item_avatar_gladiator.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_gladiator\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_halloween",
+    "displayName": "Avatar: Halloween",
+    "displayNameRu": "Аватар: Хэллоуин",
+    "category": "Avatar",
+    "image": "images/item_avatar_halloween.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_halloween\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_hiking_tools_2024",
+    "displayName": "Avatar: Hiking Tools 2024",
+    "displayNameRu": "Аватар: Поход 2024",
+    "category": "Avatar",
+    "image": "images/item_avatar_hiking_tools_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_hiking_tools_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_light_vs_dark",
+    "displayName": "Avatar: Light vs Dark",
+    "displayNameRu": "Аватар: Свет против тьмы",
+    "category": "Avatar",
+    "image": "images/item_avatar_light_vs_dark.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_light_vs_dark\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_pelmeni",
+    "displayName": "Avatar: Pelmeni",
+    "displayNameRu": "Аватар: Пельмени",
+    "category": "Avatar",
+    "image": "images/item_avatar_pelmeni.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_pelmeni\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_pirates_2024",
+    "displayName": "Avatar: Pirates 2024",
+    "displayNameRu": "Аватар: Пираты 2024",
+    "category": "Avatar",
+    "image": "images/item_avatar_pirates_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_pirates_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_valentines_day",
+    "displayName": "Avatar: Valentine's Day",
+    "displayNameRu": "Аватар: День святого Валентина",
+    "category": "Avatar",
+    "image": "images/item_avatar_valentines_day.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_valentines_day\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_avatar_vampire_castle",
+    "displayName": "Avatar: Vampire Castle",
+    "displayNameRu": "Аватар: Замок вампира",
+    "category": "Avatar",
+    "image": "images/item_avatar_vampire_castle.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_avatar_vampire_castle\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_birthday_event_2024",
+    "displayName": "Frame: Birthday 2024",
+    "displayNameRu": "Рамка: День рождения 2024",
+    "category": "Frame",
+    "image": "images/item_frame_birthday_event_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_birthday_event_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_chinese_new_year",
+    "displayName": "Frame: Chinese New Year",
+    "displayNameRu": "Рамка: Китайский Новый год",
+    "category": "Frame",
+    "image": "images/item_frame_chinese_new_year.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_chinese_new_year\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_darkest",
+    "displayName": "Frame: Darkest",
+    "displayNameRu": "Рамка: Darkest",
+    "category": "Frame",
+    "image": "images/item_frame_darkest.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_darkest\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_dwarven_miner_2024",
+    "displayName": "Frame: Dwarven Miner 2024",
+    "displayNameRu": "Рамка: Гномий Шахтёр 2024",
+    "category": "Frame",
+    "image": "images/item_frame_dwarven_miner_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_dwarven_miner_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_fortune_teller",
+    "displayName": "Frame: Fortune Teller",
+    "displayNameRu": "Рамка: Гадалка",
+    "category": "Frame",
+    "image": "images/item_frame_fortune_teller.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_fortune_teller\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_gladiator",
+    "displayName": "Frame: Gladiator",
+    "displayNameRu": "Рамка: Гладиатор",
+    "category": "Frame",
+    "image": "images/item_frame_gladiator.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_gladiator\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_halloween",
+    "displayName": "Frame: Halloween",
+    "displayNameRu": "Рамка: Хэллоуин",
+    "category": "Frame",
+    "image": "images/item_frame_halloween.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_halloween\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_hiking_tools_2024",
+    "displayName": "Frame: Hiking Tools 2024",
+    "displayNameRu": "Рамка: Поход 2024",
+    "category": "Frame",
+    "image": "images/item_frame_hiking_tools_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_hiking_tools_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_light_vs_dark",
+    "displayName": "Frame: Light vs Dark",
+    "displayNameRu": "Рамка: Свет против тьмы",
+    "category": "Frame",
+    "image": "images/item_frame_light_vs_dark.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_light_vs_dark\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_pelmeni",
+    "displayName": "Frame: Pelmeni",
+    "displayNameRu": "Рамка: Пельмени",
+    "category": "Frame",
+    "image": "images/item_frame_pelmeni.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_pelmeni\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_pirates_2024",
+    "displayName": "Frame: Pirates 2024",
+    "displayNameRu": "Рамка: Пираты 2024",
+    "category": "Frame",
+    "image": "images/item_frame_pirates_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_pirates_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_valentines_day",
+    "displayName": "Frame: Valentine's Day",
+    "displayNameRu": "Рамка: День святого Валентина",
+    "category": "Frame",
+    "image": "images/item_frame_valentines_day.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_valentines_day\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_frame_vampire_castle",
+    "displayName": "Frame: Vampire Castle",
+    "displayNameRu": "Рамка: Замок вампира",
+    "category": "Frame",
+    "image": "images/item_frame_vampire_castle.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_frame_vampire_castle\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_birthday_event_2024",
+    "displayName": "Shield: Birthday 2024",
+    "displayNameRu": "Щит: День рождения 2024",
+    "category": "Shield",
+    "image": "images/item_shield_birthday_event_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_birthday_event_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_chinese_new_year",
+    "displayName": "Shield: Chinese New Year",
+    "displayNameRu": "Щит: Китайский Новый год",
+    "category": "Shield",
+    "image": "images/item_shield_chinese_new_year.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_chinese_new_year\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_darkest",
+    "displayName": "Shield: Darkest",
+    "displayNameRu": "Щит: Darkest",
+    "category": "Shield",
+    "image": "images/item_shield_darkest.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_darkest\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_dwarven_miner_2024",
+    "displayName": "Shield: Dwarven Miner 2024",
+    "displayNameRu": "Щит: Гномий Шахтёр 2024",
+    "category": "Shield",
+    "image": "images/item_shield_dwarven_miner_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_dwarven_miner_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_fortune_teller",
+    "displayName": "Shield: Fortune Teller",
+    "displayNameRu": "Щит: Гадалка",
+    "category": "Shield",
+    "image": "images/item_shield_fortune_teller.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_fortune_teller\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_gladiator",
+    "displayName": "Shield: Gladiator",
+    "displayNameRu": "Щит: Гладиатор",
+    "category": "Shield",
+    "image": "images/item_shield_gladiator.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_gladiator\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_halloween",
+    "displayName": "Shield: Halloween",
+    "displayNameRu": "Щит: Хэллоуин",
+    "category": "Shield",
+    "image": "images/item_shield_halloween.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_halloween\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_hiking_tools_2024",
+    "displayName": "Shield: Hiking Tools 2024",
+    "displayNameRu": "Щит: Поход 2024",
+    "category": "Shield",
+    "image": "images/item_shield_hiking_tools_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_hiking_tools_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_pelmeni",
+    "displayName": "Shield: Pelmeni",
+    "displayNameRu": "Щит: Пельмени",
+    "category": "Shield",
+    "image": "images/item_shield_pelmeni.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_pelmeni\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_pirates_2024",
+    "displayName": "Shield: Pirates 2024",
+    "displayNameRu": "Щит: Пираты 2024",
+    "category": "Shield",
+    "image": "images/item_shield_pirates_2024.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_pirates_2024\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_valentines_day",
+    "displayName": "Shield: Valentine's Day",
+    "displayNameRu": "Щит: День святого Валентина",
+    "category": "Shield",
+    "image": "images/item_shield_valentines_day.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_valentines_day\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "item_shield_vampire_castle",
+    "displayName": "Shield: Vampire Castle",
+    "displayNameRu": "Щит: Замок вампира",
+    "category": "Shield",
+    "image": "images/item_shield_vampire_castle.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"item_shield_vampire_castle\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "black_friday_2024_match_three",
+    "displayName": "Black Friday 2024: Match-3",
+    "displayNameRu": "Чёрная пятница 2024: Три в ряд",
+    "category": "Event Item",
+    "image": "images/black_friday_2024_match_three.png",
+    "defaultQuantity": 10,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"black_friday_2024_match_three\",\n  \"quantity\": 10\n}"
   }
 ]
-
