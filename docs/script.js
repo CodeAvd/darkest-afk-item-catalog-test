@@ -24,6 +24,14 @@ const state = {
   filters: {
     search: '',                 // Search query
     category: '',               // Selected category
+    rarities: new Set(),        // 'common' | 'rare' | 'epic' | 'legendary'
+    grades: new Set(),          // Item grades (numbers or strings)
+    attributes: {
+      atkMin: null,
+      atkMax: null,
+      defMin: null,
+      defMax: null,
+    },
   },
   
   // View
@@ -43,6 +51,13 @@ const state = {
   }
 };
 
+// Filter metadata (populated after items load)
+let filterMeta = {
+  categories: new Map(),
+  rarities: new Map(),
+  grades: new Map(),
+};
+
 // ============================================================================
 // DOM REFERENCES
 // ============================================================================
@@ -57,6 +72,8 @@ const dom = {
   // Filters
   searchInput: document.getElementById("searchInput"),
   categoryFilter: document.getElementById("categoryFilter"),
+  filtersSidebar: document.getElementById("filters-sidebar"),
+  activeFilters: document.getElementById("active-filters"),
   
   // Detail panel (compensation package)
   detailContent: document.getElementById("detailContent"),
@@ -106,8 +123,12 @@ async function loadItems() {
     state.items = data;
     state.ui.loadingState = 'success';
     
+    // Build filter metadata for advanced filters
+    filterMeta = buildFilterMetadata(state.items);
+    
     populateCategories();
-    applyFilters();
+    renderFiltersSidebar();
+    rerenderEverything();
     checkForPresetToApply();
     
   } catch (err) {
@@ -134,29 +155,78 @@ function populateCategories() {
   });
 }
 
+/**
+ * Build filter metadata (counts for each filter value)
+ * @param {Array} items - Array of items
+ */
+function buildFilterMetadata(items) {
+  const categories = new Map();
+  const rarities = new Map();
+  const grades = new Map();
+
+  for (const item of items) {
+    // Count categories
+    if (item.category) {
+      categories.set(item.category, (categories.get(item.category) || 0) + 1);
+    }
+    
+    // Count rarities
+    if (item.rarity) {
+      rarities.set(item.rarity, (rarities.get(item.rarity) || 0) + 1);
+    }
+    
+    // Count grades
+    if (item.grade != null) {
+      const gradeStr = String(item.grade);
+      grades.set(gradeStr, (grades.get(gradeStr) || 0) + 1);
+    }
+  }
+
+  return { categories, rarities, grades };
+}
+
 // ============================================================================
 // MODULE 2: FILTERING & SEARCH
 // ============================================================================
 
 /**
- * Apply search and category filters to items
- * Updates state with filtered results and triggers grid re-render
+ * Apply all filters to items and return filtered array
+ * @returns {Array} Filtered items
  */
 function applyFilters() {
-  const term = state.filters.search.toLowerCase();
-  const cat = state.filters.category;
-  
-  const filtered = state.items.filter((item) => {
-    const matchesCat = !cat || item.category === cat;
-    const matchesSearch =
-      !term ||
-      item.id.toLowerCase().includes(term) ||
-      (item.displayName && item.displayName.toLowerCase().includes(term)) ||
-      (item.displayNameRu && item.displayNameRu.toLowerCase().includes(term));
-    return matchesCat && matchesSearch;
+  const { search, category, rarities, grades, attributes } = state.filters;
+  const searchTerm = search.trim().toLowerCase();
+
+  return state.items.filter(item => {
+    // Category filter
+    if (category && item.category !== category) return false;
+
+    // Rarity filter
+    if (rarities.size && !rarities.has(item.rarity)) return false;
+
+    // Grade filter
+    if (grades.size && !grades.has(String(item.grade))) return false;
+
+    // Attribute filters
+    if (attributes.atkMin != null && (item.atk == null || item.atk < attributes.atkMin)) return false;
+    if (attributes.atkMax != null && (item.atk == null || item.atk > attributes.atkMax)) return false;
+    if (attributes.defMin != null && (item.def == null || item.def < attributes.defMin)) return false;
+    if (attributes.defMax != null && (item.def == null || item.def > attributes.defMax)) return false;
+
+    // Search filter
+    if (searchTerm) {
+      const haystack = [
+        item.id,
+        item.displayName,
+        item.displayNameRu,
+        item.category
+      ].filter(Boolean).join(' ').toLowerCase();
+      
+      if (!haystack.includes(searchTerm)) return false;
+    }
+
+    return true;
   });
-  
-  renderGrid(filtered);
 }
 
 // ============================================================================
@@ -182,8 +252,9 @@ function toggleItemSelection(itemId) {
     }
   }
   
-  // Re-render affected components
-  applyFilters(); // Re-render grid to update selection state
+  // Re-render affected components (but don't rebuild filter sidebar)
+  const filtered = applyFilters();
+  renderGrid(filtered);
   renderCompensationPanel();
 }
 
@@ -193,7 +264,8 @@ function toggleItemSelection(itemId) {
 function clearSelection() {
   state.selectedItemIds.clear();
   state.packageItems.clear();
-  applyFilters();
+  const filtered = applyFilters();
+  renderGrid(filtered);
   renderCompensationPanel();
   showToast("Selection cleared");
 }
@@ -624,7 +696,285 @@ function renderCompensationPanelActions(selectedItems) {
 }
 
 // ============================================================================
-// MODULE 7: JSON GENERATION & PRESETS
+// MODULE 7: RENDERING - FILTERS SIDEBAR & CHIPS
+// ============================================================================
+
+/**
+ * Render the filters sidebar with all filter options
+ */
+function renderFiltersSidebar() {
+  if (!dom.filtersSidebar) return;
+
+  const { categories, rarities, grades } = filterMeta;
+
+  // Build category section
+  const categoryOptions = [...categories.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([value, count]) => `
+      <label class="filter-checkbox">
+        <input type="checkbox" data-filter-type="category" value="${value}"
+          ${state.filters.category === value ? 'checked' : ''}>
+        <span>${value}</span> <span class="count">(${count})</span>
+      </label>
+    `).join('');
+
+  // Build rarity section
+  const rarityOptions = [...rarities.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([value, count]) => `
+      <label class="filter-checkbox">
+        <input type="checkbox" data-filter-type="rarity" value="${value}"
+          ${state.filters.rarities.has(value) ? 'checked' : ''}>
+        <span class="rarity-${value.toLowerCase()}">${value}</span> <span class="count">(${count})</span>
+      </label>
+    `).join('');
+
+  // Build grade section
+  const gradeOptions = [...grades.entries()]
+    .sort(([a], [b]) => Number(a) - Number(b))
+    .map(([value, count]) => `
+      <label class="filter-checkbox">
+        <input type="checkbox" data-filter-type="grade" value="${value}"
+          ${state.filters.grades.has(value) ? 'checked' : ''}>
+        <span>Grade ${value}</span> <span class="count">(${count})</span>
+      </label>
+    `).join('');
+
+  dom.filtersSidebar.innerHTML = `
+    <div class="filters-header">
+      <h2 class="section-title">Filters</h2>
+      <button id="btn-clear-filters" class="btn-text" type="button">Clear all</button>
+    </div>
+
+    ${categoryOptions ? `
+      <section class="filter-section">
+        <h3 class="filter-section-title">Category</h3>
+        <div class="filter-options">
+          ${categoryOptions}
+        </div>
+      </section>
+    ` : ''}
+
+    ${rarityOptions ? `
+      <section class="filter-section">
+        <h3 class="filter-section-title">Rarity</h3>
+        <div class="filter-options">
+          ${rarityOptions}
+        </div>
+      </section>
+    ` : ''}
+
+    ${gradeOptions ? `
+      <section class="filter-section">
+        <h3 class="filter-section-title">Grade</h3>
+        <div class="filter-options">
+          ${gradeOptions}
+        </div>
+      </section>
+    ` : ''}
+
+    <section class="filter-section">
+      <h3 class="filter-section-title">Attributes</h3>
+      <div class="attribute-filters">
+        <div class="attribute-range">
+          <label>Attack</label>
+          <div class="range-inputs">
+            <input type="number" id="atk-min" placeholder="Min" min="0" 
+              value="${state.filters.attributes.atkMin ?? ''}" />
+            <span>–</span>
+            <input type="number" id="atk-max" placeholder="Max" min="0" 
+              value="${state.filters.attributes.atkMax ?? ''}" />
+          </div>
+        </div>
+        <div class="attribute-range">
+          <label>Defense</label>
+          <div class="range-inputs">
+            <input type="number" id="def-min" placeholder="Min" min="0" 
+              value="${state.filters.attributes.defMin ?? ''}" />
+            <span>–</span>
+            <input type="number" id="def-max" placeholder="Max" min="0" 
+              value="${state.filters.attributes.defMax ?? ''}" />
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+
+  attachFilterSidebarHandlers();
+}
+
+/**
+ * Attach event handlers to filter sidebar elements
+ */
+function attachFilterSidebarHandlers() {
+  if (!dom.filtersSidebar) return;
+
+  // Checkbox handlers
+  dom.filtersSidebar.querySelectorAll('input[type="checkbox"]').forEach(input => {
+    input.addEventListener('change', () => {
+      const type = input.dataset.filterType;
+      const value = input.value;
+
+      if (type === 'category') {
+        // Single category selection (radio-like behavior)
+        state.filters.category = input.checked ? value : '';
+        // Uncheck other category checkboxes
+        dom.filtersSidebar.querySelectorAll('input[data-filter-type="category"]').forEach(cb => {
+          if (cb !== input) cb.checked = false;
+        });
+      } else if (type === 'rarity') {
+        const set = state.filters.rarities;
+        input.checked ? set.add(value) : set.delete(value);
+      } else if (type === 'grade') {
+        const set = state.filters.grades;
+        input.checked ? set.add(value) : set.delete(value);
+      }
+
+      rerenderEverything();
+    });
+  });
+
+  // Attribute range handlers
+  const atkMin = document.getElementById('atk-min');
+  const atkMax = document.getElementById('atk-max');
+  const defMin = document.getElementById('def-min');
+  const defMax = document.getElementById('def-max');
+
+  const handleAttributeChange = debounce(() => {
+    state.filters.attributes.atkMin = atkMin?.value ? Number(atkMin.value) : null;
+    state.filters.attributes.atkMax = atkMax?.value ? Number(atkMax.value) : null;
+    state.filters.attributes.defMin = defMin?.value ? Number(defMin.value) : null;
+    state.filters.attributes.defMax = defMax?.value ? Number(defMax.value) : null;
+    rerenderEverything();
+  }, 500);
+
+  [atkMin, atkMax, defMin, defMax].forEach(input => {
+    if (input) input.addEventListener('input', handleAttributeChange);
+  });
+
+  // Clear all button
+  const clearBtn = dom.filtersSidebar.querySelector('#btn-clear-filters');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      state.filters.search = '';
+      state.filters.category = '';
+      state.filters.rarities.clear();
+      state.filters.grades.clear();
+      Object.assign(state.filters.attributes, {
+        atkMin: null, atkMax: null, defMin: null, defMax: null
+      });
+      dom.searchInput.value = '';
+      rerenderEverything();
+    });
+  }
+}
+
+/**
+ * Render active filter chips below the header
+ */
+function renderActiveFilterChips() {
+  if (!dom.activeFilters) return;
+
+  const chips = [];
+
+  // Category chip
+  if (state.filters.category) {
+    chips.push({ 
+      type: 'category', 
+      value: state.filters.category, 
+      label: state.filters.category 
+    });
+  }
+
+  // Rarity chips
+  state.filters.rarities.forEach(r => {
+    chips.push({ 
+      type: 'rarity', 
+      value: r, 
+      label: `Rarity: ${r}` 
+    });
+  });
+
+  // Grade chips
+  state.filters.grades.forEach(g => {
+    chips.push({ 
+      type: 'grade', 
+      value: g, 
+      label: `Grade ${g}` 
+    });
+  });
+
+  // Attribute chips
+  const { atkMin, atkMax, defMin, defMax } = state.filters.attributes;
+  if (atkMin != null || atkMax != null) {
+    const label = atkMin != null && atkMax != null 
+      ? `ATK: ${atkMin}–${atkMax}`
+      : atkMin != null ? `ATK ≥ ${atkMin}` : `ATK ≤ ${atkMax}`;
+    chips.push({ type: 'atk', value: 'atk', label });
+  }
+  if (defMin != null || defMax != null) {
+    const label = defMin != null && defMax != null 
+      ? `DEF: ${defMin}–${defMax}`
+      : defMin != null ? `DEF ≥ ${defMin}` : `DEF ≤ ${defMax}`;
+    chips.push({ type: 'def', value: 'def', label });
+  }
+
+  // Render chips
+  if (!chips.length) {
+    dom.activeFilters.innerHTML = '';
+    dom.activeFilters.hidden = true;
+    return;
+  }
+
+  dom.activeFilters.hidden = false;
+  dom.activeFilters.innerHTML = chips.map(c => `
+    <button class="filter-chip" data-type="${c.type}" data-value="${c.value}" type="button">
+      ${c.label} <span class="chip-close">✕</span>
+    </button>
+  `).join('');
+
+  // Attach chip remove handlers
+  dom.activeFilters.querySelectorAll('.filter-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const { type, value } = btn.dataset;
+      
+      if (type === 'category') {
+        state.filters.category = '';
+      } else if (type === 'rarity') {
+        state.filters.rarities.delete(value);
+      } else if (type === 'grade') {
+        state.filters.grades.delete(value);
+      } else if (type === 'atk') {
+        state.filters.attributes.atkMin = null;
+        state.filters.attributes.atkMax = null;
+      } else if (type === 'def') {
+        state.filters.attributes.defMin = null;
+        state.filters.attributes.defMax = null;
+      }
+      
+      rerenderEverything();
+    });
+  });
+}
+
+/**
+ * Re-render everything after state change
+ * Central render function called after any filter/selection change
+ */
+function rerenderEverything() {
+  const filtered = applyFilters();
+  renderActiveFilterChips();
+  renderGrid(filtered);
+  renderCompensationPanel();
+  
+  // Update filter sidebar checkboxes to match state
+  if (dom.filtersSidebar) {
+    renderFiltersSidebar();
+  }
+}
+
+// ============================================================================
+// MODULE 8: JSON GENERATION & PRESETS
 // ============================================================================
 
 /**
@@ -701,11 +1051,12 @@ function applyPresetToSelection(preset) {
   });
 
   console.log('Applied preset:', preset.name);
-  console.log('Selected IDs:', Array.from(state.selectedItemIds));
-  console.log('Package items:', Array.from(state.packageItems.entries()));
+    console.log('Selected IDs:', Array.from(state.selectedItemIds));
+    console.log('Package items:', Array.from(state.packageItems.entries()));
 
-  applyFilters(); // Re-render grid
-  renderCompensationPanel();
+    const filtered = applyFilters();
+    renderGrid(filtered);
+    renderCompensationPanel();
 }
 
 // ============================================================================
@@ -851,21 +1202,20 @@ function initializeEventListeners() {
   // Search and filters
   const debouncedSearch = debounce(() => {
     state.filters.search = dom.searchInput.value.trim();
-    applyFilters();
+    rerenderEverything();
   }, 200);
   
   dom.searchInput.addEventListener("input", debouncedSearch);
   
   dom.categoryFilter.addEventListener("change", () => {
     state.filters.category = dom.categoryFilter.value;
-    applyFilters();
+    rerenderEverything();
   });
   
   // Language toggle
   dom.langToggle.addEventListener("change", () => {
     state.showRussian = dom.langToggle.checked;
-    applyFilters(); // Re-render grid with new language
-    renderCompensationPanel();
+    rerenderEverything();
   });
 
   // Density toggle handlers
@@ -976,11 +1326,17 @@ function initializeEventListeners() {
     if (e.key === "Escape" && !state.ui.helpOpen) {
       if (state.selectedItemIds.size > 0) {
         clearSelection();
-      } else if (dom.searchInput.value) {
+      } else if (dom.searchInput.value || state.filters.category || state.filters.rarities.size || state.filters.grades.size) {
         dom.searchInput.value = "";
-        dom.searchInput.focus();
         state.filters.search = "";
-        applyFilters();
+        state.filters.category = "";
+        state.filters.rarities.clear();
+        state.filters.grades.clear();
+        Object.assign(state.filters.attributes, {
+          atkMin: null, atkMax: null, defMin: null, defMax: null
+        });
+        dom.searchInput.focus();
+        rerenderEverything();
       }
       return;
     }

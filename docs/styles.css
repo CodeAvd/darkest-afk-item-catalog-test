@@ -1201,6 +1201,298 @@ kbd {
   border-top: 1px solid var(--border);
 }
 
+/* ============================================================================
+   PHASE 1: FILTERS SIDEBAR & CHIPS
+   ============================================================================ */
+
+/* Active filters chips */
+.active-filters {
+  padding: 12px 24px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  position: sticky;
+  top: 71px; /* Below header */
+  z-index: 35;
+  backdrop-filter: blur(8px);
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(90, 200, 250, 0.12);
+  border: 1px solid rgba(90, 200, 250, 0.3);
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.filter-chip:hover {
+  background: rgba(90, 200, 250, 0.2);
+  border-color: rgba(90, 200, 250, 0.5);
+  transform: translateY(-1px);
+}
+
+.filter-chip:active {
+  transform: translateY(0);
+}
+
+.chip-close {
+  font-size: 16px;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.filter-chip:hover .chip-close {
+  opacity: 1;
+}
+
+/* Main layout with sidebar */
+.main-with-sidebar {
+  display: grid;
+  grid-template-columns: 280px 1fr 380px;
+  gap: 0;
+  flex: 1;
+}
+
+/* Filters sidebar */
+.filters-sidebar {
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  padding: 20px 16px;
+  overflow-y: auto;
+  height: calc(100vh - 145px); /* Account for header + chip bar */
+  position: sticky;
+  top: 145px;
+}
+
+.filters-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters-header .section-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.btn-text {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.btn-text:hover {
+  background: rgba(90, 200, 250, 0.1);
+  color: #7dd6ff;
+}
+
+/* Filter sections */
+.filter-section {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.filter-section:last-child {
+  border-bottom: none;
+}
+
+.filter-section-title {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  font-size: 14px;
+}
+
+.filter-checkbox:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.filter-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.filter-checkbox span {
+  flex: 1;
+  color: var(--text);
+}
+
+.filter-checkbox .count {
+  color: var(--muted);
+  font-size: 12px;
+  flex: none;
+}
+
+/* Rarity colors */
+.rarity-common {
+  color: #9aa1b5;
+}
+
+.rarity-rare {
+  color: #5ac8fa;
+}
+
+.rarity-epic {
+  color: #af52de;
+}
+
+.rarity-legendary {
+  color: #ff9f0a;
+}
+
+/* Attribute filters */
+.attribute-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.attribute-range {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.attribute-range label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.range-inputs input[type="number"] {
+  flex: 1;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  font-family: inherit;
+}
+
+.range-inputs input[type="number"]:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(90, 200, 250, 0.15);
+}
+
+.range-inputs input[type="number"]::placeholder {
+  color: var(--muted);
+}
+
+.range-inputs span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Remove spinner from number inputs */
+.range-inputs input[type="number"]::-webkit-inner-spin-button,
+.range-inputs input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-inputs input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Adjust grid section for sidebar layout */
+.grid-section {
+  padding: 20px 24px;
+  overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .main-with-sidebar {
+    grid-template-columns: 240px 1fr 340px;
+  }
+  
+  .filters-sidebar {
+    padding: 16px 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-with-sidebar {
+    grid-template-columns: 1fr 340px;
+  }
+  
+  .filters-sidebar {
+    display: none; /* Hide sidebar on smaller screens */
+  }
+  
+  .active-filters {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-with-sidebar {
+    grid-template-columns: 1fr;
+  }
+  
+  .detail-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 60vh;
+    border-top: 1px solid var(--border);
+    border-right: none;
+  }
+}
+
 @media (max-width: 640px) {
   .help-btn {
     bottom: 16px;
@@ -1235,6 +1527,17 @@ kbd {
   
   .modal form {
     padding: 16px;
+  }
+  
+  .active-filters {
+    padding: 8px 12px;
+    gap: 6px;
+    top: 68px;
+  }
+  
+  .filter-chip {
+    font-size: 12px;
+    padding: 5px 10px;
   }
 }
 
