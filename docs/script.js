@@ -724,15 +724,16 @@ function renderErrorState() {
 function renderCompensationPanel() {
   dom.detailContent.innerHTML = "";
 
-  if (state.selectedItemIds.size === 0) {
+  // Check packageItems, not selectedItemIds (Phase 4: selection ≠ package)
+  if (state.packageItems.size === 0) {
     const placeholder = document.createElement("p");
-    placeholder.textContent = "Select items to generate init_info JSON.";
+    placeholder.textContent = "No items in package. Select items and click 'Add to package'.";
     placeholder.style.color = "var(--muted)";
     dom.detailContent.appendChild(placeholder);
     return;
   }
 
-  // Get selected items from packageItems map
+  // Get items from packageItems map
   const selectedItems = Array.from(state.packageItems.values());
 
   // Selection counter badge
