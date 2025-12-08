@@ -34,8 +34,14 @@ const state = {
     },
   },
   
+  // Sorting
+  sort: {
+    field: 'name',              // 'name' | 'code' | 'category' | 'rarity' | 'grade'
+    direction: 'asc',           // 'asc' | 'desc'
+  },
+  
   // View
-  density: 'compact',           // 'compact' | 'visual'
+  density: 'compact',           // 'ultra' | 'compact' | 'comfortable' | 'list'
   showRussian: false,           // Show Russian labels
   
   // Selection
@@ -75,12 +81,18 @@ const dom = {
   filtersSidebar: document.getElementById("filters-sidebar"),
   activeFilters: document.getElementById("active-filters"),
   
+  // Sorting
+  sortField: document.getElementById("sort-field"),
+  sortDirection: document.getElementById("sort-direction"),
+  
   // Detail panel (compensation package)
   detailContent: document.getElementById("detailContent"),
   
   // Density toggle
-  visualBtn: document.getElementById("visualBtn"),
-  compactBtn: document.getElementById("compactBtn"),
+  densityUltra: document.getElementById("densityUltra"),
+  densityCompact: document.getElementById("densityCompact"),
+  densityComfortable: document.getElementById("densityComfortable"),
+  densityList: document.getElementById("densityList"),
   
   // Language toggle
   langToggle: document.getElementById("langToggle"),
@@ -186,7 +198,71 @@ function buildFilterMetadata(items) {
 }
 
 // ============================================================================
-// MODULE 2: FILTERING & SEARCH
+// MODULE 2: SORTING
+// ============================================================================
+
+/**
+ * Get sort order value for rarity
+ * @param {string} rarity - Rarity value
+ * @returns {number} Sort order
+ */
+function rarityOrder(rarity) {
+  const map = {
+    common: 1,
+    uncommon: 2,
+    rare: 3,
+    epic: 4,
+    legendary: 5,
+  };
+  return map[rarity?.toLowerCase()] ?? 0;
+}
+
+/**
+ * Sort items based on current sort state
+ * @param {Array} items - Items to sort
+ * @returns {Array} Sorted items (new array)
+ */
+function sortItems(items) {
+  const { field, direction } = state.sort;
+  const factor = direction === 'asc' ? 1 : -1;
+
+  return [...items].sort((a, b) => {
+    let va;
+    let vb;
+
+    switch (field) {
+      case 'name':
+        va = (a.displayName || a.name || '').toLowerCase();
+        vb = (b.displayName || b.name || '').toLowerCase();
+        break;
+      case 'code':
+        va = (a.id || a.code || '').toLowerCase();
+        vb = (b.id || b.code || '').toLowerCase();
+        break;
+      case 'category':
+        va = (a.category || '').toLowerCase();
+        vb = (b.category || '').toLowerCase();
+        break;
+      case 'rarity':
+        va = rarityOrder(a.rarity);
+        vb = rarityOrder(b.rarity);
+        break;
+      case 'grade':
+        va = a.grade ?? 0;
+        vb = b.grade ?? 0;
+        break;
+      default:
+        return 0;
+    }
+
+    if (va < vb) return -1 * factor;
+    if (va > vb) return 1 * factor;
+    return 0;
+  });
+}
+
+// ============================================================================
+// MODULE 3: FILTERING & SEARCH
 // ============================================================================
 
 /**
@@ -959,12 +1035,14 @@ function renderActiveFilterChips() {
 
 /**
  * Re-render everything after state change
- * Central render function called after any filter/selection change
+ * Central render function called after any filter/selection/sort change
  */
 function rerenderEverything() {
   const filtered = applyFilters();
+  const sorted = sortItems(filtered);
+  
   renderActiveFilterChips();
-  renderGrid(filtered);
+  renderGrid(sorted);
   renderCompensationPanel();
   
   // Update filter sidebar checkboxes to match state
@@ -1152,6 +1230,74 @@ function showToast(msg) {
 }
 
 // ============================================================================
+// SORT CONTROLS
+// ============================================================================
+
+/**
+ * Load persisted sort preferences from localStorage
+ */
+function loadPersistedSort() {
+  try {
+    const raw = localStorage.getItem('dafk.sort');
+    if (!raw) return;
+    const stored = JSON.parse(raw);
+    if (stored.field) state.sort.field = stored.field;
+    if (stored.direction) state.sort.direction = stored.direction;
+  } catch (e) {
+    console.error('Failed to load sort preferences:', e);
+  }
+}
+
+/**
+ * Save sort preferences to localStorage
+ */
+function savePersistedSort() {
+  try {
+    localStorage.setItem('dafk.sort', JSON.stringify(state.sort));
+  } catch (e) {
+    console.error('Failed to save sort preferences:', e);
+  }
+}
+
+/**
+ * Update sort direction button UI
+ * @param {HTMLButtonElement} btn - Sort direction button
+ */
+function updateSortDirectionButton(btn) {
+  if (!btn) return;
+  const isAsc = state.sort.direction === 'asc';
+  btn.textContent = isAsc ? '↑' : '↓';
+  btn.setAttribute('aria-label', isAsc ? 'Sort ascending' : 'Sort descending');
+  btn.classList.toggle('sort-direction-active', !isAsc);
+}
+
+/**
+ * Initialize sort controls
+ */
+function initSortControls() {
+  if (!dom.sortField || !dom.sortDirection) return;
+
+  // Sync UI with state
+  dom.sortField.value = state.sort.field;
+  updateSortDirectionButton(dom.sortDirection);
+
+  // Sort field change
+  dom.sortField.addEventListener('change', () => {
+    state.sort.field = dom.sortField.value;
+    savePersistedSort();
+    rerenderEverything();
+  });
+
+  // Sort direction toggle
+  dom.sortDirection.addEventListener('click', () => {
+    state.sort.direction = state.sort.direction === 'asc' ? 'desc' : 'asc';
+    updateSortDirectionButton(dom.sortDirection);
+    savePersistedSort();
+    rerenderEverything();
+  });
+}
+
+// ============================================================================
 // MODAL CONTROLS
 // ============================================================================
 
@@ -1219,25 +1365,49 @@ function initializeEventListeners() {
   });
 
   // Density toggle handlers
-  dom.visualBtn.addEventListener("click", () => {
-    state.density = 'visual';
-    document.body.classList.remove("compact-mode");
-    document.body.classList.add("visual-mode");
-    dom.visualBtn.classList.add("active");
-    dom.compactBtn.classList.remove("active");
-    dom.visualBtn.setAttribute("aria-pressed", "true");
-    dom.compactBtn.setAttribute("aria-pressed", "false");
+  const densityButtons = [
+    { btn: dom.densityUltra, mode: 'ultra' },
+    { btn: dom.densityCompact, mode: 'compact' },
+    { btn: dom.densityComfortable, mode: 'comfortable' },
+    { btn: dom.densityList, mode: 'list' }
+  ];
+
+  densityButtons.forEach(({ btn, mode }) => {
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      setDensityMode(mode);
+    });
   });
 
-  dom.compactBtn.addEventListener("click", () => {
-    state.density = 'compact';
-    document.body.classList.remove("visual-mode");
-    document.body.classList.add("compact-mode");
-    dom.compactBtn.classList.add("active");
-    dom.visualBtn.classList.remove("active");
-    dom.compactBtn.setAttribute("aria-pressed", "true");
-    dom.visualBtn.setAttribute("aria-pressed", "false");
-  });
+  function setDensityMode(mode) {
+    state.density = mode;
+    
+    // Remove all density classes
+    document.body.classList.remove('density-ultra', 'density-compact', 'density-comfortable', 'density-list');
+    
+    // Add new density class
+    document.body.classList.add(`density-${mode}`);
+    
+    // Update button states
+    densityButtons.forEach(({ btn, mode: btnMode }) => {
+      if (!btn) return;
+      const isActive = btnMode === mode;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', String(isActive));
+    });
+    
+    // Save preference
+    try {
+      localStorage.setItem('dafk.density', mode);
+    } catch (e) {
+      console.error('Failed to save density preference:', e);
+    }
+    
+    // Re-render grid with new density
+    const filtered = applyFilters();
+    const sorted = sortItems(filtered);
+    renderGrid(sorted);
+  }
 
   // Help modal
   dom.helpBtn.addEventListener("click", openHelpModal);
@@ -1351,14 +1521,35 @@ function initializeEventListeners() {
  * Initialize the application
  */
 function init() {
-  // Set default density mode
-  document.body.classList.add("compact-mode");
+  // Load persisted preferences
+  loadPersistedSort();
+  loadPersistedDensity();
+  
+  // Set density mode (will apply CSS class)
+  setDensityMode(state.density);
+  
+  // Initialize controls
+  initSortControls();
   
   // Initialize event listeners
   initializeEventListeners();
   
   // Load items
   loadItems();
+}
+
+/**
+ * Load persisted density preference
+ */
+function loadPersistedDensity() {
+  try {
+    const saved = localStorage.getItem('dafk.density');
+    if (saved && ['ultra', 'compact', 'comfortable', 'list'].includes(saved)) {
+      state.density = saved;
+    }
+  } catch (e) {
+    console.error('Failed to load density preference:', e);
+  }
 }
 
 // Start the application

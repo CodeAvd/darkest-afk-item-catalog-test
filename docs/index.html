@@ -20,9 +20,27 @@
       <select id="categoryFilter" aria-label="Filter by category">
         <option value="">All categories</option>
       </select>
+      <div class="sort-controls">
+        <label for="sort-field" class="sort-label">Sort by:</label>
+        <select id="sort-field" class="sort-select" aria-label="Sort field">
+          <option value="name">Name (A–Z)</option>
+          <option value="code">Code</option>
+          <option value="category">Category</option>
+          <option value="rarity">Rarity</option>
+          <option value="grade">Grade</option>
+        </select>
+        <button id="sort-direction"
+                class="sort-direction"
+                type="button"
+                aria-label="Toggle sort direction">
+          ↑
+        </button>
+      </div>
       <div class="density-toggle" role="group" aria-label="View density">
-        <button type="button" id="visualBtn" aria-pressed="false">Visual</button>
-        <button type="button" id="compactBtn" class="active" aria-pressed="true">Compact</button>
+        <button type="button" id="densityUltra" aria-pressed="false" title="Ultra compact">Ultra</button>
+        <button type="button" id="densityCompact" class="active" aria-pressed="true" title="Compact view">Compact</button>
+        <button type="button" id="densityComfortable" aria-pressed="false" title="Comfortable spacing">Comfortable</button>
+        <button type="button" id="densityList" aria-pressed="false" title="List view">List</button>
       </div>
       <label class="lang-toggle">
         <input id="langToggle" type="checkbox" />
