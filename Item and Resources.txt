@@ -1,0 +1,2200 @@
+ГЕРОИ
+{
+   "type"    : "HERO",
+   "hero_name": "hero_rigzash",
+   "level"  : 1,
+   "grade"  : 1
+}
+Максимальный уровень на данный момент 300
+Максимальный грейд 5
+Грейд 1 - серый
+Грейд 2 - зеленый
+Грейд 3 - синий
+Грейд 4 - фиолетовый
+Грейд 5 - золотой
+Список героев
+"hero_sir_joseph"
+"hero_tiara"     
+"hero_ghorm"     
+"hero_tomas"     
+"hero_rose"      
+"hero_ja_van"    
+"hero_drogo"     
+"hero_ridael"    
+"hero_avalon"    
+"hero_kuldjar"   
+"hero_ziuk"      
+"hero_rigzash"   
+"hero_rabba"     
+"hero_brina"     
+"hero_condrat"   
+"hero_agra"      
+"hero_gabriella" 
+"hero_selina"    
+"hero_larion"    
+"hero_chas"      
+"hero_harumi"    
+"hero_drowzet"   
+"hero_marylee"   
+"hero_tao"       
+"hero_violet"    
+"hero_airon"     
+"hero_lilith"    
+"hero_tilion"    
+"hero_ingrid"
+"hero_nurzak"
+"hero_imps_ballista"
+"hero_morrigan"
+"hero_zoryg"
+"hero_grido"
+"hero_may"
+"hero_baison"
+"hero_azarellia"
+"hero_otta"
+"hero_toshi" 
+"hero_yoshi" 
+"hero_ragnar" 
+"hero_ukun"
+"hero_ailiri" 
+"hero_cimmeria" 
+"hero_walter" 
+"hero_vector"
+"hero_kane" 
+"hero_anette" с версии 2.2.21
+"hero_bo" с версии 2.2.23
+
+
+
+
+СКИНЫ ГЕРОЕВ
+{
+   "type"      : "ITEM",
+   "item_name" : "item_hero_skin_selina_rare",
+   "quantity"  : 1
+}
+
+Версия у игроков должна быть не менее 1.1.10
+rare
+"item_hero_skin_rose_rare"
+"item_hero_skin_selina_rare"
+"item_hero_skin_lilith_rare"
+"item_hero_skin_avalon_rare"
+"item_hero_skin_ghorm_rare"
+"item_hero_skin_tiara_rare"
+"item_hero_skin_joseph_rare"
+"item_hero_skin_harumi_rare"
+"item_hero_skin_drowzet_rare"
+"item_hero_skin_brina_rare"
+"item_hero_skin_gabriella_rare"
+"item_hero_skin_larion_rare"
+"item_hero_skin_morrigan_rare"
+"item_hero_skin_rigzash_rare"
+"item_hero_skin_nurzak_rare"
+"item_hero_skin_marylee_rare"  
+"item_hero_skin_violet_rare"
+"item_hero_skin_grido_rare" 
+"item_hero_skin_toshi_rare"
+"item_hero_skin_azarellia_rare" – с версии 2.1.8
+
+epic
+"item_hero_skin_agra_epic"
+"item_hero_skin_condrat_epic"
+"item_hero_skin_tomas_epic"
+"item_hero_skin_marylee_epic"
+"item_hero_skin_ghorm_epic"
+"item_hero_skin_tiara_epic"
+"item_hero_skin_joseph_epic"
+"item_hero_skin_tilion_epic"
+"item_hero_skin_ja_van_epic"
+"item_hero_skin_ridael_epic"
+"item_hero_skin_tao_epic"
+"item_hero_skin_larion_epic"
+"item_hero_skin_chas_epic"
+"item_hero_skin_ziuk_epic" 
+"Item_hero_skin_ingrid_epic"
+"item_hero_skin_harumi_epic" 
+"item_hero_skin_avalon_epic"
+"item_hero_skin_rabba_epic" 
+"item_hero_skin_zoryg_epic"
+"item_hero_skin_kuldjar_epic"
+"item_hero_skin_morrigan_epic"
+"item_hero_skin_ragnar_epic" 
+"item_hero_skin_lilith_epic" 
+"item_hero_skin_selina_epic" 
+"item_hero_skin_nurzak_epic"
+"item_hero_skin_baison_epic"
+"item_hero_skin_otta_epic"
+"item_hero_skin_yoshi_epic" 
+"item_hero_skin_may_epic" 
+"item_hero_skin_ailiri_epic" 
+"item_hero_skin_azarellia_epic"
+"item_hero_skin_cimmeria_epic" – с версии 2.2.21
+"Item_hero_skin_anette_epic" - кровавая невеста
+
+
+
+ФРАГМЕНТЫ ПИТОМЦЕВ
+{
+   "type"      : "ITEM",
+   "item_name" : "item_pet_wallet_fragment",
+   "quantity"  : 1
+}
+
+Список питомцев
+"item_pet_chest_fragment" - Спайк
+"item_pet_wallet_fragment" - Чип
+"item_pet_basket_fragment" - Руби
+"item_pet_barrel_fragment" - Роки
+"item_pet_bag_fragment" - Тори
+"item_pet_backpack_fragment" - Оскар
+"item_pet_dresser_fragment" - Бутч
+"item_pet_coffin_fragment" - Джек
+"item_pet_handbag_fragment" - Лайла
+"item_pet_cart_fragment" - Рекс
+
+СКИНЫ ПИТОМЦЕВ
+Доступны с версии 2.2.18
+{
+   "type"      : "ITEM",
+   "item_name" : "item_pet_skin_chest_epic",
+   "quantity"  : 1
+}
+"item_pet_skin_chest_epic" - Спайк
+"item_pet_skin_wallet_epic" - Чип
+
+СНАРЯЖЕНИЕ ПИТОМЦЕВ
+Доступны с версии 2.2.18
+{
+   "type"      : "ITEM",
+   "item_name" : "pet_chest_equipment_fragment_1",
+   "quantity"  : 1
+}
+{
+   "type"      : "ITEM",
+   "item_name" : "pet_chest_equipment_fragment_2",
+   "quantity"  : 1
+}
+Список снаряжения питомцев
+"pet_chest_equipment_fragment_1" - Спайк
+"pet_chest_equipment_fragment_2" - Спайк
+"pet_wallet_equipment_fragment_1" - Чип
+"pet_wallet_equipment_fragment_2" - Чип
+"pet_basket_equipment_fragment_1" - Руби
+"pet_basket_equipment_fragment_2" - Руби
+"pet_barrel_equipment_fragment_1" - Роки
+"pet_barrel_equipment_fragment_2" - Роки
+"pet_bag_equipment_fragment_1" - Тори 
+"pet_bag_equipment_fragment_2" - Тори
+"pet_backpack_equipment_fragment_1" - Оскар 
+"pet_backpack_equipment_fragment_2" - Оскар
+"pet_dresser_equipment_fragment_1" - Бутч 
+"pet_dresser_equipment_fragment_2" - Бутч
+"pet_coffin_equipment_fragment_1" - Джек
+"pet_coffin_equipment_fragment_2" - Джек
+"pet_handbag_equipment_fragment_1" - Лайла
+"pet_handbag_equipment_fragment_2" - Лайла
+"pet_cart_equipment_fragment_1" - Рекс
+"pet_cart_equipment_fragment_2" - Рекс
+
+Версия у игроков должна быть не менее 1.1.10
+ГЕМЫ
+{
+    "type"     : "RESOURCE",
+    "resource" : "gem",
+    "quantity" : 100
+}
+
+СВИТОК ГЕРОЯ 
+{
+    "type"    : "RESOURCE",
+    "resource": "hero_summon_scroll",
+    "quantity"  : 10
+}
+КЛАССОВЫЙ СВИТОК 
+{
+    "type"      : "ITEM",
+    "item_name" : "items_hero_summon_scroll_class",
+    "quantity"  : 1
+}
+
+МЕДАЛИ ГЕРОЯ
+{
+    "type"    : "RESOURCE",
+    "resource": "hero_medal",
+    "quantity"  : 500
+}
+
+ГОЛДА
+{
+        "type"          : "RESOURCE",
+        "resource"      : "gold",
+        "quantity"      : 10000
+}
+
+ОПЫТ ГЕРОЯ
+{
+        "type"          : "RESOURCE",
+        "resource"      : "hero_exp",
+        "quantity"      : 6000
+}
+
+МОНЕТЫ ЛАБИРИНТА
+{
+    "type"      : "RESOURCE",
+    "resource"  : "maze_coin",
+    "quantity"  : 10000
+}
+
+ПЕЧАТИ ПАДШИХ
+{
+    "type"      : "RESOURCE",
+    "resource"  : "seal",
+    "quantity"  : 2000
+}
+РУНЫ УТОПИИ ДРАКОНОВ
+Магическая Руна Призыва
+{
+    "type"      : "ITEM",
+    "item_name" : "item_summoning_magic_rune",
+    "quantity"  : 1
+}
+Магическая Руна Света
+{
+    "type"      : "ITEM",
+    "item_name" : "item_light_magic_rune",
+    "quantity"  : 1
+}
+Магическая Руна Тьмы
+{
+    "type"      : "ITEM",
+    "item_name" : "item_dark_magic_rune",
+    "quantity"  : 1
+}
+Магическая Руна Хаоса
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chaos_magic_rune",
+    "quantity"  : 1
+}
+
+СУНДУКИ ГОЛДЫ
+Этот предмет хранится в инвентаре и величина его награды при распаковке зависит от скорости IDLE, который растет после каждого 4 стейджа и при повышении ВИПа
+Одночасовой
+{
+    "type"      : "ITEM",
+    "item_name" : "item_idle_gold_1h",
+    "quantity"  : 1
+}
+Двухчасовй
+{
+    "type"      : "ITEM",
+    "item_name" : "item_idle_gold_2h",
+    "quantity"  : 1
+}
+
+СУНДУКИ ОПЫТА
+Этот предмет хранится в инвентаре и величина его награды при распаковке зависит от скорости IDLE, который растет после каждого 4 стейджа и при повышении ВИПа
+Одночасовой
+{
+    "type"      : "ITEM",
+    "item_name" : "item_idle_hero_exp_1h",
+    "quantity"  : 1
+}
+Двухчасовй
+{
+    "type"      : "ITEM",
+    "item_name" : "item_idle_hero_exp_2h",
+    "quantity"  : 1
+}
+
+СУНДУКИ ГЕМОВ
+Этот предмет хранится в инвентаре и величина его награды случайна при распаковке.
+Малый Сундук Гемов - от 5 до 20 гемов
+{
+    "type"      : "ITEM",
+    "item_name" : "item_small_gems_pack",
+    "quantity"  : 1
+}
+Тяжелый Сундук Гемов - от 20 до 50 гемов
+{
+    "type"      : "ITEM",
+    "item_name" : "item_medium_gems_pack",
+    "quantity"  : 1
+}
+
+Массивный Сундук Гемов - от 60 до 100 гемов
+{
+    "type"      : "ITEM",
+    "item_name" : "item_big_gems_pack",
+    "quantity"  : 1
+}
+
+СУНДУК КЛАССОВ
+Этот предмет хранится в инвентаре. При открытии дает 60 фрагментов героев класса ТАНКА, АТК или САПП
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chest_heroes_fragment",
+    "quantity"  : 1
+}
+
+ИТЕМЫ ДВАРФИЙСКИХ КОПИЙ
+Кирка, бур, динамит
+Версия у игроков должна быть не менее 2.1.7
+{
+    "type"      : "ITEM",
+    "item_name" : "item_dwarven_miner_game_pick",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_dwarven_miner_game_boer",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_dwarven_miner_game_dynamite",
+    "quantity"  : 1
+}
+
+
+
+СОСУД ДУШИ
+Выдает 1 случайную душу. Зеленай душа начинает выпадать с 145 стейджа, синяя с 265 стейджа, фиолетовая с 385 стейджа.
+{
+    "type"      : "ITEM",
+    "item_name" : "item_universal_soul_pack",
+    "quantity"  : 1
+}
+
+ФРАГМЕНТ СОСУДА ДУШИ
+20 фрагментов - 1 сосуд души
+{
+        "type"      : "ITEM",
+        "item_name" : "item_fragment_soul_pack",
+        "quantity"  : 1
+}
+
+
+СЕРАЯ ДУША
+{
+    "type"      : "ITEM",
+    "item_name" : "item_universal_soul_gr1",
+    "quantity"  : 1
+}
+
+ЗЕЛЕНАЯ ДУША
+{
+    "type"      : "ITEM",
+    "item_name" : "item_universal_soul_gr2",
+    "quantity"  : 1
+}
+
+СИНЯЯ ДУША
+{
+    "type"      : "ITEM",
+    "item_name" : "item_universal_soul_gr3",
+    "quantity"  : 1
+}
+
+ФИОЛЕТОВАЯ ДУША
+{
+    "type"      : "ITEM",
+    "item_name" : "item_universal_soul_gr4",
+    "quantity"  : 1
+}
+
+
+ФРАГМЕНТЫ КЛАССОВ
+60 фрагментов - 1 герой определенного класса
+Дамагер
+{
+    "type"      : "ITEM",
+    "item_name" : "item_fragment_dmgr_gr1",
+    "quantity"  : 60
+}
+Танк
+{
+    "type"      : "ITEM",
+    "item_name" : "item_fragment_tank_gr1",
+    "quantity"  : 60
+}
+Саппорт
+{
+    "type"      : "ITEM",
+    "item_name" : "item_fragment_supp_gr1",
+    "quantity"  : 60
+}
+
+ПЫЛАЮЩИЙ МЕТЕОРИТ И АУРЫ ГЕРОЕВ
+Версия у игроков должна быть не менее 2.2
+{
+    "type"      : "ITEM",
+    "item_name" : "item_meteorite",
+    "quantity"  : 1
+}
+
+
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_joseph_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_tiara_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_ghorm_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_rose_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_ja_van_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_tomas_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_ridael_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_avalon_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_drogo_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_ziuk_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_rigzash_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_kuldjar_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_rabba_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_brina_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_condrat_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_agra_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_gabriella_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_selina_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_larion_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_chas_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_harumi_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_drowzet_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_marylee_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_tao_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_violet_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_imps_ballista_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_airon_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_ingrid_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_tilion_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_lilith_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_nurzak_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_morrigan_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_zoryg_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_may_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_azarellia_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_grido_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_baison_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_otta_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_toshi_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_yoshi_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_ragnar_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_ukun_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_ailiri_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_cimmeria_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_walter_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_vector_fragment",
+     "quantity"  : 1
+}
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_kane_fragment",
+     "quantity"  : 1
+}
+Версия у игроков должна быть не менее 2.2.21
+{
+     "type"      : "ITEM",
+     "item_name" : "hero_aura_item_anette_fragment",
+     "quantity"  : 1
+}
+
+ОЧКИ ВИП за покупку
+За 1$ дается - 50 очков ВИПа. В инаппах в конце приписка с1,c2,c10,..c50,c75,c100 что означает сумму в долларах.
+{
+    "type"      : "ITEM",
+    "item_name" : "item_vip_points_pay",
+    "quantity"  : 50
+}
+
+СНАРЯЖЕНИЕ
+Снаряжение разбиты по 3 классам героев и 4 типам - Оружие, Доп. Оружие, Доспех, Перчатки. А также грейдам.  
+{
+    "type"       : "GEAR",
+    "item_name"  : "gear_supp_weapon_grade1",
+    "quantity"   : 1
+}
+Список снаряжения
+Серое снаряжение Новичка выпадает со старта
+Группа снаряжения первого грейда для dmgr
+"gear_dmgr_weapon_grade1" 
+"gear_dmgr_offhand_grade1"
+"gear_dmgr_body_grade1"   
+"gear_dmgr_gloves_grade1"
+Группа снаряжения первого грейда для tank
+"gear_tank_weapon_grade1" 
+"gear_tank_offhand_grade1"
+"gear_tank_body_grade1"   
+"gear_tank_gloves_grade1"
+Группа снаряжения первого грейда для supp
+"gear_supp_weapon_grade1" 
+"gear_supp_offhand_grade1"
+"gear_supp_body_grade1"   
+"gear_supp_gloves_grade1"
+
+Зеленое снаряжение Ученика выпадает с 25 стейджа
+Группа снаряжения второго грейда для dmgr
+"gear_dmgr_weapon_grade2" 
+"gear_dmgr_offhand_grade2"
+"gear_dmgr_body_grade2"   
+"gear_dmgr_gloves_grade2"
+Группа снаряжения второго грейда для tank
+"gear_tank_weapon_grade2" 
+"gear_tank_offhand_grade2"
+"gear_tank_body_grade2"   
+"gear_tank_gloves_grade2"
+Группа снаряжения второго грейда для supp
+"gear_supp_weapon_grade2" 
+"gear_supp_offhand_grade2"
+"gear_supp_body_grade2"   
+"gear_supp_gloves_grade2" 
+
+Синее снаряжение Адепта выпадает с 105 стейджа
+Группа снаряжения третьего грейда для dmgr
+"gear_dmgr_weapon_grade3" 
+"gear_dmgr_offhand_grade3"
+"gear_dmgr_body_grade3"   
+"gear_dmgr_gloves_grade3"
+Группа снаряжения третьего грейда для tank
+"gear_tank_weapon_grade3" 
+"gear_tank_offhand_grade3"
+"gear_tank_body_grade3"   
+"gear_tank_gloves_grade3"
+Группа снаряжения третьего грейда для supp
+"gear_supp_weapon_grade3" 
+"gear_supp_offhand_grade3"
+"gear_supp_body_grade3"   
+"gear_supp_gloves_grade3"
+
+Редкое синее снаряжение Адепта выпадает с 225 стейджа
+Группа снаряжения третьего грейда + для dmgr
+"gear_dmgr_weapon_grade3_plus" 
+"gear_dmgr_offhand_grade3_plus"
+"gear_dmgr_body_grade3_plus"   
+"gear_dmgr_gloves_grade3_plus"
+Группа снаряжения третьего грейда + для tank
+"gear_tank_weapon_grade3_plus" 
+"gear_tank_offhand_grade3_plus"
+"gear_tank_body_grade3_plus"   
+"gear_tank_gloves_grade3_plus"
+Группа снаряжения третьего грейда + для supp
+"gear_supp_weapon_grade3_plus" 
+"gear_supp_offhand_grade3_plus"
+"gear_supp_body_grade3_plus"   
+"gear_supp_gloves_grade3_plus"
+
+Фиолетовое снаряжение Мастера выпадает с 345 стейджа
+Группа снаряжения четвертого грейда для dmgr
+"gear_dmgr_weapon_grade4" 
+"gear_dmgr_offhand_grade4"
+"gear_dmgr_body_grade4"   
+"gear_dmgr_gloves_grade4"
+Группа снаряжения четвертого грейда для tank
+"gear_tank_weapon_grade4" 
+"gear_tank_offhand_grade4"
+"gear_tank_body_grade4"   
+"gear_tank_gloves_grade4"
+Группа снаряжения четвертого грейда для supp
+"gear_supp_weapon_grade4" 
+"gear_supp_offhand_grade4"
+"gear_supp_body_grade4"   
+"gear_supp_gloves_grade4"
+
+Редкое фиолетовое снаряжение Мастера выпадает с 465 стейджа
+Группа снаряжения четвертого + грейда для dmgr
+"gear_dmgr_weapon_grade4_plus" 
+"gear_dmgr_offhand_grade4_plus"
+"gear_dmgr_body_grade4_plus"   
+"gear_dmgr_gloves_grade4_plus"
+Группа снаряжения четвертого + грейда для tank
+"gear_tank_weapon_grade4_plus" 
+"gear_tank_offhand_grade4_plus"
+"gear_tank_body_grade4_plus"   
+"gear_tank_gloves_grade4_plus"
+Группа снаряжения четвертого + грейда для supp
+"gear_supp_weapon_grade4_plus" 
+"gear_supp_offhand_grade4_plus"
+"gear_supp_body_grade4_plus"   
+"gear_supp_gloves_grade4_plus"
+
+Золотое снаряжение Великого Мастера выпадает с 585 стейджа
+Группа снаряжения пятого грейда для dmgr
+"gear_dmgr_weapon_grade5" 
+"gear_dmgr_offhand_grade5"
+"gear_dmgr_body_grade5"   
+"gear_dmgr_gloves_grade5"
+Группа снаряжения пятого грейда для tank
+"gear_tank_weapon_grade5" 
+"gear_tank_offhand_grade5"
+"gear_tank_body_grade5"   
+"gear_tank_gloves_grade5"
+Группа снаряжения пятого грейда для supp
+"gear_supp_weapon_grade5" 
+"gear_supp_offhand_grade5"
+"gear_supp_body_grade5"   
+"gear_supp_gloves_grade5"
+
+ПРЕДМЕТЫ ЛАБИРИНТА И СОБЫТИЙ В БОЮ
+Предметы применяются в боевых события кампании и лабиринта
+Пример
+{
+    "type"      : "ITEM",
+    "item_name" : "item_torch_set",
+    "quantity"  : 1
+}
+Список предметов лабиринта
+item_resurrection_scroll - воскресающий свиток
+item_torch_set - факел
+item_food_supplies  - еда
+item_medical_bandages - медикаменты
+item_vigor_potion - зелье бодрости
+
+Список общих предметов
+item_hiking_tools - походные инструменты
+item_holy_water - святая вода
+item_medicinal_herb - лечебные травы
+item_pick_set - набор отмычек
+ 
+ИТЕМЫ DISCORD
+Версия у игроков должна быть не менее 1.0.59
+Шаблон на сервере "discord_item"
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_profile_shield_discord",
+    "quantity"  : 1
+},
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_frame_discord",
+    "quantity"  : 1
+},
+
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_discord",
+    "quantity"  : 1
+}
+ИТЕМ DISCORD EVENT
+Версия у игроков должна быть не менее 1.0.64
+Шаблон на сервере "discord_item"
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_dragon_slayer",
+    "quantity"  : 1
+}
+
+ИТЕМ STARDUST И ИМЕННОЕ ОРУЖИЕ ГЕРОЕВ
+Версия у игроков должна быть не менее 1.1
+Шаблон на сервере "personal_stardust"
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_stardust",
+    "quantity"  : 100
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_joseph_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_avalon_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_rose_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_tiara_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_ghorm_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_kuldjar_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_brina_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_airon_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_imps_ballista_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_nurzak_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_lilith_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_ingrid_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_violet_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_marylee_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_drowzet_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_harumi_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_larion_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_selina_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_gabriella_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_condrat_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_rigzash_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_ziuk_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_morrigan_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_tilion_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_zoryg_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_ja_van_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_tomas_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_drogo_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_ridael_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_rabba_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_agra_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_tao_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_grido_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_may_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_baison_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_azarellia_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_otta_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_toshi_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_yoshi_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_ragnar_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_ukun_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_ailiri_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_cimmeria_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_walter_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_vector_fragment",
+    "quantity"  : 50
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_kane_fragment",
+    "quantity"  : 50
+}
+Версия у игроков должна быть не менее 2.2.21
+{
+    "type"      : "ITEM",
+    "item_name" : "signature_item_anette_fragment",
+    "quantity"  : 50
+}
+
+
+ИТЕМ DEVIL SEALS
+Версия у игроков должна быть не менее 1.1.3
+23.11.2022 23:59 все печати будут сконвертированы в медали героя.
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_halloween_event_activity",
+    "quantity"  : 10
+}
+
+ИТЕМЫ АВАТАРЫ, РАМКИ, ГЕРБЫ 
+BLACK FRIDAY 2022
+Версия у игроков должна быть не менее 1.1.4
+Шаблон на сервере "discord_item", заменить item_name на нужный
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_coin",
+    "quantity"  : 1
+},
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_frame_black_friday_2022",
+    "quantity"  : 1
+},
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_profile_shield_black_friday_2022",
+    "quantity"  : 1
+}
+BLACK FRIDAY 2025
+Версия у игроков должна быть не менее 2.2.28
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_zoryg",
+    "quantity"  : 1
+},
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_frame_tavern",
+    "quantity"  : 1
+},
+{
+    "type"      : "ITEM",
+    "item_name" : "black_friday_2024_match_three",
+    "quantity"  : 1
+},
+{
+    "type"      : "ITEM",
+    "item_name" : "black_friday_event_2024_activity_cloth",
+    "quantity"  : 1
+},
+{
+    "type"      : "ITEM",
+    "item_name" : "black_friday_event_2024_activity_scoop",
+    "quantity"  : 1
+},
+{
+    "type"      : "ITEM",
+    "item_name" : "black_friday_event_2024_activity_broom",
+    "quantity"  : 1
+}
+XMASS 2023
+Версия у игроков должна быть не менее 1.1.6
+{
+      "type"      : "ITEM",
+      "item_name" : "item_player_avatar_icon_wreath",
+      "quantity"  : 1
+}
+
+{
+       "type"      : "ITEM",
+       "item_name" : "item_player_avatar_icon_krampus",
+       "quantity"  : 1
+}
+
+{
+       "type"      : "ITEM",
+       "item_name" : "item_player_avatar_frame_new_year_2023",
+       "quantity"  : 1
+}
+
+{
+       "type"      : "ITEM",
+       "item_name" : "item_player_profile_shield_new_year_2023",
+       "quantity"  : 1
+}
+BOOKWORM 2023
+Версия у игроков должна быть не менее 1.1.13
+{
+      "type"      : "ITEM",
+      "item_name" : "item_player_avatar_icon_bookworm",
+      "quantity"  : 1
+}
+
+{
+      "type"      : "ITEM",
+      "item_name" : "item_player_avatar_frame_bookworm",
+      "quantity"  : 1
+}
+ПРОПУСК ХРАНИТЕЛЯ
+Версия у игроков должна быть не менее 1.1.10
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "title",
+        "message"      : "message",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 1000
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAActivateBattlePass",
+                "battle_pass_type" : "SAPPER_EVENT_PASS"
+            }
+        ]
+    }
+}
+
+ПОРТАЛЬНЫЙ КЛЮЧ
+Версия у игроков должна быть не менее 1.1.10
+
+{
+   "type"      : "ITEM",
+   "item_name" : "item_sapper_event_activity_key",
+   "quantity"  : 1
+}
+ЗОЛОТАЯ РУДА
+{
+   "type"      : "ITEM",
+   "item_name" : "item_sapper_event_activity_ore",
+   "quantity"  : 1
+}
+
+ПУШЕЧНЫЙ ВЫСТРЕЛ
+Версия у игроков должна быть не менее 1.1.20
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_pirates_event_activity_shooter",
+    "quantity"  : 1
+}
+ПРОКЛЯТЫЕ МОНЕТЫ
+Версия у игроков должна быть не менее 1.1.20
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_pirates_event_activity",
+    "quantity"  : 1
+}
+
+VAMPIRE CASTLE
+Версия у игроков должна быть не менее 1.1.22
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_vampire_castle_event_activity",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_vampire",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_bat",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_frame_vampire_castle",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_profile_shield_vampire_castle",
+    "quantity"  : 1
+}
+HALLOWEEN 2023
+Версия у игроков должна быть не менее 1.1.28
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_card_halloween_event_activity",
+    "quantity"  : 1
+}
+GLADIATOR EVENT
+Версия у игроков должна быть не менее 2.0.10
+{
+    "type"      : "ITEM",
+    "item_name" : "item_gladiator_event_activity_monopolia",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_gladiator_event_activity_dmg",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_gladiator_event_activity_tnk",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_gladiator_event_activity_spr",
+    "quantity"  : 1
+}
+Аватары
+Версия у игроков должна быть не менее 2.1.5
+{
+      "type"      : "ITEM",
+      "item_name" : "item_player_avatar_icon_dog",
+      "quantity"  : 1
+}
+{
+      "type"      : "ITEM",
+      "item_name" : "item_player_avatar_icon_cat",
+      "quantity"  : 1
+}
+DISCORD EVENT
+Версия у игроков должна быть не менее 2.0.10
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_moth_of_light",
+    "quantity"  : 1
+}
+
+FORTUNE TELLER
+Версия у игроков должна быть не менее 2.2.5
+{
+    "type"      : "ITEM",
+    "item_name" : "item_coin_fortune_teller_event_activity",
+    "quantity"  : 1
+}
+999 БЕСПЛАТНЫХ ПРИЗЫВОВ ГЕРОЕВ
+Версия у игроков должна быть не менее 2.1
+Активация функции сбора двух наград
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "title",
+        "message"      : "message",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "id"        : "avatar_icon",
+                    "type"      : "ITEM",
+                    "item_name" : "item_player_avatar_icon_summons_event_demon",
+                    "quantity"  : 1
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 1500
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAIncOfferPurchasesCount",
+                "offer_name" : "free_summons_event_offer_additional_gacha_reward"
+            }
+        ]
+    }
+}
+
+Активация функции сброса таймеров порталов
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "title",
+        "message"      : "message",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "id"        : "avatar_icon",
+                    "type"      : "ITEM",
+                    "item_name" : "item_player_avatar_icon_summons_event_angel",
+                    "quantity"  : 1
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 1000
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAIncOfferPurchasesCount",
+                "offer_name" : "free_summons_event_offer_open_all_gachas"
+            }
+        ]
+    }
+}
+
+999 БЕСПЛАТНЫХ ПРИЗЫВОВ ПИТОМЦЕВ
+Версия у игроков должна быть не менее 2.2.3
+Активация функции сбора двух наград
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "title",
+        "message"      : "message",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "id"        : "avatar_icon",
+                    "type"      : "ITEM",
+                    "item_name" : "item_player_avatar_icon_pet_bag",
+                    "quantity"  : 1
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 1500
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAIncOfferPurchasesCount",
+                "offer_name" : "free_summons_pets_event_offer_additional_gacha_reward"
+            }
+        ]
+    }
+}
+
+Активация функции сброса таймеров порталов
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "title",
+        "message"      : "message",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "id"        : "avatar_icon",
+                    "type"      : "ITEM",
+                    "item_name" : "item_player_avatar_icon_pet_chest",
+                    "quantity"  : 1
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 1000
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAIncOfferPurchasesCount",
+                "offer_name" : "free_summons_pets_event_offer_open_all_gachas"
+            }
+        ]
+    }
+}
+DISCORD 10K
+Версия у игроков должна быть не менее 2.1
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_discord_10k",
+    "quantity"  : 1
+}
+БУСТЕРЫ УТОПИИ ДРАКОНОВ
+Версия у игроков должна быть не менее 2.1
+{
+    "type"      : "ITEM",
+    "item_name" : "item_dragon_utopia_boost_spear",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_dragon_utopia_boost_mace",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_dragon_utopia_boost_magic_sword",
+    "quantity"  : 1
+}
+ФЕСТИВАЛЬ ЕДЫ
+Версия у игроков должна быть не менее 2.1.4
+Руна ивента
+{
+    "type"      : "ITEM",
+    "item_name" : "birthday_event_2024_boss_item_rune",
+    "quantity"  : 1
+}
+Игровые Жетоны для мини игры
+{
+    "type"      : "ITEM",
+    "item_name" : "birthday_event_2024_match_three",
+    "quantity"  : 1
+}
+Бустеры для мини игры
+{
+    "type"      : "ITEM",
+    "item_name" : "item_birthday_event_2024_activity_cleaver",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_birthday_event_2024_activity_knife",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_birthday_event_2024_activity_pan",
+    "quantity"  : 1
+}
+
+Бустеры для битв с боссом
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chinese_2024_event_activity_petard",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chinese_2024_event_activity_mace",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chinese_2024_event_activity_crossbow",
+    "quantity"  : 1
+}
+Аватары
+{
+      "type"      : "ITEM",
+      "item_name" : "item_player_avatar_icon_cook",
+      "quantity"  : 1
+}
+{
+      "type"      : "ITEM",
+      "item_name" : "item_player_avatar_icon_food_peddler",
+      "quantity"  : 1
+}
+ДРАКОНЬИ ВЫСОТЫ
+Версия у игроков должна быть не менее 2.2.4
+Храмовые монеты
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chinese_new_year_event_activity",
+    "quantity"  : 1
+}
+Бустеры
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chinese_2024_event_activity_petard",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chinese_2024_event_activity_crossbow",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_chinese_2024_event_activity_mace",
+    "quantity"  : 1
+}
+ПОЛЕТ АВАЛОНА
+Версия у игроков должна быть не менее 2.2.8
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_fly_shooter_event_activity_feather",
+    "quantity"  : 1
+}
+ПОВЕЛИТЕЛЬ БЕЗДНЫ ПРОТИВ СИЛ ДОБРА
+Версия у игроков должна быть не менее 2.2.10
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_coin_balrog_vs_forces_of_good_event_activity",
+    "quantity"  : 1
+}
+
+АКЦИЯ ДАРЫ ДРЕВНИХ
+Версия у игроков должна быть не менее 2.2.17
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_gifts_ancients_event",
+    "quantity"  : 1
+}
+ПОВЕЛИТЕЛИ НОЧИ
+Версия у игроков должна быть не менее 2.2.21
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_anniversary_2025_move_event",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_anniversary_2025_event_mini_game_search",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_vampire_castle_event_activity",
+    "quantity"  : 1
+}
+Аватар - Кубок
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_anniversary_2025",
+    "quantity"  : 1
+}
+Рамка - Повелители Ночи
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_frame_anniversary_2025",
+    "quantity"  : 1
+}
+Герб - Повелители Ночи
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_profile_shield_anniversary_2025",
+    "quantity"  : 1
+}
+Итемы для конкурса в discord:
+Аватар - День Рождения 2025
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_anniversary_community_2025",
+    "quantity"  : 1
+}
+Рамка - День Рождения 2025
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_frame_anniversary_community_2025",
+    "quantity"  : 1
+}
+Герб - День Рождения 2025
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_profile_shield_anniversary_community_2025",
+    "quantity"  : 1
+}
+БАЙКИ У КОСТРА
+Версия у игроков должна быть не менее 2.2.26
+
+Аватар - Хранитель Подземелий
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_icon_dungeon_keeper",
+    "quantity"  : 1
+}
+Рамка - Нить Судьбы
+{
+    "type"      : "ITEM",
+    "item_name" : "item_player_avatar_frame_thread_fate",
+    "quantity"  : 1
+}
+
+
+ИТЕМ MAGIC SEED
+Версия у игроков должна быть не менее 2.0
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_magic_seed",
+    "quantity"  : 1
+}
+
+ИТЕМ PET NEEDS
+Версия у игроков должна быть не менее 2.0
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_pet_training",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_pet_bowl",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "item_pet_toys",
+    "quantity"  : 1
+}
+
+
+
+ИТЕМ GPVP MARKET COIN
+Версия у игроков должна быть не менее 2.2.7
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_gpvp_market_coin",
+    "quantity"  : 1
+}
+ИТЕМ MAGIC BEAN
+Версия у игроков должна быть не менее 2.2.18
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_magic_bean",
+    "quantity"  : 1
+}
+ИТЕМ MОНЕТА ФОРТУНЫ
+Версия у игроков должна быть не менее 2.2.5
+
+{
+    "type"      : "ITEM",
+    "item_name" : "item_coin_fortune_teller_event_activity",
+    "quantity"  : 1
+}
+ИТЕМ РУНЫ СНАРЯЖЕНИЯ
+Версия у игроков должна быть не менее 2.2.19
+
+{
+    "type"      : "ITEM",
+    "item_name" : "gear_rune_dust",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "gear_rune_rank_1",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "gear_rune_rank_2",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "gear_rune_rank_3",
+    "quantity"  : 1
+}
+Руны ниже пока НЕ используются в игре, не отсылать!
+{
+    "type"      : "ITEM",
+    "item_name" : "gear_rune_rank_4",
+    "quantity"  : 1
+}
+{
+    "type"      : "ITEM",
+    "item_name" : "gear_rune_rank_5",
+    "quantity"  : 1
+}
+МЕСЯЧНЫЕ КАРТЫ с версии 2.2.26
+Гемы - 
+
+{
+    "init_info":
+    {
+        "type"     	: "COMMON",
+        "title"    	: "Monthly Card",
+        "message"  	: "The monthly card has been successfully activated. Have glorious battles!",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	: "RESOURCE",
+                    "resource" : "gem",
+                    "quantity" : 100
+                },
+                {
+                    "type"  	: "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 250
+                }
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                                   "name" : "GAActivateSubscription",
+                                   "subscription_name" : "gem_common"
+            }
+        ]
+    }
+}
+
+Медали героя - 
+
+{
+    "init_info":
+    {
+        "type"     	: "COMMON",
+        "title"    	: "Monthly Card",
+        "message"  	: "The monthly card has been successfully activated. Have glorious battles!",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	: "RESOURCE",
+                    "resource" : "hero_medal",
+                    "quantity" : 75
+                },
+                {
+                    "type"  	: "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 250
+                }
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                                   "name" : "GAActivateSubscription",
+                                   "subscription_name" : "hero_medal_common"
+            }
+        ]
+    }
+}
+
+Магические Семена - открываются в игре с 26 стейджа. 
+
+{
+    "init_info":
+    {
+        "type"     	: "COMMON",
+        "title"    	: "Monthly Card",
+        "message"  	: "The monthly card has been successfully activated. Have glorious battles!",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	: "ITEM",
+                    "item_name" : "item_magic_seed",
+                    "quantity" : 150
+                },
+                {
+                    "type"  	: "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 250
+                }
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                                   "name" : "GAActivateSubscription",
+                                   "subscription_name" : "item_magic_seed_common"
+            }
+        ]
+    }
+}
+
+
+Магические Бобы - открываются в игре с 346 стейджа.
+
+{
+    "init_info":
+    {
+        "type"     	: "COMMON",
+        "title"    	: "Monthly Card",
+        "message"  	: "The monthly card has been successfully activated. Have glorious battles!",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	: "ITEM",
+                    "item_name" : "item_magic_bean",
+                    "quantity" : 125
+                },
+                {
+                    "type"  	: "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 250
+                }
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                                   "name" : "GAActivateSubscription",
+                                   "subscription_name" : "item_magic_bean_common"
+            }
+        ]
+    }
+}
+
+Звёздная Пыль - открываются в игре с 266 стейджа.
+
+{
+    "init_info":
+    {
+        "type"     	: "COMMON",
+        "title"    	: "Monthly Card",
+        "message"  	: "The monthly card has been successfully activated. Have glorious battles!",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	: "ITEM",
+                    "item_name" : "item_stardust",
+                    "quantity" : 200
+                },
+                {
+                    "type"  	: "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 250
+                }
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                                   "name" : "GAActivateSubscription",
+                                   "subscription_name" : "item_stardust_common"
+            }
+        ]
+    }
+}
+
+Пылающие Метеориты - открываются в игре с 706 стейджа.
+
+{
+    "init_info":
+    {
+        "type"     	: "COMMON",
+        "title"    	: "Monthly Card",
+        "message"  	: "The monthly card has been successfully activated. Have glorious battles!",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	: "ITEM",
+                    "item_name" : "item_meteorite",
+                    "quantity" : 250
+                },
+                {
+                    "type"  	: "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 250
+                }
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                                   "name" : "GAActivateSubscription",
+                                   "subscription_name" : "item_meteorite_common"
+            }
+        ]
+    }
+}
+
+МЕСЯЧНЫЕ КАРТЫ ЛЮКС с версии игры 2.2.26
+Гемы - 
+
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "Lux Monthly Card",
+        "message"      : "The Lux Monthly card is succefully activated.",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type"     : "RESOURCE",
+                    "resource" : "gem",
+                    "quantity" : 500
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 750
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAActivateSubscription",
+                "subscription_type" : "gem_lux"
+            }
+        ]
+    }
+}
+
+Медали героя - 
+
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "Lux Monthly Card",
+        "message"      : "The Lux Monthly card is succefully activated.",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	: "RESOURCE",
+                    "resource" : "hero_medal",
+                    "quantity" : 400
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 750
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAActivateSubscription",
+                "subscription_type" : "hero_medal_lux"
+            }
+        ]
+    }
+}
+
+Магические Семена - открываются в игре с 26 стейджа.
+
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "Lux Monthly Card",
+        "message"      : "The Lux Monthly card is succefully activated.",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	     : "ITEM",
+                    "item_name" : "item_magic_seed",
+                    "quantity"  : 750
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 750
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAActivateSubscription",
+                "subscription_type" : "item_magic_seed_lux"
+            }
+        ]
+    }
+}
+
+Магические Бобы - открываются в игре с 346 стейджа.
+
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "Lux Monthly Card",
+        "message"      : "The Lux Monthly card is succefully activated.",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	     : "ITEM",
+                    "item_name" : "item_magic_bean",
+                    "quantity"  : 625
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 750
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAActivateSubscription",
+                "subscription_type" : "item_magic_bean_lux"
+            }
+        ]
+    }
+}
+
+Звёздная Пыль - открываются в игре с 266 стейджа.
+
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "Lux Monthly Card",
+        "message"      : "The Lux Monthly card is succefully activated.",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	     : "ITEM",
+                    "item_name" : "item_stardust",
+                    "quantity"  : 1000
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 750
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAActivateSubscription",
+                "subscription_type" : "item_stardust_lux"
+            }
+        ]
+    }
+}
+
+
+Пылающие Метеориты - открываются в игре с 706 стейджа.
+
+{
+    "init_info":
+    {
+        "type"         : "COMMON",
+        "title"        : "Lux Monthly Card",
+        "message"      : "The Lux Monthly card is succefully activated.",
+        "rewards" :
+        {
+            "rewards_list" :
+            [
+                {
+                    "type" 	     : "ITEM",
+                    "item_name" : "item_meteorite",
+                    "quantity"  : 1250
+                },
+                {
+                    "type"      : "ITEM",
+                    "item_name" : "item_vip_points_pay",
+                    "quantity"  : 750
+                }    
+            ]
+        },
+        "auto_game_actions" :
+        [
+            {
+                "name" : "GAActivateSubscription",
+                "subscription_type" : "item_meteorite_lux"
+            }
+        ]
+    }
+}

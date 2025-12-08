@@ -1,0 +1,102 @@
+================================================================================
+ПОЛНЫЙ СПИСОК ИКОНОК БЕЗ GAME CODES
+================================================================================
+Всего: 81 файлов
+
+
+================================================================================
+EPIC WEAPON ICONS (50 файлов)
+================================================================================
+  1. Ragnar_epic_weapon_icon.png
+  2. Toshi_epic_weapon_icon.png
+  3. Ukun_epic_weapon_icon.png
+  4. Yoshi_epic_weapon_icon.png
+  5. agra_epic_weapon_icon.png
+  6. ailiri_epic_weapon_icon.png
+  7. airon_epic_weapon_icon.png
+  8. anette_epic_weapon_icon.png
+  9. avalon_epic_weapon_icon.png
+ 10. azarellia_epic_weapon_icon.png
+ 11. baison_epic_weapon_icon.png
+ 12. bo_epic_weapon_icon.png
+ 13. brina_epic_weapon_icon.png
+ 14. chas_epic_weapon_icon.png
+ 15. cimmeria_epic_weapon_icon.png
+ 16. condrat_epic_weapon_icon.png
+ 17. drogo_epic_weapon_icon.png
+ 18. drowzet_epic_weapon_icon.png
+ 19. eliana_epic_weapon_icon.png
+ 20. gabriela_epic_weapon_icon.png
+ 21. ghorm_epic_weapon_icon.png
+ 22. grido_epic_weapon_icon.png
+ 23. harumi_epic_weapon_icon.png
+ 24. imps_ballista_epic_weapon_icon.png
+ 25. ingrid_epic_weapon_icon.png
+ 26. ja_van_epic_weapon_icon.png
+ 27. joseph_epic_weapon_icon.png
+ 28. kane_epic_weapon_icon.png
+ 29. kuldjar_epic_weapon_icon.png
+ 30. larion_epic_weapon_icon.png
+ 31. lilith_epic_weapon_icon.png
+ 32. marylee_epic_weapon_icon.png
+ 33. may_epic_weapon_icon.png
+ 34. morrigan_epic_weapon_icon.png
+ 35. nurzak_epic_weapon_icon.png
+ 36. otta_epic_weapon_icon.png
+ 37. rabba_epic_weapon_icon.png
+ 38. ridael_epic_weapon_icon.png
+ 39. rigzash_epic_weapon_icon.png
+ 40. rose_epic_weapon_icon.png
+ 41. selina_epic_weapon_icon.png
+ 42. tao_epic_weapon_icon.png
+ 43. tiara_epic_weapon_icon.png
+ 44. tilion_epic_weapon_icon.png
+ 45. tomas_epic_weapon_icon.png
+ 46. vector_epic_weapon_icon.png
+ 47. violet_epic_weapon_icon.png
+ 48. walter_epic_weapon_icon.png
+ 49. ziuk_epic_weapon_icon.png
+ 50. zoryg_epic_weapon_icon.png
+
+================================================================================
+FALLEN HERO ICONS (6 файлов)
+================================================================================
+  1. icon_fallen_hero_edmund.png
+  2. icon_fallen_hero_fugi.png
+  3. icon_fallen_hero_imset.png
+  4. icon_fallen_hero_sangus.png
+  5. icon_fallen_hero_slappy.png
+  6. icon_fallen_hero_una.png
+
+================================================================================
+MISCELLANEOUS ITEMS (22 файлов)
+================================================================================
+  1. item_badge.png
+  2. item_christmas_rune.png
+  3. item_global_pvp_ticket.png
+  4. item_iron_ingot_gr1.png
+  5. item_iron_ingot_gr2.png
+  6. item_iron_ingot_gr3.png
+  7. item_iron_ore.png
+  8. item_lite_pvp_ticket.png
+  9. item_mana.png
+ 10. item_piece_of_soul.png
+ 11. item_provision.png
+ 12. item_quest_daily.png
+ 13. item_quest_event_hero_summon.png
+ 14. item_quest_guild_daily.png
+ 15. item_quest_hell.png
+ 16. item_quest_meteorite.png
+ 17. item_quest_mission.png
+ 18. item_quest_prologue.png
+ 19. item_quest_pvp.png
+ 20. item_writ.png
+ 21. item_xmas_merge.png
+ 22. item_xmas_rune.png
+
+================================================================================
+OTHER ICONS (3 файлов)
+================================================================================
+  1. icon_hero_eliana.png
+  2. icon_move_red_cube_flames.png
+  3. icon_ticket_new_pvp_lite.png

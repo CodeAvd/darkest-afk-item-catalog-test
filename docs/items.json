@@ -2124,6 +2124,465 @@
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"hero_aura_item_zorro_fragment\",\n  \"quantity\": 10\n}"
   },
   {
+    "id": "icon_aura_agra",
+    "displayName": "Hero Aura: Agra",
+    "displayNameRu": "Аура героя: Агра",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_agra.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_agra\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_ailiri",
+    "displayName": "Hero Aura: Ailiri",
+    "displayNameRu": "Аура героя: Айлири",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_ailiri.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_ailiri\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_airon",
+    "displayName": "Hero Aura: Airon",
+    "displayNameRu": "Аура героя: Айрон",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_airon.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_airon\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_anette",
+    "displayName": "Hero Aura: Anette",
+    "displayNameRu": "Аура героя: Анетт",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_anette.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_anette\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_avalon",
+    "displayName": "Hero Aura: Avalon",
+    "displayNameRu": "Аура героя: Авалон",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_avalon.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_avalon\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_azarellia",
+    "displayName": "Hero Aura: Azarellia",
+    "displayNameRu": "Аура героя: Азареллия",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_azarellia.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_azarellia\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_baison",
+    "displayName": "Hero Aura: Baison",
+    "displayNameRu": "Аура героя: Байсон",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_baison.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_baison\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_bo",
+    "displayName": "Hero Aura: Bo",
+    "displayNameRu": "Аура героя: Бо",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_bo.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_bo\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_brina",
+    "displayName": "Hero Aura: Brina",
+    "displayNameRu": "Аура героя: Брина",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_brina.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_brina\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_chas",
+    "displayName": "Hero Aura: Chas",
+    "displayNameRu": "Аура героя: Чейс",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_chas.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_chas\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_cimmeria",
+    "displayName": "Hero Aura: Cimmeria",
+    "displayNameRu": "Аура героя: Киммерия",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_cimmeria.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_cimmeria\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_condrat",
+    "displayName": "Hero Aura: Condrat",
+    "displayNameRu": "Аура героя: Кондрат",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_condrat.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_condrat\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_drogo",
+    "displayName": "Hero Aura: Drogo",
+    "displayNameRu": "Аура героя: Дрого",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_drogo.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_drogo\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_drowzet",
+    "displayName": "Hero Aura: Drowzet",
+    "displayNameRu": "Аура героя: Драузет",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_drowzet.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_drowzet\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_eliana",
+    "displayName": "Hero Aura: Eliana",
+    "displayNameRu": "Аура героя: Элиана",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_eliana.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_eliana\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_gabriella",
+    "displayName": "Hero Aura: Gabriella",
+    "displayNameRu": "Аура героя: Габриэлла",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_gabriella.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_gabriella\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_ghorm",
+    "displayName": "Hero Aura: Ghorm",
+    "displayNameRu": "Аура героя: Горм",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_ghorm.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_ghorm\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_grido",
+    "displayName": "Hero Aura: Grido",
+    "displayNameRu": "Аура героя: Гридо",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_grido.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_grido\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_harumi",
+    "displayName": "Hero Aura: Harumi",
+    "displayNameRu": "Аура героя: Харуми",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_harumi.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_harumi\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_imps_ballista",
+    "displayName": "Hero Aura: Imp's Ballista",
+    "displayNameRu": "Аура героя: Баллиста Импа",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_imps_ballista.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_imps_ballista\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_ingrid",
+    "displayName": "Hero Aura: Ingrid",
+    "displayNameRu": "Аура героя: Ингрид",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_ingrid.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_ingrid\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_ja_van",
+    "displayName": "Hero Aura: Ja-Van",
+    "displayNameRu": "Аура героя: Джа-Ван",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_ja_van.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_ja_van\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_jade",
+    "displayName": "Hero Aura: Jade",
+    "displayNameRu": "Аура героя: Джейд",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_jade.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_jade\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_kane",
+    "displayName": "Hero Aura: Kane",
+    "displayNameRu": "Аура героя: Кейн",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_kane.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_kane\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_kuldjar",
+    "displayName": "Hero Aura: Kuldjar",
+    "displayNameRu": "Аура героя: Кулджар",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_kuldjar.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_kuldjar\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_larion",
+    "displayName": "Hero Aura: Larion",
+    "displayNameRu": "Аура героя: Ларион",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_larion.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_larion\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_lilith",
+    "displayName": "Hero Aura: Lilith",
+    "displayNameRu": "Аура героя: Лилит",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_lilith.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_lilith\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_marylee",
+    "displayName": "Hero Aura: MaryLee",
+    "displayNameRu": "Аура героя: МэриЛи",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_marylee.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_marylee\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_may",
+    "displayName": "Hero Aura: May",
+    "displayNameRu": "Аура героя: Мэй",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_may.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_may\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_morrigan",
+    "displayName": "Hero Aura: Morrigan",
+    "displayNameRu": "Аура героя: Морриган",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_morrigan.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_morrigan\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_nurzak",
+    "displayName": "Hero Aura: Nurzak",
+    "displayNameRu": "Аура героя: Нурзак",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_nurzak.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_nurzak\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_otta",
+    "displayName": "Hero Aura: Otta",
+    "displayNameRu": "Аура героя: Отта",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_otta.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_otta\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_rabba",
+    "displayName": "Hero Aura: Rabba",
+    "displayNameRu": "Аура героя: Рабба",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_rabba.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_rabba\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_ragnar",
+    "displayName": "Hero Aura: Ragnar",
+    "displayNameRu": "Аура героя: Рагнар",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_ragnar.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_ragnar\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_ridael",
+    "displayName": "Hero Aura: Ridael",
+    "displayNameRu": "Аура героя: Ридаэль",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_ridael.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_ridael\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_rigzash",
+    "displayName": "Hero Aura: Rigzash",
+    "displayNameRu": "Аура героя: Ригзаш",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_rigzash.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_rigzash\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_rose",
+    "displayName": "Hero Aura: Rose",
+    "displayNameRu": "Аура героя: Роуз",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_rose.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_rose\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_selina",
+    "displayName": "Hero Aura: Selina",
+    "displayNameRu": "Аура героя: Селина",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_selina.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_selina\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_sir_joseph",
+    "displayName": "Hero Aura: Sir Joseph",
+    "displayNameRu": "Аура героя: Сэр Джозеф",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_sir_joseph.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_sir_joseph\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_tao",
+    "displayName": "Hero Aura: Tao",
+    "displayNameRu": "Аура героя: Тао",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_tao.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_tao\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_tiara",
+    "displayName": "Hero Aura: Tiara",
+    "displayNameRu": "Аура героя: Тиара",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_tiara.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_tiara\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_tilion",
+    "displayName": "Hero Aura: Tilion",
+    "displayNameRu": "Аура героя: Тилион",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_tilion.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_tilion\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_tomas",
+    "displayName": "Hero Aura: Tomas",
+    "displayNameRu": "Аура героя: Томас",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_tomas.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_tomas\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_toshi",
+    "displayName": "Hero Aura: Toshi",
+    "displayNameRu": "Аура героя: Тоши",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_toshi.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_toshi\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_ukun",
+    "displayName": "Hero Aura: Ukun",
+    "displayNameRu": "Аура героя: Укун",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_ukun.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_ukun\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_vector",
+    "displayName": "Hero Aura: Vector",
+    "displayNameRu": "Аура героя: Вектор",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_vector.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_vector\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_violet",
+    "displayName": "Hero Aura: Violet",
+    "displayNameRu": "Аура героя: Виолет",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_violet.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_violet\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_walter",
+    "displayName": "Hero Aura: Walter",
+    "displayNameRu": "Аура героя: Уолтер",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_walter.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_walter\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_yoshi",
+    "displayName": "Hero Aura: Yoshi",
+    "displayNameRu": "Аура героя: Йоши",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_yoshi.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_yoshi\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_ziuk",
+    "displayName": "Hero Aura: Ziuk",
+    "displayNameRu": "Аура героя: Зюк",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_ziuk.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_ziuk\",\n  \"quantity\": 1\n}"
+  },
+  {
+    "id": "icon_aura_zoryg",
+    "displayName": "Hero Aura: Zoryg",
+    "displayNameRu": "Аура героя: Зориг",
+    "category": "Hero Aura",
+    "image": "images/icon_aura_zoryg.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"icon_aura_zoryg\",\n  \"quantity\": 1\n}"
+  },
+  {
     "id": "signature_item_agra_fragment",
     "displayName": "Signature: Agra Fragment",
     "displayNameRu": "Сигнатура: Фрагмент Агры",
@@ -2905,5 +3364,959 @@
     "image": "images/black_friday_2024_match_three.png",
     "defaultQuantity": 10,
     "codeSnippet": "{\n  \"type\": \"ITEM\",\n  \"item_name\": \"black_friday_2024_match_three\",\n  \"quantity\": 10\n}"
+  },
+  {
+    "id": "icon_hero_agra",
+    "displayName": "Hero: Agra",
+    "displayNameRu": "Герой: Агра",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_agra.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_agra\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_agra_epic",
+    "displayName": "Hero: Agra (Epic)",
+    "displayNameRu": "Герой: Агра (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_agra_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_agra\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ailiri",
+    "displayName": "Hero: Ailiri",
+    "displayNameRu": "Герой: Айлири",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_ailiri.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ailiri\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ailiri_epic",
+    "displayName": "Hero: Ailiri (Epic)",
+    "displayNameRu": "Герой: Айлири (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_ailiri_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ailiri\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_airon",
+    "displayName": "Hero: Airon",
+    "displayNameRu": "Герой: Айрон",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_airon.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_airon\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_airon_rare",
+    "displayName": "Hero: Airon (Rare)",
+    "displayNameRu": "Герой: Айрон (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_airon_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_airon\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_anette",
+    "displayName": "Hero: Anette",
+    "displayNameRu": "Герой: Анетт",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_anette.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_anette\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_anette_epic",
+    "displayName": "Hero: Anette (Epic)",
+    "displayNameRu": "Герой: Анетт (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_anette_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_anette\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_avalon",
+    "displayName": "Hero: Avalon",
+    "displayNameRu": "Герой: Авалон",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_avalon.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_avalon\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_avalon_epic",
+    "displayName": "Hero: Avalon (Epic)",
+    "displayNameRu": "Герой: Авалон (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_avalon_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_avalon\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_avalon_rare",
+    "displayName": "Hero: Avalon (Rare)",
+    "displayNameRu": "Герой: Авалон (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_avalon_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_avalon\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_azarellia",
+    "displayName": "Hero: Azarellia",
+    "displayNameRu": "Герой: Азареллия",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_azarellia.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_azarellia\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_azarellia_epic",
+    "displayName": "Hero: Azarellia (Epic)",
+    "displayNameRu": "Герой: Азареллия (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_azarellia_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_azarellia\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_azarellia_rare",
+    "displayName": "Hero: Azarellia (Rare)",
+    "displayNameRu": "Герой: Азареллия (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_azarellia_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_azarellia\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_baison",
+    "displayName": "Hero: Baison",
+    "displayNameRu": "Герой: Байсон",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_baison.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_baison\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_baison_epic",
+    "displayName": "Hero: Baison (Epic)",
+    "displayNameRu": "Герой: Байсон (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_baison_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_baison\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_bo",
+    "displayName": "Hero: Bo",
+    "displayNameRu": "Герой: Бо",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_bo.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_bo\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_brina",
+    "displayName": "Hero: Brina",
+    "displayNameRu": "Герой: Брина",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_brina.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_brina\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_brina_rare",
+    "displayName": "Hero: Brina (Rare)",
+    "displayNameRu": "Герой: Брина (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_brina_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_brina\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_chas",
+    "displayName": "Hero: Chas",
+    "displayNameRu": "Герой: Чейс",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_chas.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_chas\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_chas_epic",
+    "displayName": "Hero: Chas (Epic)",
+    "displayNameRu": "Герой: Чейс (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_chas_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_chas\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_cimmeria",
+    "displayName": "Hero: Cimmeria",
+    "displayNameRu": "Герой: Киммерия",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_cimmeria.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_cimmeria\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_cimmeria_epic",
+    "displayName": "Hero: Cimmeria (Epic)",
+    "displayNameRu": "Герой: Киммерия (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_cimmeria_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_cimmeria\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_condrat",
+    "displayName": "Hero: Condrat",
+    "displayNameRu": "Герой: Кондрат",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_condrat.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_condrat\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_condrat_epic",
+    "displayName": "Hero: Condrat (Epic)",
+    "displayNameRu": "Герой: Кондрат (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_condrat_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_condrat\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_drogo",
+    "displayName": "Hero: Drogo",
+    "displayNameRu": "Герой: Дрого",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_drogo.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_drogo\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_drogo_epic",
+    "displayName": "Hero: Drogo (Epic)",
+    "displayNameRu": "Герой: Дрого (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_drogo_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_drogo\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_drowzet",
+    "displayName": "Hero: Drowzet",
+    "displayNameRu": "Герой: Драузет",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_drowzet.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_drowzet\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_drowzet_rare",
+    "displayName": "Hero: Drowzet (Rare)",
+    "displayNameRu": "Герой: Драузет (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_drowzet_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_drowzet\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_gabriella",
+    "displayName": "Hero: Gabriella",
+    "displayNameRu": "Герой: Габриэлла",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_gabriella.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_gabriella\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_gabriella_rare",
+    "displayName": "Hero: Gabriella (Rare)",
+    "displayNameRu": "Герой: Габриэлла (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_gabriella_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_gabriella\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ghorm",
+    "displayName": "Hero: Ghorm",
+    "displayNameRu": "Герой: Горм",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_ghorm.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ghorm\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ghorm_epic",
+    "displayName": "Hero: Ghorm (Epic)",
+    "displayNameRu": "Герой: Горм (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_ghorm_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ghorm\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ghorm_rare",
+    "displayName": "Hero: Ghorm (Rare)",
+    "displayNameRu": "Герой: Горм (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_ghorm_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ghorm\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_grido",
+    "displayName": "Hero: Grido",
+    "displayNameRu": "Герой: Гридо",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_grido.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_grido\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_grido_epic",
+    "displayName": "Hero: Grido (Epic)",
+    "displayNameRu": "Герой: Гридо (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_grido_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_grido\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_grido_rare",
+    "displayName": "Hero: Grido (Rare)",
+    "displayNameRu": "Герой: Гридо (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_grido_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_grido\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_harumi",
+    "displayName": "Hero: Harumi",
+    "displayNameRu": "Герой: Харуми",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_harumi.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_harumi\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_harumi_epic",
+    "displayName": "Hero: Harumi (Epic)",
+    "displayNameRu": "Герой: Харуми (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_harumi_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_harumi\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_harumi_rare",
+    "displayName": "Hero: Harumi (Rare)",
+    "displayNameRu": "Герой: Харуми (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_harumi_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_harumi\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_imps_ballista",
+    "displayName": "Hero: Imp's Ballista",
+    "displayNameRu": "Герой: Баллиста Импа",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_imps_ballista.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_imps_ballista\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ingrid",
+    "displayName": "Hero: Ingrid",
+    "displayNameRu": "Герой: Ингрид",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_ingrid.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ingrid\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ingrid_epic",
+    "displayName": "Hero: Ingrid (Epic)",
+    "displayNameRu": "Герой: Ингрид (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_ingrid_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ingrid\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ja_van",
+    "displayName": "Hero: Ja-Van",
+    "displayNameRu": "Герой: Джа-Ван",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_ja_van.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ja_van\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ja_van_epic",
+    "displayName": "Hero: Ja-Van (Epic)",
+    "displayNameRu": "Герой: Джа-Ван (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_ja_van_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ja_van\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_kane",
+    "displayName": "Hero: Kane",
+    "displayNameRu": "Герой: Кейн",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_kane.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_kane\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_kuldjar",
+    "displayName": "Hero: Kuldjar",
+    "displayNameRu": "Герой: Кулджар",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_kuldjar.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_kuldjar\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_kuldjar_epic",
+    "displayName": "Hero: Kuldjar (Epic)",
+    "displayNameRu": "Герой: Кулджар (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_kuldjar_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_kuldjar\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_larion",
+    "displayName": "Hero: Larion",
+    "displayNameRu": "Герой: Ларион",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_larion.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_larion\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_larion_epic",
+    "displayName": "Hero: Larion (Epic)",
+    "displayNameRu": "Герой: Ларион (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_larion_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_larion\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_larion_rare",
+    "displayName": "Hero: Larion (Rare)",
+    "displayNameRu": "Герой: Ларион (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_larion_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_larion\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_lilith",
+    "displayName": "Hero: Lilith",
+    "displayNameRu": "Герой: Лилит",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_lilith.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_lilith\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_lilith_epic",
+    "displayName": "Hero: Lilith (Epic)",
+    "displayNameRu": "Герой: Лилит (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_lilith_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_lilith\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_lilith_rare",
+    "displayName": "Hero: Lilith (Rare)",
+    "displayNameRu": "Герой: Лилит (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_lilith_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_lilith\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_marylee",
+    "displayName": "Hero: MaryLee",
+    "displayNameRu": "Герой: МэриЛи",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_marylee.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_marylee\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_marylee_epic",
+    "displayName": "Hero: MaryLee (Epic)",
+    "displayNameRu": "Герой: МэриЛи (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_marylee_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_marylee\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_marylee_rare",
+    "displayName": "Hero: MaryLee (Rare)",
+    "displayNameRu": "Герой: МэриЛи (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_marylee_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_marylee\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_may",
+    "displayName": "Hero: May",
+    "displayNameRu": "Герой: Мэй",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_may.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_may\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_may_epic",
+    "displayName": "Hero: May (Epic)",
+    "displayNameRu": "Герой: Мэй (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_may_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_may\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_morrigan",
+    "displayName": "Hero: Morrigan",
+    "displayNameRu": "Герой: Морриган",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_morrigan.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_morrigan\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_morrigan_epic",
+    "displayName": "Hero: Morrigan (Epic)",
+    "displayNameRu": "Герой: Морриган (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_morrigan_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_morrigan\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_morrigan_rare",
+    "displayName": "Hero: Morrigan (Rare)",
+    "displayNameRu": "Герой: Морриган (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_morrigan_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_morrigan\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_nurzak",
+    "displayName": "Hero: Nurzak",
+    "displayNameRu": "Герой: Нурзак",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_nurzak.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_nurzak\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_nurzak_epic",
+    "displayName": "Hero: Nurzak (Epic)",
+    "displayNameRu": "Герой: Нурзак (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_nurzak_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_nurzak\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_nurzak_rare",
+    "displayName": "Hero: Nurzak (Rare)",
+    "displayNameRu": "Герой: Нурзак (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_nurzak_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_nurzak\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_otta",
+    "displayName": "Hero: Otta",
+    "displayNameRu": "Герой: Отта",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_otta.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_otta\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_otta_epic",
+    "displayName": "Hero: Otta (Epic)",
+    "displayNameRu": "Герой: Отта (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_otta_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_otta\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_rabba",
+    "displayName": "Hero: Rabba",
+    "displayNameRu": "Герой: Рабба",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_rabba.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_rabba\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_rabba_epic",
+    "displayName": "Hero: Rabba (Epic)",
+    "displayNameRu": "Герой: Рабба (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_rabba_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_rabba\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ragnar",
+    "displayName": "Hero: Ragnar",
+    "displayNameRu": "Герой: Рагнар",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_ragnar.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ragnar\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ragnar_epic",
+    "displayName": "Hero: Ragnar (Epic)",
+    "displayNameRu": "Герой: Рагнар (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_ragnar_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ragnar\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ridael",
+    "displayName": "Hero: Ridael",
+    "displayNameRu": "Герой: Ридаэль",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_ridael.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ridael\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ridael_epic",
+    "displayName": "Hero: Ridael (Epic)",
+    "displayNameRu": "Герой: Ридаэль (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_ridael_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ridael\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_rigzash",
+    "displayName": "Hero: Rigzash",
+    "displayNameRu": "Герой: Ригзаш",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_rigzash.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_rigzash\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_rigzash_rare",
+    "displayName": "Hero: Rigzash (Rare)",
+    "displayNameRu": "Герой: Ригзаш (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_rigzash_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_rigzash\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_rose",
+    "displayName": "Hero: Rose",
+    "displayNameRu": "Герой: Роуз",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_rose.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_rose\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_rose_rare",
+    "displayName": "Hero: Rose (Rare)",
+    "displayNameRu": "Герой: Роуз (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_rose_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_rose\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_selina",
+    "displayName": "Hero: Selina",
+    "displayNameRu": "Герой: Селина",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_selina.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_selina\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_selina_epic",
+    "displayName": "Hero: Selina (Epic)",
+    "displayNameRu": "Герой: Селина (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_selina_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_selina\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_selina_rare",
+    "displayName": "Hero: Selina (Rare)",
+    "displayNameRu": "Герой: Селина (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_selina_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_selina\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_sir_joseph",
+    "displayName": "Hero: Sir Joseph",
+    "displayNameRu": "Герой: Сэр Джозеф",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_sir_joseph.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_sir_joseph\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_sir_joseph_epic",
+    "displayName": "Hero: Sir Joseph (Epic)",
+    "displayNameRu": "Герой: Сэр Джозеф (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_sir_joseph_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_sir_joseph\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_sir_joseph_rare",
+    "displayName": "Hero: Sir Joseph (Rare)",
+    "displayNameRu": "Герой: Сэр Джозеф (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_sir_joseph_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_sir_joseph\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tao",
+    "displayName": "Hero: Tao",
+    "displayNameRu": "Герой: Тао",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_tao.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tao\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tao_epic",
+    "displayName": "Hero: Tao (Epic)",
+    "displayNameRu": "Герой: Тао (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_tao_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tao\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tiara",
+    "displayName": "Hero: Tiara",
+    "displayNameRu": "Герой: Тиара",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_tiara.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tiara\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tiara_epic",
+    "displayName": "Hero: Tiara (Epic)",
+    "displayNameRu": "Герой: Тиара (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_tiara_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tiara\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tiara_rare",
+    "displayName": "Hero: Tiara (Rare)",
+    "displayNameRu": "Герой: Тиара (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_tiara_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tiara\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tilion",
+    "displayName": "Hero: Tilion",
+    "displayNameRu": "Герой: Тилион",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_tilion.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tilion\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tilion_epic",
+    "displayName": "Hero: Tilion (Epic)",
+    "displayNameRu": "Герой: Тилион (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_tilion_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tilion\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tomas",
+    "displayName": "Hero: Tomas",
+    "displayNameRu": "Герой: Томас",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_tomas.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tomas\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_tomas_epic",
+    "displayName": "Hero: Tomas (Epic)",
+    "displayNameRu": "Герой: Томас (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_tomas_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_tomas\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_toshi",
+    "displayName": "Hero: Toshi",
+    "displayNameRu": "Герой: Тоши",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_toshi.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_toshi\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_toshi_epic",
+    "displayName": "Hero: Toshi (Epic)",
+    "displayNameRu": "Герой: Тоши (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_toshi_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_toshi\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_toshi_rare",
+    "displayName": "Hero: Toshi (Rare)",
+    "displayNameRu": "Герой: Тоши (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_toshi_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_toshi\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ukun",
+    "displayName": "Hero: Ukun",
+    "displayNameRu": "Герой: Укун",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_ukun.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ukun\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_vector",
+    "displayName": "Hero: Vector",
+    "displayNameRu": "Герой: Вектор",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_vector.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_vector\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_violet",
+    "displayName": "Hero: Violet",
+    "displayNameRu": "Герой: Виолет",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_violet.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_violet\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_violet_rare",
+    "displayName": "Hero: Violet (Rare)",
+    "displayNameRu": "Герой: Виолет (Редкий)",
+    "category": "Hero Icon (rare)",
+    "image": "images/icon_hero_violet_rare.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_violet\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_walter",
+    "displayName": "Hero: Walter",
+    "displayNameRu": "Герой: Уолтер",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_walter.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_walter\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_yoshi",
+    "displayName": "Hero: Yoshi",
+    "displayNameRu": "Герой: Йоши",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_yoshi.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_yoshi\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_yoshi_epic",
+    "displayName": "Hero: Yoshi (Epic)",
+    "displayNameRu": "Герой: Йоши (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_yoshi_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_yoshi\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ziuk",
+    "displayName": "Hero: Ziuk",
+    "displayNameRu": "Герой: Зюк",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_ziuk.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ziuk\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_ziuk_epic",
+    "displayName": "Hero: Ziuk (Epic)",
+    "displayNameRu": "Герой: Зюк (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_ziuk_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_ziuk\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_zoryg",
+    "displayName": "Hero: Zoryg",
+    "displayNameRu": "Герой: Зориг",
+    "category": "Hero Icon",
+    "image": "images/icon_hero_zoryg.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_zoryg\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
+  },
+  {
+    "id": "icon_hero_zoryg_epic",
+    "displayName": "Hero: Zoryg (Epic)",
+    "displayNameRu": "Герой: Зориг (Эпический)",
+    "category": "Hero Icon (epic)",
+    "image": "images/icon_hero_zoryg_epic.png",
+    "defaultQuantity": 1,
+    "codeSnippet": "{\n  \"type\"      : \"HERO\",\n  \"hero_name\" : \"hero_zoryg\",\n  \"level\"     : 1,\n  \"grade\"     : 1\n}"
   }
 ]
