@@ -64,6 +64,9 @@ let filterMeta = {
   grades: new Map(),
 };
 
+// Selection state for shift+click range selection
+let lastClickedIndex = null;
+
 // ============================================================================
 // DOM REFERENCES
 // ============================================================================
@@ -107,6 +110,9 @@ const dom = {
   
   // Toast
   toast: document.getElementById("toast"),
+  
+  // Selection bar
+  selectionBar: document.getElementById("selection-bar"),
 };
 
 // ============================================================================
@@ -306,32 +312,21 @@ function applyFilters() {
 }
 
 // ============================================================================
-// MODULE 3: SELECTION LOGIC
+// MODULE 3: SELECTION LOGIC (Phase 4 Enhanced)
 // ============================================================================
 
 /**
- * Toggle item selection state
+ * Toggle item selection state (does NOT modify package)
+ * Selection is just a "focus set" - use bulk actions to add to package
  * @param {string} itemId - Item ID to toggle
  */
 function toggleItemSelection(itemId) {
   if (state.selectedItemIds.has(itemId)) {
     state.selectedItemIds.delete(itemId);
-    state.packageItems.delete(itemId);
   } else {
-    const item = state.items.find(i => i.id === itemId);
-    if (item) {
-      state.selectedItemIds.add(itemId);
-      state.packageItems.set(itemId, {
-        item: item,
-        quantity: state.packageItems.get(itemId)?.quantity || item.defaultQuantity || 1
-      });
-    }
+    state.selectedItemIds.add(itemId);
   }
-  
-  // Re-render affected components (but don't rebuild filter sidebar)
-  const filtered = applyFilters();
-  renderGrid(filtered);
-  renderCompensationPanel();
+  rerenderEverything();
 }
 
 /**
@@ -339,15 +334,13 @@ function toggleItemSelection(itemId) {
  */
 function clearSelection() {
   state.selectedItemIds.clear();
-  state.packageItems.clear();
-  const filtered = applyFilters();
-  renderGrid(filtered);
-  renderCompensationPanel();
+  lastClickedIndex = null;
+  rerenderEverything();
   showToast("Selection cleared");
 }
 
 /**
- * Update quantity for a selected item
+ * Update quantity for an item in the package
  * @param {string} itemId - Item ID
  * @param {number} quantity - New quantity
  */
@@ -358,6 +351,97 @@ function updateItemQuantity(itemId, quantity) {
     state.packageItems.set(itemId, packageItem);
     renderCompensationPanel();
   }
+}
+
+/**
+ * Get currently visible items (filtered + sorted)
+ * @returns {Array} Visible items
+ */
+function getVisibleItems() {
+  const filtered = applyFilters();
+  const sorted = sortItems(filtered);
+  return sorted;
+}
+
+/**
+ * Select all currently visible items
+ */
+function selectAllVisible() {
+  const items = getVisibleItems();
+  state.selectedItemIds.clear();
+  for (const item of items) {
+    state.selectedItemIds.add(item.id);
+  }
+  rerenderEverything();
+  showToast(`Selected ${items.length} visible items`);
+}
+
+/**
+ * Select range of items (for shift+click)
+ * @param {number} fromIndex - Start index
+ * @param {number} toIndex - End index
+ */
+function selectRange(fromIndex, toIndex) {
+  const items = getVisibleItems();
+  const start = Math.min(fromIndex, toIndex);
+  const end = Math.max(fromIndex, toIndex);
+  
+  for (let i = start; i <= end; i++) {
+    const item = items[i];
+    if (!item) continue;
+    state.selectedItemIds.add(item.id);
+  }
+  rerenderEverything();
+}
+
+/**
+ * Move selected items to package
+ * @param {Object} options - Options
+ * @param {string} options.mode - 'increment' or 'replace'
+ */
+function moveSelectedToPackage({ mode = 'increment' } = {}) {
+  let count = 0;
+  
+  for (const id of state.selectedItemIds) {
+    const item = state.items.find(i => i.id === id);
+    if (!item) continue;
+    
+    const existing = state.packageItems.get(id);
+    
+    if (mode === 'replace') {
+      state.packageItems.set(id, {
+        item,
+        quantity: 1
+      });
+    } else {
+      const newQuantity = (existing?.quantity ?? 0) + 1;
+      state.packageItems.set(id, {
+        item,
+        quantity: newQuantity
+      });
+    }
+    count++;
+  }
+  
+  rerenderEverything();
+  showToast(`Added ${count} item${count !== 1 ? 's' : ''} to package`);
+}
+
+/**
+ * Remove selected items from package
+ */
+function removeSelectedFromPackage() {
+  let count = 0;
+  
+  for (const id of state.selectedItemIds) {
+    if (state.packageItems.has(id)) {
+      state.packageItems.delete(id);
+      count++;
+    }
+  }
+  
+  rerenderEverything();
+  showToast(`Removed ${count} item${count !== 1 ? 's' : ''} from package`);
 }
 
 // ============================================================================
@@ -374,6 +458,10 @@ function renderGrid(filteredItems) {
   dom.loadingSkeleton.hidden = true;
   dom.errorState.hidden = true;
   
+  // Apply density class to grid
+  dom.grid.classList.remove('density-ultra', 'density-compact', 'density-comfortable', 'density-list');
+  dom.grid.classList.add(`density-${state.density}`);
+  
   if (!filteredItems.length) {
     renderEmptyState();
     return;
@@ -381,8 +469,8 @@ function renderGrid(filteredItems) {
   
   dom.emptyState.hidden = true;
   
-  filteredItems.forEach((item) => {
-    const card = createItemCard(item);
+  filteredItems.forEach((item, index) => {
+    const card = createItemCard(item, index);
     dom.grid.appendChild(card);
   });
 }
@@ -390,25 +478,31 @@ function renderGrid(filteredItems) {
 /**
  * Create an item card element
  * @param {Object} item - Item data object
+ * @param {number} index - Index in current filtered/sorted array
  * @returns {HTMLDivElement} - Card element
  */
-function createItemCard(item) {
+function createItemCard(item, index) {
   const card = document.createElement("div");
   card.className = "card";
   card.setAttribute("role", "button");
   card.setAttribute("tabindex", "0");
   card.setAttribute("aria-pressed", state.selectedItemIds.has(item.id) ? "true" : "false");
+  card.dataset.id = item.id;
+  card.dataset.index = String(index);
   
   if (state.selectedItemIds.has(item.id)) {
     card.classList.add("selected");
   }
   
-  // Click and keyboard handlers
-  card.addEventListener("click", () => toggleItemSelection(item.id));
+  // Enhanced click handler with shift+click support
+  card.addEventListener("click", (event) => onCardClick(event, item, index));
+  
+  // Keyboard handlers
   card.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       toggleItemSelection(item.id);
+      lastClickedIndex = index;
     }
   });
 
@@ -421,7 +515,14 @@ function createItemCard(item) {
     img.replaceWith(createFallbackIcon(item.id));
   };
 
-  // Display name (respects language toggle)
+  // Display name with quick copy button
+  const nameContainer = document.createElement("div");
+  nameContainer.className = "name-container";
+  nameContainer.style.display = "flex";
+  nameContainer.style.alignItems = "center";
+  nameContainer.style.justifyContent = "space-between";
+  nameContainer.style.gap = "4px";
+  
   const name = document.createElement("div");
   name.className = "name";
   const displayName = state.showRussian && item.displayNameRu 
@@ -429,6 +530,22 @@ function createItemCard(item) {
     : item.displayName || item.id;
   name.textContent = displayName;
   name.setAttribute("title", displayName);
+  name.style.flex = "1";
+  name.style.minWidth = "0";
+  
+  // Quick copy button
+  const quickCopyBtn = document.createElement("button");
+  quickCopyBtn.className = "quick-copy-btn";
+  quickCopyBtn.type = "button";
+  quickCopyBtn.textContent = "📋";
+  quickCopyBtn.title = "Copy JSON for this item";
+  quickCopyBtn.setAttribute("aria-label", `Copy JSON for ${displayName}`);
+  quickCopyBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    quickCopyItemJson(item, quickCopyBtn);
+  });
+  
+  nameContainer.append(name, quickCopyBtn);
 
   // Secondary name (opposite language)
   const nameRu = document.createElement("div");
@@ -445,11 +562,79 @@ function createItemCard(item) {
   code.textContent = item.id;
   code.setAttribute("title", item.id);
 
-  card.append(img, name);
+  card.append(img, nameContainer);
   if (nameRu.textContent) card.appendChild(nameRu);
   card.appendChild(code);
   
   return card;
+}
+
+/**
+ * Handle card click with modifier keys support
+ * @param {MouseEvent} event - Click event
+ * @param {Object} item - Item data
+ * @param {number} index - Item index
+ */
+function onCardClick(event, item, index) {
+  const id = item.id;
+  
+  // Ctrl/Cmd => toggle single
+  if (event.ctrlKey || event.metaKey) {
+    toggleItemSelection(id);
+    lastClickedIndex = index;
+    return;
+  }
+  
+  // Shift => range select
+  if (event.shiftKey && lastClickedIndex != null) {
+    selectRange(lastClickedIndex, index);
+    lastClickedIndex = index;
+    return;
+  }
+  
+  // Normal click: toggle
+  toggleItemSelection(id);
+  lastClickedIndex = index;
+}
+
+/**
+ * Quick copy single item JSON
+ * @param {Object} item - Item to copy
+ * @param {HTMLElement} btn - Button element for visual feedback
+ */
+function quickCopyItemJson(item, btn) {
+  const payload = {
+    init_info: {
+      type: "COMMON",
+      title: "To our dearest hero",
+      message: "We apologize for the inconvenience you have encountered. Here is the compensation pack for you.",
+      rewards: {
+        rewards_list: [{
+          type: "ITEM",
+          item_name: item.id,
+          quantity: item.defaultQuantity ?? 1
+        }]
+      }
+    }
+  };
+  
+  const text = state.ui.jsonFormatPretty
+    ? JSON.stringify(payload, null, 2)
+    : JSON.stringify(payload);
+  
+  copyText(text).then(() => {
+    // Visual feedback
+    const originalText = btn.textContent;
+    btn.textContent = "✓";
+    btn.classList.add("copied");
+    
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.classList.remove("copied");
+    }, 1500);
+    
+    showToast(`Copied JSON for "${item.displayName || item.id}"`);
+  });
 }
 
 /**
@@ -735,7 +920,11 @@ function renderCompensationPanelActions(selectedItems) {
     const jsonStr = state.ui.jsonFormatPretty 
       ? JSON.stringify(initInfo, null, 2)
       : JSON.stringify(initInfo);
-    copyText(jsonStr);
+    copyText(jsonStr).then(() => {
+      showToast("JSON copied to clipboard");
+    }).catch(() => {
+      showToast("Failed to copy JSON");
+    });
   });
   
   // Save Preset button (primary)
@@ -756,7 +945,11 @@ function renderCompensationPanelActions(selectedItems) {
   copyIdsBtn.setAttribute("aria-label", "Copy item IDs to clipboard");
   copyIdsBtn.addEventListener("click", () => {
     const ids = selectedItems.map(({ item }) => item.id).join(", ");
-    copyText(ids);
+    copyText(ids).then(() => {
+      showToast("Item IDs copied to clipboard");
+    }).catch(() => {
+      showToast("Failed to copy IDs");
+    });
   });
   
   // Clear button (tertiary)
@@ -1044,10 +1237,62 @@ function rerenderEverything() {
   renderActiveFilterChips();
   renderGrid(sorted);
   renderCompensationPanel();
+  renderSelectionBar();  // Phase 4: Selection bar
   
   // Update filter sidebar checkboxes to match state
   if (dom.filtersSidebar) {
     renderFiltersSidebar();
+  }
+}
+
+/**
+ * Render selection bar (Phase 4 - Bulk Operations)
+ */
+function renderSelectionBar() {
+  if (!dom.selectionBar) return;
+  
+  const count = state.selectedItemIds.size;
+  
+  if (!count) {
+    dom.selectionBar.classList.remove('active');
+    dom.selectionBar.innerHTML = '';
+    return;
+  }
+  
+  dom.selectionBar.classList.add('active');
+  dom.selectionBar.innerHTML = `
+    <div class="selection-bar-left">
+      <span class="selection-bar-count">${count} item${count > 1 ? 's' : ''} selected</span>
+      <span class="selection-bar-hint">Use filters/sorting, then add to package</span>
+    </div>
+    <div class="selection-bar-actions">
+      <button id="sb-add-to-package" class="btn btn-primary" type="button">Add to package</button>
+      <button id="sb-remove-from-package" class="btn btn-secondary" type="button">Remove from package</button>
+      <button id="sb-clear-selection" class="btn btn-tertiary" type="button">Clear selection</button>
+    </div>
+  `;
+  
+  // Attach event handlers
+  const addBtn = document.getElementById('sb-add-to-package');
+  const removeBtn = document.getElementById('sb-remove-from-package');
+  const clearBtn = document.getElementById('sb-clear-selection');
+  
+  if (addBtn) {
+    addBtn.addEventListener('click', () => {
+      moveSelectedToPackage();
+    });
+  }
+  
+  if (removeBtn) {
+    removeBtn.addEventListener('click', () => {
+      removeSelectedFromPackage();
+    });
+  }
+  
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      clearSelection();
+    });
   }
 }
 
@@ -1168,9 +1413,10 @@ function syntaxHighlight(json) {
 /**
  * Copy text to clipboard with fallback for older browsers
  * @param {string} text - Text to copy
+ * @returns {Promise} Promise that resolves when copy succeeds
  */
 async function copyText(text) {
-  if (!text) return;
+  if (!text) return Promise.resolve();
   
   try {
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -1186,10 +1432,10 @@ async function copyText(text) {
       document.execCommand("copy");
       ta.remove();
     }
-    showToast("Copied to clipboard");
+    return Promise.resolve();
   } catch (err) {
     console.error("Copy failed:", err);
-    showToast("Copy failed");
+    return Promise.reject(err);
   }
 }
 
@@ -1518,6 +1764,44 @@ function initializeEventListeners() {
 // ============================================================================
 
 /**
+ * Initialize keyboard shortcuts (Phase 4B)
+ */
+function initKeyboardShortcuts() {
+  document.addEventListener('keydown', (event) => {
+    // Ignore typing inside inputs / textareas
+    const target = event.target;
+    if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.tagName === 'SELECT')) {
+      return;
+    }
+    
+    // Ctrl/Cmd + A => select all visible
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'a') {
+      event.preventDefault();
+      selectAllVisible();
+      return;
+    }
+    
+    // Escape => clear selection (if any)
+    if (event.key === 'Escape') {
+      if (state.selectedItemIds.size > 0) {
+        clearSelection();
+        return;
+      }
+      // If no selection, let existing Escape handler handle it
+    }
+    
+    // Delete / Backspace => remove from package
+    if ((event.key === 'Delete' || event.key === 'Backspace') && !event.ctrlKey && !event.metaKey) {
+      if (state.selectedItemIds.size > 0) {
+        event.preventDefault();
+        removeSelectedFromPackage();
+        return;
+      }
+    }
+  });
+}
+
+/**
  * Initialize the application
  */
 function init() {
@@ -1530,6 +1814,7 @@ function init() {
   
   // Initialize controls
   initSortControls();
+  initKeyboardShortcuts();
   
   // Initialize event listeners
   initializeEventListeners();

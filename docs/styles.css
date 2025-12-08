@@ -1697,6 +1697,105 @@ kbd {
   font-weight: 600;
 }
 
+/* ============================================================================
+   PHASE 4: BULK OPERATIONS & SELECTION BAR
+   ============================================================================ */
+
+/* Selection Bar (sticky bottom) */
+.selection-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 64px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.85));
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+  
+  transform: translateY(100%);
+  transition: transform 0.25s ease;
+  z-index: 50;
+}
+
+.selection-bar.active {
+  transform: translateY(0);
+}
+
+.selection-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.selection-bar-count {
+  font-size: 15px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.selection-bar-hint {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.selection-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Ensure main content doesn't get hidden by selection bar */
+.grid-section {
+  padding-bottom: 80px;
+}
+
+/* Quick copy button on cards */
+.quick-copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--muted);
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.card:hover .quick-copy-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.quick-copy-btn:hover {
+  background: rgba(90, 200, 250, 0.1);
+  color: var(--accent);
+}
+
+.quick-copy-btn:active {
+  transform: scale(0.95);
+}
+
+.quick-copy-btn.copied {
+  color: #22c55e;
+}
+
+/* Sticky compensation panel */
+.detail-panel {
+  position: sticky;
+  top: 145px; /* Below header + chips bar */
+  align-self: start;
+  max-height: calc(100vh - 165px);
+  overflow-y: auto;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .main-with-sidebar {
@@ -1838,6 +1937,33 @@ kbd {
     flex: 1;
     min-width: 0;
     font-size: 12px;
+  }
+  
+  /* Selection bar on mobile */
+  .selection-bar {
+    height: auto;
+    min-height: 64px;
+    padding: 10px 16px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .selection-bar-left {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+  
+  .selection-bar-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .selection-bar-actions button {
+    flex: 1;
+    min-width: 0;
   }
 }
 
