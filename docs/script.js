@@ -126,6 +126,15 @@ async function loadItems() {
   state.ui.loadingState = 'loading';
   renderLoadingSkeleton();
   
+  // Safety timeout to ensure loading skeleton is hidden
+  const safetyTimeout = setTimeout(() => {
+    if (state.ui.loadingState === 'loading') {
+      console.warn('Loading timeout - forcing skeleton hide');
+      dom.loadingSkeleton.hidden = true;
+      renderErrorState();
+    }
+  }, 10000);
+  
   try {
     const res = await fetch("items.json");
     if (!res.ok) {
@@ -140,6 +149,7 @@ async function loadItems() {
     
     state.items = data;
     state.ui.loadingState = 'success';
+    clearTimeout(safetyTimeout);
     
     // Build filter metadata for advanced filters
     filterMeta = buildFilterMetadata(state.items);
@@ -152,6 +162,7 @@ async function loadItems() {
   } catch (err) {
     console.error("Failed to load items:", err);
     state.ui.loadingState = 'error';
+    clearTimeout(safetyTimeout);
     renderErrorState();
     showToast("Failed to load items");
   }
@@ -453,26 +464,33 @@ function removeSelectedFromPackage() {
  * @param {Array} filteredItems - Array of items to render
  */
 function renderGrid(filteredItems) {
-  dom.grid.innerHTML = "";
-  dom.grid.hidden = false;
-  dom.loadingSkeleton.hidden = true;
-  dom.errorState.hidden = true;
-  
-  // Apply density class to grid
-  dom.grid.classList.remove('density-ultra', 'density-compact', 'density-comfortable', 'density-list');
-  dom.grid.classList.add(`density-${state.density}`);
-  
-  if (!filteredItems.length) {
-    renderEmptyState();
-    return;
+  try {
+    // Always hide loading skeleton first
+    dom.loadingSkeleton.hidden = true;
+    dom.errorState.hidden = true;
+    dom.grid.hidden = false;
+    dom.grid.innerHTML = "";
+    
+    // Apply density class to grid
+    dom.grid.classList.remove('density-ultra', 'density-compact', 'density-comfortable', 'density-list');
+    dom.grid.classList.add(`density-${state.density}`);
+    
+    if (!filteredItems.length) {
+      renderEmptyState();
+      return;
+    }
+    
+    dom.emptyState.hidden = true;
+    
+    filteredItems.forEach((item, index) => {
+      const card = createItemCard(item, index);
+      dom.grid.appendChild(card);
+    });
+  } catch (err) {
+    console.error('Error rendering grid:', err);
+    dom.loadingSkeleton.hidden = true;
+    renderErrorState();
   }
-  
-  dom.emptyState.hidden = true;
-  
-  filteredItems.forEach((item, index) => {
-    const card = createItemCard(item, index);
-    dom.grid.appendChild(card);
-  });
 }
 
 /**
@@ -1239,11 +1257,6 @@ function rerenderEverything() {
   renderGrid(sorted);
   renderCompensationPanel();
   renderSelectionBar();  // Phase 4: Selection bar
-  
-  // Update filter sidebar checkboxes to match state
-  if (dom.filtersSidebar) {
-    renderFiltersSidebar();
-  }
 }
 
 /**
@@ -1375,12 +1388,10 @@ function applyPresetToSelection(preset) {
   });
 
   console.log('Applied preset:', preset.name);
-    console.log('Selected IDs:', Array.from(state.selectedItemIds));
-    console.log('Package items:', Array.from(state.packageItems.entries()));
+  console.log('Selected IDs:', Array.from(state.selectedItemIds));
+  console.log('Package items:', Array.from(state.packageItems.entries()));
 
-    const filtered = applyFilters();
-    renderGrid(filtered);
-    renderCompensationPanel();
+  rerenderEverything();
 }
 
 // ============================================================================
