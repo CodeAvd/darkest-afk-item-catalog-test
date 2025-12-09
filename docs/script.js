@@ -1585,6 +1585,54 @@ function closeHelpModal() {
 }
 
 // ============================================================================
+// DENSITY CONTROLS
+// ============================================================================
+
+/**
+ * Density button configuration
+ */
+const densityButtons = [
+  { btn: dom.densityUltra, mode: 'ultra' },
+  { btn: dom.densityCompact, mode: 'compact' },
+  { btn: dom.densityComfortable, mode: 'comfortable' },
+  { btn: dom.densityList, mode: 'list' }
+];
+
+/**
+ * Set density mode and update UI
+ * @param {string} mode - Density mode (ultra, compact, comfortable, list)
+ */
+function setDensityMode(mode) {
+  state.density = mode;
+  
+  // Remove all density classes
+  document.body.classList.remove('density-ultra', 'density-compact', 'density-comfortable', 'density-list');
+  
+  // Add new density class
+  document.body.classList.add(`density-${mode}`);
+  
+  // Update button states
+  densityButtons.forEach(({ btn, mode: btnMode }) => {
+    if (!btn) return;
+    const isActive = btnMode === mode;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', String(isActive));
+  });
+  
+  // Save preference
+  try {
+    localStorage.setItem('dafk.density', mode);
+  } catch (e) {
+    console.error('Failed to save density preference:', e);
+  }
+  
+  // Re-render grid with new density
+  const filtered = applyFilters();
+  const sorted = sortItems(filtered);
+  renderGrid(sorted);
+}
+
+// ============================================================================
 // EVENT LISTENERS
 // ============================================================================
 
@@ -1612,49 +1660,12 @@ function initializeEventListeners() {
   });
 
   // Density toggle handlers
-  const densityButtons = [
-    { btn: dom.densityUltra, mode: 'ultra' },
-    { btn: dom.densityCompact, mode: 'compact' },
-    { btn: dom.densityComfortable, mode: 'comfortable' },
-    { btn: dom.densityList, mode: 'list' }
-  ];
-
   densityButtons.forEach(({ btn, mode }) => {
     if (!btn) return;
     btn.addEventListener("click", () => {
       setDensityMode(mode);
     });
   });
-
-  function setDensityMode(mode) {
-    state.density = mode;
-    
-    // Remove all density classes
-    document.body.classList.remove('density-ultra', 'density-compact', 'density-comfortable', 'density-list');
-    
-    // Add new density class
-    document.body.classList.add(`density-${mode}`);
-    
-    // Update button states
-    densityButtons.forEach(({ btn, mode: btnMode }) => {
-      if (!btn) return;
-      const isActive = btnMode === mode;
-      btn.classList.toggle('active', isActive);
-      btn.setAttribute('aria-pressed', String(isActive));
-    });
-    
-    // Save preference
-    try {
-      localStorage.setItem('dafk.density', mode);
-    } catch (e) {
-      console.error('Failed to save density preference:', e);
-    }
-    
-    // Re-render grid with new density
-    const filtered = applyFilters();
-    const sorted = sortItems(filtered);
-    renderGrid(sorted);
-  }
 
   // Help modal
   dom.helpBtn.addEventListener("click", openHelpModal);
