@@ -67,6 +67,9 @@ let filterMeta = {
 // Selection state for shift+click range selection
 let lastClickedIndex = null;
 
+// Loading flag to prevent multiple simultaneous loads
+let isLoading = false;
+
 // ============================================================================
 // DOM REFERENCES
 // ============================================================================
@@ -123,6 +126,13 @@ const dom = {
  * Load items from JSON file
  */
 async function loadItems() {
+  // Prevent multiple simultaneous loads
+  if (isLoading) {
+    console.warn('Already loading items, skipping duplicate call');
+    return;
+  }
+  
+  isLoading = true;
   state.ui.loadingState = 'loading';
   renderLoadingSkeleton();
   
@@ -130,7 +140,11 @@ async function loadItems() {
   const safetyTimeout = setTimeout(() => {
     if (state.ui.loadingState === 'loading') {
       console.warn('Loading timeout - forcing skeleton hide');
+      state.ui.loadingState = 'error';
+      isLoading = false;
       dom.loadingSkeleton.hidden = true;
+      dom.loadingSkeleton.style.display = 'none';
+      dom.loadingSkeleton.innerHTML = '';
       renderErrorState();
     }
   }, 10000);
@@ -149,7 +163,13 @@ async function loadItems() {
     
     state.items = data;
     state.ui.loadingState = 'success';
+    isLoading = false;
     clearTimeout(safetyTimeout);
+    
+    // FORCE hide loading skeleton immediately after successful load
+    dom.loadingSkeleton.hidden = true;
+    dom.loadingSkeleton.style.display = 'none';
+    dom.loadingSkeleton.innerHTML = '';
     
     // Build filter metadata for advanced filters
     filterMeta = buildFilterMetadata(state.items);
@@ -159,10 +179,16 @@ async function loadItems() {
     rerenderEverything();
     checkForPresetToApply();
     
+    console.log('Items loaded successfully:', state.items.length);
+    
   } catch (err) {
     console.error("Failed to load items:", err);
     state.ui.loadingState = 'error';
+    isLoading = false;
     clearTimeout(safetyTimeout);
+    dom.loadingSkeleton.hidden = true;
+    dom.loadingSkeleton.style.display = 'none';
+    dom.loadingSkeleton.innerHTML = '';
     renderErrorState();
     showToast("Failed to load items");
   }
@@ -465,8 +491,12 @@ function removeSelectedFromPackage() {
  */
 function renderGrid(filteredItems) {
   try {
-    // Always hide loading skeleton first
+    // FORCE hide loading skeleton - multiple methods for reliability
     dom.loadingSkeleton.hidden = true;
+    dom.loadingSkeleton.style.display = 'none';
+    dom.loadingSkeleton.innerHTML = '';
+    dom.loadingSkeleton.setAttribute('aria-busy', 'false');
+    
     dom.errorState.hidden = true;
     dom.grid.hidden = false;
     dom.grid.innerHTML = "";
@@ -489,6 +519,7 @@ function renderGrid(filteredItems) {
   } catch (err) {
     console.error('Error rendering grid:', err);
     dom.loadingSkeleton.hidden = true;
+    dom.loadingSkeleton.style.display = 'none';
     renderErrorState();
   }
 }
@@ -689,13 +720,19 @@ function createFallbackIcon(text) {
  * Show loading skeleton (12 placeholder cards)
  */
 function renderLoadingSkeleton() {
+  // Only show skeleton if we're actually loading
+  if (state.ui.loadingState !== 'loading') {
+    return;
+  }
+  
   dom.loadingSkeleton.hidden = false;
+  dom.loadingSkeleton.style.display = 'grid';
   dom.loadingSkeleton.innerHTML = "";
   dom.grid.hidden = true;
   dom.emptyState.hidden = true;
   dom.errorState.hidden = true;
   
-  // Generate 12 skeleton cards
+  // Generate 12 skeleton cards (ONLY 12, not infinite)
   for (let i = 0; i < 12; i++) {
     const skeleton = document.createElement("div");
     skeleton.className = "skeleton-card";
@@ -713,6 +750,8 @@ function renderLoadingSkeleton() {
  * Render empty state when no items match filters
  */
 function renderEmptyState() {
+  dom.loadingSkeleton.hidden = true;
+  dom.loadingSkeleton.style.display = 'none';
   dom.emptyState.innerHTML = `
     <div class="empty-icon">📦</div>
     <p>No items found matching your filters.</p>
@@ -720,6 +759,7 @@ function renderEmptyState() {
   `;
   dom.emptyState.hidden = false;
   dom.grid.hidden = true;
+  dom.errorState.hidden = true;
 }
 
 /**
@@ -727,8 +767,11 @@ function renderEmptyState() {
  */
 function renderErrorState() {
   dom.loadingSkeleton.hidden = true;
+  dom.loadingSkeleton.style.display = 'none';
+  dom.loadingSkeleton.innerHTML = '';
   dom.errorState.hidden = false;
   dom.grid.hidden = true;
+  dom.emptyState.hidden = true;
 }
 
 // ============================================================================
